@@ -1,6 +1,6 @@
 # regression_analysis.py
 
-import statsmodels.api as sm
+# import statsmodels.api as sm
 import pandas as pd
 
 def run_regression(df, dependent_var, independent_vars):

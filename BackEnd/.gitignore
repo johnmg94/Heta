@@ -1,0 +1,8 @@
+/venv
+venv
+/venv/
+venv/
+/temp.json
+temp.json
+/__pycache__/
+__pycache__/
