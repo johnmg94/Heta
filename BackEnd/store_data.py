@@ -18,7 +18,6 @@ class DataSeries(Base):
     date = Column(DateTime(30), nullable=True)
     value = Column(Float, nullable=True)
 
-
 class DBStart():
     def __init__(self):
         self.metadata_obj = MetaData()

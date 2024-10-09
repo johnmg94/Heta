@@ -1,6 +1,6 @@
 import re
 
-def build_url(keywords_str, api_key, base_url='https://api.stlouisfed.org/fred/series/search?search_text='):
+def build_url(keywords_str, api_key, base_url):
     # Split the input string into individual keywords using commas or whitespace
     keywords = re.split(r'[,\s]+', keywords_str.strip())
     
