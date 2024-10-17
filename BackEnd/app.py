@@ -1,4 +1,7 @@
-from flask import Flask, render_template, request, redirect, url_for
+# app.py
+from flask import Flask, render_template, request, redirect, url_for, jsonify, Response
+from flask_restful import Api, Resource
+from flasgger import Swagger, swag_from
 from flask_cors import CORS
 import os
 import pandas as pd
@@ -7,40 +10,158 @@ from store_data import store_data
 from run_sql import run_query, engine, table_names
 from plot_data import plot_series
 from regression_analysis import run_regression
-# import statsmodels.api as sm
 import pickle
 import matplotlib as plt
+import json
+from store_data import DBStart, DataSeries
+from parser import build_url
+import requests
+from dotenv import load_dotenv
 
 app = Flask(__name__)
+api = Api(app)
 cors = CORS(app)
 
 # Ensure directories exist
 os.makedirs('static/plots', exist_ok=True)
 os.makedirs('models', exist_ok=True)
 
+#Configuring Swagger
+app.config['SWAGGER'] = {
+    'title' : 'My API',
+    'uiversion' : 3
+}
+
+swagger = Swagger(app)
+
 @app.route('/')
 def home():
     test = { "name" : "hello_world"}
     return test
 
-@app.route('/fetch', methods=['GET', 'POST'])
-def fetch():
-    if request.method == 'POST':
-        # getting the series from the textbox
-        series_id = request.form['series_id']
-        df = fetch_series(series_id)
-        store_data(df, series_id.lower())
 
-        # return redirect(url_for('home'))
-    # return render_template('fetch.html')
+
+
+
+
+
+
+
+
+
+
+
+
+@app.route('/query_db', methods=['GET', 'POST'])
+def query_db():
+    if request.method == 'GET':
+        try:
+            print("here")
+            res = str(request.args.get('series'))
+            print(res)
+        except Exception as e:
+            print(e)
+            
+        df = run_query(f'SELECT * from {res}')
+        columns = df.columns
+        json_out = df.to_json(orient = "records")
+        json_load = json.loads(json_out)
+        json_load_named = {res : json_load }
+        response = jsonify(json_load_named)
+        if (response):
+            return response
+        else:
+            return { "Response" : "None" }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@app.route('/search_data', methods=['GET', 'POST'])
+def fetch():
+    try:
+        api_key = os.environ.get('FRED_API_KEY')
+    except Exception as e:
+        print(str(e))
+    try:
+        series = str(request.args.get('series'))
+    except Exception as e:
+        print(str(e))
+    if request.method == 'GET':
+        db_init = DBStart()
+        api_key = '&api_key=' + str(api_key) + '&file_type=json'
+        base_url = 'https://api.stlouisfed.org/fred/series/search?search_text='
+        keywords = build_url(series)
+        fetch_data = fetch(base_url,keywords,api_key)
+        return fetch_data
+ 
+# Also this function will run even if the realtimestart date exists. I need to store the realtime_start date and the query in a place where a new request won't fire if those two things exist and match the incoming query
+# @app.route('/search_series?query=<query>}', methods=['POST'])
+# def get_series_options(query):
+#     if request.method == 'POST':
+#         result = search_series(query)
+#         df = result['df_object']
+#         store_data(df)
+
 
 @app.route('/view_series', methods=['GET'])
+    # Example route to demonstrate how to document Flask routes.
+
+    # Query Parameters:
+    # - param1 (str): The first parameter. Default is 'None'.
+    # - param2 (int): The second parameter. Default is 'None'.
+
+    # Returns:
+    # - JSON object containing the values of param1 and param2.
+
+    # Example:
+    # /example?param1=hello&param2=123
+
+    # """
+
 def view_series():
+    print('here')
+    try:
+        api_key = os.environ.get('FRED_API_KEY')
+    except Exception as e:
+        print(str(e))
+    try:
+        series = str(request.args.get('series'))
+    except Exception as e:
+        print(str(e))
     if request.method == 'GET':
-        table_name = 'gnpca'
-        df = run_query(f'SELECT * FROM {table_name}')
-        json_out = df.to_json()
-        return json_out
+        db_init = DBStart()
+        api_key = '&api_key=' + str(api_key) + '&file_type=json'
+        base_url = 'https://api.stlouisfed.org/fred/series/observations?series_id='
+        keywords = build_url(series)
+        print(str(base_url) + str(api_key) + str(keywords))
+        fetch_data = fetch(base_url,keywords,api_key)
+        print(fetch_data)
+        return fetch_data
+            
+        # if request.method == 'GET':
+        #     table_name = 'gnpca'
+        #     df = run_query(f'SELECT * FROM {table_name}')
+        #     columns = df.columns
+        #     json_out = df.to_json(orient = "records")
+        #     json_load = json.loads(json_out)
+        #     json_load_named = {table_name : json_load }
+        #     response = jsonify(json_load_named)
+        #     return response
         
 
 @app.route('/graph', methods=['GET', 'POST'])
@@ -89,5 +210,24 @@ def model():
         columns[table] = df.columns.tolist()
     return render_template('model.html', summary=summary, tables=tables, columns=columns)
 
+def fetch(base_url, keywords, api_key):
+    url = str(base_url) + str(keywords) + str(api_key)
+    try:
+        r = requests.get(url)
+    except Exception as e:
+        print("Error: ", str(e))
+    if r.status_code == 200:
+        returned_json = r.text
+        json_item = json.loads(returned_json)
+        if json_item != None:
+            # for item in dict_item
+            return jsonify(json_item)
+        else:
+            response = { 'response_status':'Your Query Combination Returned No Results.' }
+            return jsonify(response)
+    else:
+        status_code = { 'status_code_error': str(r.status_code)}
+        return jsonify(status_code)
+        
 if __name__ == '__main__':
     app.run(debug=True)
