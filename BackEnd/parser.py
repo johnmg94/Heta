@@ -1,6 +1,6 @@
 import re
 
-def build_url(keywords_str, api_key, base_url):
+def build_url(keywords_str):
     # Split the input string into individual keywords using commas or whitespace
     keywords = re.split(r'[,\s]+', keywords_str.strip())
     
@@ -15,5 +15,5 @@ def build_url(keywords_str, api_key, base_url):
     joined_keywords = '+'.join(cleaned_keywords)
     
     # Append the API key to the URL
-    url = f"{base_url}{joined_keywords}/{api_key}"
-    return url
+    keywords = str(joined_keywords) 
+    return keywords
