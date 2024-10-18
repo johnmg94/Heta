@@ -39,19 +39,6 @@ def home():
     test = { "name" : "hello_world"}
     return test
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @app.route('/query_db', methods=['GET', 'POST'])
 def query_db():
     if request.method == 'GET':
@@ -61,8 +48,13 @@ def query_db():
             print(res)
         except Exception as e:
             print(e)
-            
-        df = run_query(f'SELECT * from {res}')
+
+        try:    
+            df = run_query(f'SELECT * from {res}')
+        except Exception as e:
+            err = "Table SELECT did not finish: ", str(e)
+            return { "error" : err}
+
         columns = df.columns
         json_out = df.to_json(orient = "records")
         json_load = json.loads(json_out)
@@ -72,23 +64,6 @@ def query_db():
             return response
         else:
             return { "Response" : "None" }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @app.route('/search_data', methods=['GET', 'POST'])
