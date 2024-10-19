@@ -39,19 +39,6 @@ def home():
     test = { "name" : "hello_world"}
     return test
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @app.route('/query_db', methods=['GET', 'POST'])
 def query_db():
     if request.method == 'GET':
@@ -61,7 +48,7 @@ def query_db():
             print(res)
         except Exception as e:
             print(e)
-            
+
         df = run_query(f'SELECT * from {res}')
         columns = df.columns
         json_out = df.to_json(orient = "records")
@@ -73,24 +60,6 @@ def query_db():
         else:
             return { "Response" : "None" }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @app.route('/search_data', methods=['GET', 'POST'])
 def fetch():
     try:
@@ -98,7 +67,8 @@ def fetch():
     except Exception as e:
         print(str(e))
     try:
-        series = str(request.args.get('series'))
+        series = str(request.args.get('query'))
+        print(series)
     except Exception as e:
         print(str(e))
     if request.method == 'GET':
@@ -106,7 +76,10 @@ def fetch():
         api_key = '&api_key=' + str(api_key) + '&file_type=json'
         base_url = 'https://api.stlouisfed.org/fred/series/search?search_text='
         keywords = build_url(series)
-        fetch_data = fetch(base_url,keywords,api_key)
+        print("Base URL", str(base_url))
+        print("Keywords", str(keywords))
+        view_series = False
+        fetch_data = fetch(base_url,keywords,api_key, view_series)
         return fetch_data
  
 # Also this function will run even if the realtimestart date exists. I need to store the realtime_start date and the query in a place where a new request won't fire if those two things exist and match the incoming query
@@ -149,7 +122,8 @@ def view_series():
         base_url = 'https://api.stlouisfed.org/fred/series/observations?series_id='
         keywords = build_url(series)
         print(str(base_url) + str(api_key) + str(keywords))
-        fetch_data = fetch(base_url,keywords,api_key)
+        view_series = True
+        fetch_data = fetch(base_url,keywords,api_key, view_series)
         print(fetch_data)
         return fetch_data
             
@@ -210,21 +184,46 @@ def model():
         columns[table] = df.columns.tolist()
     return render_template('model.html', summary=summary, tables=tables, columns=columns)
 
-def fetch(base_url, keywords, api_key):
+def fetch(base_url, keywords, api_key, view_series):
     url = str(base_url) + str(keywords) + str(api_key)
     try:
         r = requests.get(url)
     except Exception as e:
         print("Error: ", str(e))
     if r.status_code == 200:
-        returned_json = r.text
-        json_item = json.loads(returned_json)
-        if json_item != None:
-            # for item in dict_item
-            return jsonify(json_item)
+        if view_series != False:
+            print("Blah")
+            json_item = json.loads(r.text)
+            try:
+                json_item = json_item["observations"]
+            except:
+                print("'observations' key does not exist on json_item.")
+                return jsonify(json_item)
+            df = pd.DataFrame(json_item)
+            count = 1
+            print(df.head())
+            for index in range(len(df)):
+                if count < 5:
+                    print(index)
+                    print("COUNT", count)
+                df.loc[index, 'id'] = str(index)
+                count+=1
+            df = df.to_json(orient = "records")
+            json_load = json.loads(df)
+            # json_load_named = {res : json_load }
+            response = jsonify(json_load)
+            # json_out = df.to_json()
+            return response
         else:
-            response = { 'response_status':'Your Query Combination Returned No Results.' }
-            return jsonify(response)
+            returned_json = r.text
+            json_item = json.loads(returned_json)
+            if json_item != None:
+                # for item in dict_item
+                
+                return jsonify(json_item)
+            else:
+                response = { 'response_status':'Your Query Combination Returned No Results.' }
+                return jsonify(response)
     else:
         status_code = { 'status_code_error': str(r.status_code)}
         return jsonify(status_code)
