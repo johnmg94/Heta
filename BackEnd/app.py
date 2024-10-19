@@ -49,7 +49,12 @@ def query_db():
         except Exception as e:
             print(e)
 
-        df = run_query(f'SELECT * from {res}')
+        try:    
+            df = run_query(f'SELECT * from {res}')
+        except Exception as e:
+            err = "Table SELECT did not finish: ", str(e)
+            return { "error" : err}
+
         columns = df.columns
         json_out = df.to_json(orient = "records")
         json_load = json.loads(json_out)
