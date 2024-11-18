@@ -17,6 +17,10 @@ from store_data import DBStart, DataSeries
 from parser import build_url
 import requests
 from dotenv import load_dotenv
+from db.user import User
+import hashlib
+import jwt
+import datetime
 
 app = Flask(__name__)
 api = Api(app)
@@ -39,7 +43,78 @@ def home():
     test = { "name" : "hello_world"}
     return test
 
+
+# @app.route('/login', methods=['GET', 'POST'])
+    # Query Parameters:
+    # - param1 (str): The first parameter. Default is 'None'.
+    # - param2 (int): The second parameter. Default is 'None'.
+
+    # Returns:
+    # - JSON object containing the values of param1 and param2.
+
+    # Example:
+    # /example?param1=hello&param2=123
+
+    # """
+# def login():
+#     user_instance = User()
+#     if request.method == 'GET':
+#         try:
+#             username = str(request.args.get('username'))
+#         except Exception as e:
+#             return str(e)
+#         try:
+#             password = str(request.args.get('password'))
+#         except Exception as e:
+#             return str(e)
+#         hashed_password = hashlib.sha256(password.encode().hexdigest)
+
+#         try:
+#             user_instance.auth_user(username,hashed_password)
+#             if user_instance.user_login:
+#                 # To Do: Need to fix secret key
+#                 secret_key = 'blah'
+#                 # To Do: Need to generate a token and return a success message
+#                 payload = {
+#                     'user_id' : str(user_instance.user_name),
+#                     'exp' : datetime.timezone.utc + datetime.timedelta(hours=1)
+#                 }
+#                 session_token = jwt.encode(payload, secret_key, algorithm='HS256')
+#                 return {"login_message" : "Successfully Logged In" ,
+#                         # To Do: Jsonify Session Token
+#                         "session_token" : str(session_token) }
+#             else:
+#                 # To Do: Implement number of times user can login. Also implement ability to reset password using email token. Also implement SSO
+#                 return {"login_message": "Login Failed. Please Try Again"}
+
+#         except Exception as e:
+#             return {"login_failed":"Login Failed. Please Try Again."}
+
+#         # user_instance.c
+#         if (username & password):
+#             usr_check = run_query(f'SELECT {username} from')
+
+#     if request.method == 'POST':
+#         print("FUck")
+        # creating user logic
+        
+    #     print(series)
+    # except Exception as e:
+    #     print(str(e))
+    # if request.method == 'GET':
+    #     db_init = DBStart()
+    #     api_key = '&api_key=' + str(api_key) + '&file_type=json'
+    #     base_url = 'https://api.stlouisfed.org/fred/series/search?search_text='
+    #     keywords = build_url(series)
+    #     print("Base URL", str(base_url))
+    #     print("Keywords", str(keywords))
+    #     view_series = False
+    #     fetch_data = fetch(base_url,keywords,api_key, view_series)
+    #     return fetch_data
+    
+
 @app.route('/query_db', methods=['GET', 'POST'])
+
 def query_db():
     if request.method == 'GET':
         try:
@@ -65,7 +140,19 @@ def query_db():
         else:
             return { "Response" : "None" }
 
+
 @app.route('/search_data', methods=['GET', 'POST'])
+    # Query Parameters:
+    # - param1 (str): The first parameter. Default is 'None'.
+    # - param2 (int): The second parameter. Default is 'None'.
+
+    # Returns:
+    # - JSON object containing the values of param1 and param2.
+
+    # Example:
+    # /example?param1=hello&param2=123
+
+    # """
 def fetch():
     try:
         api_key = os.environ.get('FRED_API_KEY')
