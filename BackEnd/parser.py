@@ -1,9 +1,9 @@
 import re
 
 def build_url(keywords_str):
+
     # Split the input string into individual keywords using commas or whitespace
     keywords = re.split(r'[,\s]+', keywords_str.strip())
-    
     cleaned_keywords = []
     for keyword in keywords:
         # Remove special characters, keeping only alphanumeric characters

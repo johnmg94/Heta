@@ -1,0 +1,20 @@
+[
+  {
+    "record_date": "2025-04-22",
+    "account_type": "Treasury General Account (TGA) Opening Balance",
+    "close_today_bal": "null",
+    "open_today_bal": "626444",
+    "open_month_bal": "405786",
+    "open_fiscal_year_bal": "885725",
+    "table_nbr": "I",
+    "table_nm": "Operating Cash Balance",
+    "sub_table_name": "Cash Balance Details",
+    "src_line_nbr": "1",
+    "record_fiscal_year": "2025",
+    "record_fiscal_quarter": "3",
+    "record_calendar_year": "2025",
+    "record_calendar_quarter": "2",
+    "record_calendar_month": "04",
+    "record_calendar_day": "22"
+  }
+]

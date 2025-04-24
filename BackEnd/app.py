@@ -1,15 +1,10 @@
-# app.py
 from flask import Flask, render_template, request, redirect, url_for, jsonify, Response
 from flask_restful import Api, Resource
 from flasgger import Swagger, swag_from
 from flask_cors import CORS
 import os
 import pandas as pd
-from fetch_data import fetch_series
-from store_data import store_data
-from run_sql import run_query, engine, table_names
-from plot_data import plot_series
-from regression_analysis import run_regression
+import psycopg2
 import pickle
 import matplotlib as plt
 import json
@@ -17,10 +12,15 @@ from store_data import DBStart, DataSeries
 from parser import build_url
 import requests
 from dotenv import load_dotenv
-from db.user import User
 import hashlib
 import jwt
 import datetime
+from store_data import store_data
+from run_sql import run_query, engine, table_names
+from plot_data import plot_series
+from regression_analysis import run_regression
+from db.db_functions import db_insert
+from fetch_data  import fetch_series, build_url, fetch_from_fred, fetch_from_treasury
 
 app = Flask(__name__)
 api = Api(app)
@@ -42,78 +42,105 @@ swagger = Swagger(app)
 def home():
     test = { "name" : "hello_world"}
     return test
+            
 
+@app.route('/get_series', methods=['GET', 'POST'])
+# If this URL is accessed arbitrarily, it will attempt to make a connection to the db which is not correct. There needs to be some form of authentication
 
-# @app.route('/login', methods=['GET', 'POST'])
-    # Query Parameters:
-    # - param1 (str): The first parameter. Default is 'None'.
-    # - param2 (int): The second parameter. Default is 'None'.
+def get_series():
+    """
+    Fetches a time series from the database if available.
+    Otherwise, fetches it from an external API, stores it in the DB, then returns it.
+    TODO: Add authentication to secure this route.
+    """
 
-    # Returns:
-    # - JSON object containing the values of param1 and param2.
+    # Load environment variables
+    load_dotenv()
+    user = os.environ.get('POSTGRES_USERNAME')
+    password = os.environ.get('POSTGRES_PASSWORD')
 
-    # Example:
-    # /example?param1=hello&param2=123
+    # Get query parameter
+    table_name = str(request.args.get('query'))
+    subscription = str(request.args.get('subscription'))
+    print("Table name: ", table_name)
 
-    # """
-# def login():
-#     user_instance = User()
-#     if request.method == 'GET':
-#         try:
-#             username = str(request.args.get('username'))
-#         except Exception as e:
-#             return str(e)
-#         try:
-#             password = str(request.args.get('password'))
-#         except Exception as e:
-#             return str(e)
-#         hashed_password = hashlib.sha256(password.encode().hexdigest)
+    # Database connection
+    conn = psycopg2.connect(
+        dbname="Heta",
+        user=user,
+        password=password,
+        host="localhost",  # Change if remote
+        port="5432"
+    )
+    cur = conn.cursor()
 
-#         try:
-#             user_instance.auth_user(username,hashed_password)
-#             if user_instance.user_login:
-#                 # To Do: Need to fix secret key
-#                 secret_key = 'blah'
-#                 # To Do: Need to generate a token and return a success message
-#                 payload = {
-#                     'user_id' : str(user_instance.user_name),
-#                     'exp' : datetime.timezone.utc + datetime.timedelta(hours=1)
-#                 }
-#                 session_token = jwt.encode(payload, secret_key, algorithm='HS256')
-#                 return {"login_message" : "Successfully Logged In" ,
-#                         # To Do: Jsonify Session Token
-#                         "session_token" : str(session_token) }
-#             else:
-#                 # To Do: Implement number of times user can login. Also implement ability to reset password using email token. Also implement SSO
-#                 return {"login_message": "Login Failed. Please Try Again"}
-
-#         except Exception as e:
-#             return {"login_failed":"Login Failed. Please Try Again."}
-
-#         # user_instance.c
-#         if (username & password):
-#             usr_check = run_query(f'SELECT {username} from')
-
-#     if request.method == 'POST':
-#         print("FUck")
-        # creating user logic
-        
-    #     print(series)
-    # except Exception as e:
-    #     print(str(e))
-    # if request.method == 'GET':
-    #     db_init = DBStart()
-    #     api_key = '&api_key=' + str(api_key) + '&file_type=json'
-    #     base_url = 'https://api.stlouisfed.org/fred/series/search?search_text='
-    #     keywords = build_url(series)
-    #     print("Base URL", str(base_url))
-    #     print("Keywords", str(keywords))
-    #     view_series = False
-    #     fetch_data = fetch(base_url,keywords,api_key, view_series)
-    #     return fetch_data
+    # Validate table name to avoid SQL injection!
+    if subscription.lower() not in ["fred", "treasury"]:
+        return "Invalid subscription/table name", 400
     
+    # Query the FRED table for the series
+    select_query = f"SELECT * FROM {subscription} WHERE series_id LIKE %s"
+    results = []
+    try:
+        cur.execute(select_query, (table_name,))
+        results = cur.fetchall()
+    except Exception as e:
+        print("Query Failed: ", e)
+        conn.rollback()
 
-@app.route('/query_db', methods=['GET', 'POST'])
+    # If series exists in DB, return it as JSON
+    # Code assumes table format of FRED
+    if results:
+        if subscription == "fred":
+            df = pd.DataFrame(results, columns = ['id', 'series_id', 'date', 'value'])
+            return jsonify(json.loads(df.to_json(orient="records")))
+        # This part likely isn't correct. Check format of treasury api
+        elif subscription == "treasury":
+            df = pd.DataFrame(results)
+            return jsonify(json.loads(df.to_json(orient="records")))
+    
+    # If series is not found, attempt to fetch from local API endpoint
+    try:
+        if subscription == "fred":
+            df = fetch_from_fred(table_name)
+        elif subscription == "treasury":
+            df = fetch_from_treasury(table_name)
+        else:
+            return f"Unsupported subscription: {subscription}", 400
+        # Prepare insert query dynamically
+        columns = df_fred.columns.tolist()
+        placeholders = ', '.join(['%s'] * len(columns))
+        insert_query = f"INSERT INTO FRED ({', '.join(columns)}) VALUES ({placeholders})"
+
+        data = [tuple(row) for row in df_fred.itertuples(index=False, name=None)]
+
+        # Insert new records into DB
+        try:
+            cur.executemany(insert_query, data)
+            conn.commit()
+
+            # Re-query the DB for the newly inserted data
+            cur.execute(select_query, (table_name,))
+            results = cur.fetchall()
+
+            if results:
+                df = pd.DataFrame(results, columns=['id', 'series_id', 'date', 'value'])
+                return jsonify(json.loads(df.to_json(orient="records")))
+            else:
+                return "Data inserted but not retrievable", 500
+
+        except Exception as e:
+            print("Data insertion failed:", e)
+            conn.rollback()
+            return "Error inserting new series", 500
+
+    except Exception as e:
+        print("External API fetch failed:", e)
+        return "Error fetching from external API", 500
+
+    return "Series not found and fetch failed", 404
+
+
 
 def query_db():
     if request.method == 'GET':
@@ -153,26 +180,43 @@ def query_db():
     # /example?param1=hello&param2=123
 
     # """
-def fetch():
-    try:
-        api_key = os.environ.get('FRED_API_KEY')
-    except Exception as e:
-        print(str(e))
-    try:
-        series = str(request.args.get('query'))
-        print(series)
-    except Exception as e:
-        print(str(e))
-    if request.method == 'GET':
-        db_init = DBStart()
-        api_key = '&api_key=' + str(api_key) + '&file_type=json'
-        base_url = 'https://api.stlouisfed.org/fred/series/search?search_text='
-        keywords = build_url(series)
-        print("Base URL", str(base_url))
-        print("Keywords", str(keywords))
-        view_series = False
-        fetch_data = fetch(base_url,keywords,api_key, view_series)
-        return fetch_data
+
+
+def search_data():
+    # if subscription == "FRED":
+        try:
+            api_key = os.environ.get('FRED_API_KEY')
+        except Exception as e:
+            print(e)
+        try:
+            series = str(request.args.get('query'))
+            print(series)
+        except Exception as e:
+            print(str(e))
+        if request.method == 'GET':
+            # db_init = DBStart()
+            api_key = '&api_key=' + str(api_key) + '&file_type=json'
+            base_url = 'https://api.stlouisfed.org/fred/series/search?search_text='
+            keywords = build_url(series)
+            url = str(base_url) + str(keywords) + str(api_key)
+            print("Keywords: ", keywords)
+            # print("Base URL", str(base_url))
+            # print("Keywords", str(keywords))
+            view_series = False
+            fetch_data = fetch_series(url, keywords, view_series)
+            return fetch_data
+
+    # elif subscription == "Treasury":
+    #     try:
+    #         test = "Test"
+    #     except Exception as e:
+    #         print(e)
+    # elif subscription == "EIA":
+    #     try:
+    #         test_1 = "Test"
+    #     except Exception as e:
+    #         print(e)
+
  
 # Also this function will run even if the realtimestart date exists. I need to store the realtime_start date and the query in a place where a new request won't fire if those two things exist and match the incoming query
 # @app.route('/search_series?query=<query>}', methods=['POST'])
@@ -183,51 +227,7 @@ def fetch():
 #         store_data(df)
 
 
-@app.route('/view_series', methods=['GET'])
-    # Example route to demonstrate how to document Flask routes.
 
-    # Query Parameters:
-    # - param1 (str): The first parameter. Default is 'None'.
-    # - param2 (int): The second parameter. Default is 'None'.
-
-    # Returns:
-    # - JSON object containing the values of param1 and param2.
-
-    # Example:
-    # /example?param1=hello&param2=123
-
-    # """
-
-def view_series():
-    print('here')
-    try:
-        api_key = os.environ.get('FRED_API_KEY')
-    except Exception as e:
-        print(str(e))
-    try:
-        series = str(request.args.get('series'))
-    except Exception as e:
-        print(str(e))
-    if request.method == 'GET':
-        db_init = DBStart()
-        api_key = '&api_key=' + str(api_key) + '&file_type=json'
-        base_url = 'https://api.stlouisfed.org/fred/series/observations?series_id='
-        keywords = build_url(series)
-        print(str(base_url) + str(api_key) + str(keywords))
-        view_series = True
-        fetch_data = fetch(base_url,keywords,api_key, view_series)
-        print(fetch_data)
-        return fetch_data
-            
-        # if request.method == 'GET':
-        #     table_name = 'gnpca'
-        #     df = run_query(f'SELECT * FROM {table_name}')
-        #     columns = df.columns
-        #     json_out = df.to_json(orient = "records")
-        #     json_load = json.loads(json_out)
-        #     json_load_named = {table_name : json_load }
-        #     response = jsonify(json_load_named)
-        #     return response
         
 
 @app.route('/graph', methods=['GET', 'POST'])
@@ -276,49 +276,11 @@ def model():
         columns[table] = df.columns.tolist()
     return render_template('model.html', summary=summary, tables=tables, columns=columns)
 
-def fetch(base_url, keywords, api_key, view_series):
-    url = str(base_url) + str(keywords) + str(api_key)
-    try:
-        r = requests.get(url)
-    except Exception as e:
-        print("Error: ", str(e))
-    if r.status_code == 200:
-        if view_series != False:
-            print("Blah")
-            json_item = json.loads(r.text)
-            try:
-                json_item = json_item["observations"]
-            except:
-                print("'observations' key does not exist on json_item.")
-                return jsonify(json_item)
-            df = pd.DataFrame(json_item)
-            count = 1
-            print(df.head())
-            for index in range(len(df)):
-                if count < 5:
-                    print(index)
-                    print("COUNT", count)
-                df.loc[index, 'id'] = str(index)
-                count+=1
-            df = df.to_json(orient = "records")
-            json_load = json.loads(df)
-            # json_load_named = {res : json_load }
-            response = jsonify(json_load)
-            # json_out = df.to_json()
-            return response
-        else:
-            returned_json = r.text
-            json_item = json.loads(returned_json)
-            if json_item != None:
-                # for item in dict_item
-                
-                return jsonify(json_item)
-            else:
-                response = { 'response_status':'Your Query Combination Returned No Results.' }
-                return jsonify(response)
-    else:
-        status_code = { 'status_code_error': str(r.status_code)}
-        return jsonify(status_code)
+# This function requires keywords to be passed in 
+# 
+# 
+
+
         
 if __name__ == '__main__':
     app.run(debug=True)
