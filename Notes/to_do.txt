@@ -1,0 +1,14 @@
+Need to finish the db_connect function and test it. 
+
+Connect to postgres isn't working in back end
+
+Haven't tested front end requests to the db
+
+Need to make sure db connection is secure
+
+Should  the db_connect function return the connection object? 
+I think it should but it obviously can't return it to the front end.
+
+It needs to be passed and handled correctly inside of the backend....
+
+CONNECTION TO DB ISNT WORKING
