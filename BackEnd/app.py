@@ -62,7 +62,9 @@ def get_series():
     # Get query parameter
     table_name = str(request.args.get('query'))
     subscription = str(request.args.get('subscription'))
+    
     print("Table name: ", table_name)
+    print("Subscription name:", subscription)
 
     # Database connection
     conn = psycopg2.connect(
@@ -78,7 +80,7 @@ def get_series():
     if subscription.lower() not in ["fred", "treasury"]:
         return "Invalid subscription/table name", 400
     
-    # Query the FRED table for the series
+    # Query the correct table for the series
     select_query = f"SELECT * FROM {subscription} WHERE series_id LIKE %s"
     results = []
     try:
@@ -93,11 +95,11 @@ def get_series():
     if results:
         if subscription == "fred":
             df = pd.DataFrame(results, columns = ['id', 'series_id', 'date', 'value'])
-            return jsonify(json.loads(df.to_json(orient="records")))
+            return jsonify(json.loads(df.to_json(orient="records", date_format="iso")))
         # This part likely isn't correct. Check format of treasury api
         elif subscription == "treasury":
             df = pd.DataFrame(results)
-            return jsonify(json.loads(df.to_json(orient="records")))
+            return jsonify(json.loads(df.to_json(orient="records", date_format="iso")))
     
     # If series is not found, attempt to fetch from local API endpoint
     try:
@@ -108,11 +110,11 @@ def get_series():
         else:
             return f"Unsupported subscription: {subscription}", 400
         # Prepare insert query dynamically
-        columns = df_fred.columns.tolist()
+        columns = df.columns.tolist()
         placeholders = ', '.join(['%s'] * len(columns))
         insert_query = f"INSERT INTO FRED ({', '.join(columns)}) VALUES ({placeholders})"
 
-        data = [tuple(row) for row in df_fred.itertuples(index=False, name=None)]
+        data = [tuple(row) for row in df.itertuples(index=False, name=None)]
 
         # Insert new records into DB
         try:
@@ -125,7 +127,7 @@ def get_series():
 
             if results:
                 df = pd.DataFrame(results, columns=['id', 'series_id', 'date', 'value'])
-                return jsonify(json.loads(df.to_json(orient="records")))
+                return jsonify(json.loads(df.to_json(orient="records", date_format="iso")))
             else:
                 return "Data inserted but not retrievable", 500
 
@@ -139,8 +141,6 @@ def get_series():
         return "Error fetching from external API", 500
 
     return "Series not found and fetch failed", 404
-
-
 
 def query_db():
     if request.method == 'GET':
