@@ -1,0 +1,3 @@
+Need to add cache-control - how long do I store json documents?
+
+After running /fred/dailyseries again, I get the message that JSON file does not exist which it does

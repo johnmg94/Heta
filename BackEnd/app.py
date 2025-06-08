@@ -1,286 +1,433 @@
-from flask import Flask, render_template, request, redirect, url_for, jsonify, Response
-from flask_restful import Api, Resource
-from flasgger import Swagger, swag_from
-from flask_cors import CORS
+from fastapi import FastAPI, Query, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
+from pymongo import MongoClient
+from datetime import datetime
 import os
 import pandas as pd
-import psycopg2
-import pickle
-import matplotlib as plt
 import json
-from store_data import DBStart, DataSeries
-from parser import build_url
 import requests
-from dotenv import load_dotenv
-import hashlib
-import jwt
-import datetime
-from store_data import store_data
-from run_sql import run_query, engine, table_names
-from plot_data import plot_series
-from regression_analysis import run_regression
-from db.db_functions import db_insert
-from fetch_data  import fetch_series, build_url, fetch_from_fred, fetch_from_treasury
+from scrapers.fred_economic_release import fetch_fred_releases_api, get_releases_published_on, get_series_ids_for_release
+import time
+import logging
+import re
 
-app = Flask(__name__)
-api = Api(app)
-cors = CORS(app)
+# uvicorn app:app --reload
+
+# MongoDB setup
+MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017")
+client = MongoClient(MONGO_URI)
+db = client["heta"]
+collection = db["daily_series_ids"]
+summary_collection = db["fred_release_summaries"]
+series_data_collection = db["fred_series_observations"]
+
+
+# Logging configuration
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.FileHandler("dailyseries.log"),
+        logging.StreamHandler()  # Also output to console
+    ]
+)
+
+logger = logging.getLogger(__name__)
+app = FastAPI(
+    title="My API",
+    version="1.0"
+)
+
+# Enable CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # You can restrict to specific domains later
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Ensure directories exist
 os.makedirs('static/plots', exist_ok=True)
 os.makedirs('models', exist_ok=True)
 
-#Configuring Swagger
-app.config['SWAGGER'] = {
-    'title' : 'My API',
-    'uiversion' : 3
-}
-
-swagger = Swagger(app)
-
-@app.route('/')
+@app.get("/")
 def home():
-    test = { "name" : "hello_world"}
-    return test
+    return {"name": "hello_world"}
             
-
-@app.route('/get_series', methods=['GET', 'POST'])
+@app.get('/fred/get_series')
 # If this URL is accessed arbitrarily, it will attempt to make a connection to the db which is not correct. There needs to be some form of authentication
 
-def get_series():
+def get_series(
+    series_id: str = Query(..., description="Series ID like GFDGDPA188S"),
+):
+    fred_api_key = os.environ.get('FRED_API_KEY')
+    if not fred_api_key:
+        raise HTTPException(status_code=500, detail="FRED API key not set in environment")
+
+    url = "https://api.stlouisfed.org/fred/series/observations"
+    params = {
+        "series_id": series_id,
+        "api_key": fred_api_key,
+        "file_type": "json"
+    }
+
+    try:
+        response = requests.get(url, params=params, timeout=30)
+        if response.status_code != 200:
+            raise HTTPException(status_code=500, detail="FRED observation fetch failed")
+
+        data = response.json()
+        observations = data.get("observations", [])
+        if not observations:
+            raise HTTPException(status_code=404, detail="No observations found")
+
+        # Clean and transform data as needed
+        df = pd.DataFrame(observations)
+        # Example: convert values (if exists) to float, parse dates, etc.
+        if "value" in df.columns:
+            df["value"] = pd.to_numeric(df["value"], errors="coerce")
+        if "date" in df.columns:
+            df["date"] = pd.to_datetime(df["date"], errors="coerce").dt.strftime('%Y-%m-%d')
+        df = df.drop(columns=['realtime_start', 'realtime_end'])
+
+        df.dropna(subset=["value"], inplace=True)
+        df.reset_index(drop=True, inplace=True)
+
+        df_key = {
+            "Series Id": series_id,
+            "observations": df.to_dict(orient='records')
+        }
+
+        return JSONResponse(
+            content=df_key["observations"],
+            status_code=200
+        )
+
+    except Exception as e:
+        return JSONResponse(
+            content={"error": str(e)},
+            status_code=500
+        )
+
+
+@app.get('/fred/get_metadata')
+
+def fred_get_metadata(
+    series_id: str = Query(..., description="Series ID like GFDGDPA188S")
+):
     """
-    Fetches a time series from the database if available.
-    Otherwise, fetches it from an external API, stores it in the DB, then returns it.
-    TODO: Add authentication to secure this route.
+    Fetches metadata for a FRED series and returns it as a one-row DataFrame.
     """
+    fred_api_key = os.environ.get("FRED_API_KEY")
+    if not fred_api_key:
+        raise HTTPException(status_code=500, detail="FRED API key not set in environment")
 
-    # Load environment variables
-    load_dotenv()
-    user = os.environ.get('POSTGRES_USERNAME')
-    password = os.environ.get('POSTGRES_PASSWORD')
+    url = "https://api.stlouisfed.org/fred/series"
+    params = {
+        "series_id": series_id,
+        "api_key": fred_api_key,
+        "file_type": "json"
+    }
 
-    # Get query parameter
-    table_name = str(request.args.get('query'))
-    subscription = str(request.args.get('subscription'))
-    
-    print("Table name: ", table_name)
-    print("Subscription name:", subscription)
+    response = requests.get(url, params=params, timeout=30)
+    if response.status_code != 200:
+        raise HTTPException(status_code=500, detail="FRED metadata fetch failed")
 
-    # Database connection
-    conn = psycopg2.connect(
-        dbname="Heta",
-        user=user,
-        password=password,
-        host="localhost",  # Change if remote
-        port="5432"
+    data = response.json()
+    series_list = data.get("seriess", [])
+
+    if not series_list:
+        raise HTTPException(status_code=404, detail="No metadata found")
+
+    df = pd.DataFrame(series_list)
+    df["series_id"] = series_id  # Make sure this column is consistent
+
+    # Optionally assign a primary key id (for DB insert)
+    # Clean and transform data
+    try:
+        df.dropna(inplace=True)
+        df["observation_start"] = pd.to_datetime(df["observation_start"], errors='coerce').dt.date
+        df["observation_end"] = pd.to_datetime(df["observation_end"], errors='coerce').dt.date
+        df.drop(columns=['realtime_start', 'realtime_end'], errors='ignore', inplace=True)
+    except Exception as e:
+        print("Data transformation failed:", e)
+
+    return JSONResponse(content=json.loads(df.to_json(orient="records", date_format="iso")))
+
+
+@app.get('/fred/dailyseries_ids')
+def fred_daily_series_ids(date: str = Query(...)):
+    try:
+        fred_api_key = os.environ.get("FRED_API_KEY")
+        releases = fetch_fred_releases_api(date, fred_api_key)
+        all_series_ids = []
+
+        for release in releases:
+            release_id = release["id"]
+            try:
+                series_ids = get_series_ids_for_release(release_id, fred_api_key)
+                all_series_ids.extend(series_ids)
+            except Exception as sub_e:
+                print(f"Failed for release ID {release_id}: {sub_e}")
+
+        return JSONResponse(content={"date": date, "series_ids": all_series_ids}, status_code=200)
+
+    except Exception as e:
+        return JSONResponse(content={"error": str(e)}, status_code=500)
+
+
+@app.get('/fred/daily_series_ids')
+def fred_daily_series(date: str = Query(...)):
+    api_key = os.environ.get("FRED_API_KEY")
+    releases = get_releases_published_on(date, api_key)
+    all_series = check_releases(date, releases, api_key)
+    return JSONResponse(
+        content=json.loads(json.dumps(all_series, default=str)),
+        status_code=200
     )
-    cur = conn.cursor()
 
-    # Validate table name to avoid SQL injection!
-    if subscription.lower() not in ["fred", "treasury"]:
-        return "Invalid subscription/table name", 400
-    
-    # Query the correct table for the series
-    select_query = f"SELECT * FROM {subscription} WHERE series_id LIKE %s"
-    results = []
-    try:
-        cur.execute(select_query, (table_name,))
-        results = cur.fetchall()
-    except Exception as e:
-        print("Query Failed: ", e)
-        conn.rollback()
+def safe_parse_last_updated(ts: str) -> datetime:
+    # print("ts: ", ts)
+    # print("ts-3", ts[-3])
+    # print("len: ", len(ts.split()[-1]))
+    if ts[-3] in ['+', '-']:
+        ts += "00"  # Convert -05 → -0500
+        # print("ts_edited: ", ts)
+        # print("return: ", datetime.strptime(ts, "%Y-%m-%d %H:%M:%S%z"))
+    return datetime.strptime(ts, "%Y-%m-%d")
 
-    # If series exists in DB, return it as JSON
-    # Code assumes table format of FRED
-    if results:
-        if subscription == "fred":
-            df = pd.DataFrame(results, columns = ['id', 'series_id', 'date', 'value'])
-            return jsonify(json.loads(df.to_json(orient="records", date_format="iso")))
-        # This part likely isn't correct. Check format of treasury api
-        elif subscription == "treasury":
-            df = pd.DataFrame(results)
-            return jsonify(json.loads(df.to_json(orient="records", date_format="iso")))
-    
-    # If series is not found, attempt to fetch from local API endpoint
-    try:
-        if subscription == "fred":
-            df = fetch_from_fred(table_name)
-        elif subscription == "treasury":
-            df = fetch_from_treasury(table_name)
-        else:
-            return f"Unsupported subscription: {subscription}", 400
-        # Prepare insert query dynamically
-        columns = df.columns.tolist()
-        placeholders = ', '.join(['%s'] * len(columns))
-        insert_query = f"INSERT INTO FRED ({', '.join(columns)}) VALUES ({placeholders})"
+def clean_to_date(value: str) -> datetime.date:
+    """
+    Extracts the YYYY-MM-DD from a timestamp string using regex.
+    Example: '2025-05-15 07:34:01-05' → datetime.date(2025, 5, 15)
+    """
+    match = re.match(r"(\d{4}-\d{2}-\d{2})", value)
+    if not match:
+        raise ValueError(f"Could not extract date from: {value}")
+    return datetime.strptime(match.group(1), "%Y-%m-%d")
 
-        data = [tuple(row) for row in df.itertuples(index=False, name=None)]
+# for_later = []
+def check_releases(date, releases, api_key, depth=0, max_depth=5):
+    all_series = []
+    for_later = []
 
-        # Insert new records into DB
-        try:
-            cur.executemany(insert_query, data)
-            conn.commit()
+    cached_doc = summary_collection.find_one({"date": date})
+    if cached_doc:
+        logger.info(f"Using cached FRED data for date {date}")
+        return cached_doc["releases"]
 
-            # Re-query the DB for the newly inserted data
-            cur.execute(select_query, (table_name,))
-            results = cur.fetchall()
-
-            if results:
-                df = pd.DataFrame(results, columns=['id', 'series_id', 'date', 'value'])
-                return jsonify(json.loads(df.to_json(orient="records", date_format="iso")))
-            else:
-                return "Data inserted but not retrievable", 500
-
-        except Exception as e:
-            print("Data insertion failed:", e)
-            conn.rollback()
-            return "Error inserting new series", 500
-
-    except Exception as e:
-        print("External API fetch failed:", e)
-        return "Error fetching from external API", 500
-
-    return "Series not found and fetch failed", 404
-
-def query_db():
-    if request.method == 'GET':
-        try:
-            print("here")
-            res = str(request.args.get('series'))
-            print(res)
-        except Exception as e:
-            print(e)
-
-        try:    
-            df = run_query(f'SELECT * from {res}')
-        except Exception as e:
-            err = "Table SELECT did not finish: ", str(e)
-            return { "error" : err}
-
-        columns = df.columns
-        json_out = df.to_json(orient = "records")
-        json_load = json.loads(json_out)
-        json_load_named = {res : json_load }
-        response = jsonify(json_load_named)
-        if (response):
-            return response
-        else:
-            return { "Response" : "None" }
-
-
-@app.route('/search_data', methods=['GET', 'POST'])
-    # Query Parameters:
-    # - param1 (str): The first parameter. Default is 'None'.
-    # - param2 (int): The second parameter. Default is 'None'.
-
-    # Returns:
-    # - JSON object containing the values of param1 and param2.
-
-    # Example:
-    # /example?param1=hello&param2=123
-
-    # """
-
-
-def search_data():
-    # if subscription == "FRED":
-        try:
-            api_key = os.environ.get('FRED_API_KEY')
-        except Exception as e:
-            print(e)
-        try:
-            series = str(request.args.get('query'))
-            print(series)
-        except Exception as e:
-            print(str(e))
-        if request.method == 'GET':
-            # db_init = DBStart()
-            api_key = '&api_key=' + str(api_key) + '&file_type=json'
-            base_url = 'https://api.stlouisfed.org/fred/series/search?search_text='
-            keywords = build_url(series)
-            url = str(base_url) + str(keywords) + str(api_key)
-            print("Keywords: ", keywords)
-            # print("Base URL", str(base_url))
-            # print("Keywords", str(keywords))
-            view_series = False
-            fetch_data = fetch_series(url, keywords, view_series)
-            return fetch_data
-
-    # elif subscription == "Treasury":
-    #     try:
-    #         test = "Test"
-    #     except Exception as e:
-    #         print(e)
-    # elif subscription == "EIA":
-    #     try:
-    #         test_1 = "Test"
-    #     except Exception as e:
-    #         print(e)
-
- 
-# Also this function will run even if the realtimestart date exists. I need to store the realtime_start date and the query in a place where a new request won't fire if those two things exist and match the incoming query
-# @app.route('/search_series?query=<query>}', methods=['POST'])
-# def get_series_options(query):
-#     if request.method == 'POST':
-#         result = search_series(query)
-#         df = result['df_object']
-#         store_data(df)
-
-
-
+    for release in releases:
         
+        release_id = release["id"]
+        release_name = release["name"]
+        logger.info(f"Checking release: {release_name} (ID: {release_id})")
 
-@app.route('/graph', methods=['GET', 'POST'])
-def graph():
-    if request.method == 'POST':
-        table_name = request.form['table_name']
-        df = run_query(f'SELECT * FROM {table_name}')
-        plot_series(df, 'Value', table_name.upper(), f'{table_name.upper()} Over Time')
-        plot_path = f'plots/{table_name}.png'
-        plt.savefig(f'static/{plot_path}')
-        plt.close()
-        return render_template('graph.html', plot_image=plot_path)
-    tables = table_names()
-    return render_template('graph_select.html', tables=tables)
-
-@app.route('/sql', methods=['GET', 'POST'])
-def sql():
-    result = None
-    if request.method == 'POST':
-        query = request.form['query']
-        try:
-            result_df = run_query(query)
-            result = result_df.to_html(classes='data')
-        except Exception as e:
-            result = f"Error: {e}"
-    return render_template('sql.html', result=result)
-
-@app.route('/model', methods=['GET', 'POST'])
-def model():
-    summary = None
-    if request.method == 'POST':
-        dependent_var = request.form['dependent_var']
-        independent_vars = request.form.getlist('independent_vars')
-        table_name = request.form['table_name']
-        df = run_query(f'SELECT * FROM {table_name}').dropna()
-        model = run_regression(df, dependent_var, independent_vars)
-        summary = model.summary().as_html()
-        # Save the model
-        model_name = request.form['model_name']
-        with open(f'models/{model_name}.pkl', 'wb') as f:
-            pickle.dump(model, f)
-    tables = table_names()
-    columns = {}
-    for table in tables:
-        df = run_query(f'SELECT * FROM {table} LIMIT 1;')
-        columns[table] = df.columns.tolist()
-    return render_template('model.html', summary=summary, tables=tables, columns=columns)
-
-# This function requires keywords to be passed in 
-# 
-# 
-
-
+        # 1. Check if this release already exists in MongoDB
+        mongo_series = list(collection.find({"release_id": release_id}))
         
-if __name__ == '__main__':
-    app.run(debug=True)
+        # Determine if we need to fetch from API
+        print("HERE")
+        should_call_api = True
+        if mongo_series:
+            latest_cached = max([doc.get("date_cached", datetime.min) for doc in mongo_series])
+            # print("Latest cached: ", latest_cached)
+            latest_updated = max([clean_to_date(doc["last_updated"]) for doc in mongo_series if "last_updated" in doc])
+
+            
+            # print("Latest Updated: ", latest_updated)
+            # print("Latest cached: ", str(latest_cached))
+            # print("Last updated:", str(latest_updated))
+
+            if latest_cached > latest_updated:
+                # Cached data is up-to-date
+                logger.info(f"Using cached data for release {release_id} (cached: {latest_cached.date()}, updated: {latest_updated.date()})")
+
+                all_series.append({
+                    "release_name": release_name,
+                    "release_id": release_id,
+                    "series": [
+                        {
+                            "series_id": s["series_id"],
+                            "title": s["title"],
+                            "frequency": s["frequency"]
+                        } for s in mongo_series
+                    ]
+                })
+                should_call_api = False
+
+        if should_call_api:
+            logger.info(f"Fetching series from FRED API for release ID: {release_id}")
+            try:
+                series_list = get_series_ids_for_release(release_id, api_key)
+                if series_list["series_data"]:
+                    logger.info(f"First series ID received: {series_list['series_data'][0]['series_id']}")
+            except requests.exceptions.HTTPError as http_err:
+                status_code = http_err.response.status_code if http_err.response else None
+                if status_code == 429:
+                    logger.warning(f"Rate limit hit for release ID: {release_id}")
+                    for_later.append(release)
+                else:
+                    logger.error(f"HTTP error for release ID {release_id}: {status_code}")
+                series_list = {"series_data": []}
+            except Exception as e:
+                logger.error(f"General error for release ID {release_id}: {str(e)}")
+                series_list = {"series_data": []}
+
+            # Insert each series document into MongoDB
+            for s in series_list["series_data"]:
+                s_doc = {
+                    "series_id": s["series_id"],
+                    "title": s["title"],
+                    "frequency": s["frequency"],
+                    "release_id": release_id,
+                    "release_name": release_name,
+                    "last_updated": s["last_updated"],
+                    "date_cached": datetime.utcnow()
+                }
+                collection.update_one(
+                    {"series_id": s["series_id"], "release_id": release_id},
+                    {"$set": s_doc},
+                    upsert=True
+                )
+                logger.info(f"MongoDB upserted series: {s['series_id']} (release ID: {release_id})")
+
+
+            all_series.append({
+                "release_name": release_name,
+                "release_id": release_id,
+                "series": [
+                    {
+                        "series_id": s["series_id"],
+                        "title": s["title"],
+                        "frequency": s["frequency"]
+                    } for s in series_list["series_data"]
+                ]
+            })
+
+    # Retry failed releases
+    if for_later and depth < max_depth:
+        logger.info(f"Retrying {len(for_later)} releases after rate limit. Retry #{depth + 1}")
+        all_series += check_releases(for_later, api_key, depth=depth + 1, max_depth=max_depth)
+    elif for_later:
+        logger.warning(f"Max retry depth reached. Could not process {len(for_later)} releases.")
+
+    # Store the full all_series summary in its own collection
+    summary_doc = {
+    "date": date,  # pass this in as a function parameter
+    "timestamp": datetime.utcnow(),
+    "releases": all_series
+    }
+
+    summary_collection.update_one(
+        {"date": date},
+        {"$set": summary_doc},
+        upsert=True
+    )
+    logger.info(f"Cached all_series summary in MongoDB for date {date}")
+
+    return all_series
+
+@app.get("/fred/daily_series_data")
+def get_series_data_for_date(date: str = Query(...)):
+    api_key = os.environ.get("FRED_API_KEY")
+    if not api_key:
+        raise HTTPException(status_code=500, detail="FRED API key not set")
+
+    # Step 1: Check summary cache
+    summary_doc = summary_collection.find_one({"date": date})
+    if summary_doc:
+        releases = summary_doc["releases"]
+    else:
+        # Step 2: Fallback to live fetch
+        logger.info(f"No cached summary for {date}. Fetching from FRED...")
+        releases_raw = get_releases_published_on(date, api_key)
+        releases = check_releases(date, releases_raw, api_key)
+        # Note: check_releases() already stores to summary_collection
+
+    # Step 3: Get all unique series_ids
+    series_ids = []
+    for release in releases:
+        for s in release["series"]:
+            series_ids.append(s["series_id"])
+
+    # Step 4: Fetch series data for each ID
+    all_data = {}
+    for sid in series_ids:
+        cached = series_data_collection.find_one({"series_id": sid})
+        if cached:
+            all_data[sid] = cached["data"]
+            continue
+
+        # Fetch from FRED API
+        try:
+            response = requests.get(
+                "https://api.stlouisfed.org/fred/series/observations",
+                params={
+                    "series_id": sid,
+                    "api_key": api_key,
+                    "file_type": "json"
+                }, timeout=30
+            )
+            response.raise_for_status()
+            observations = response.json().get("observations", [])
+
+            df = pd.DataFrame(observations)
+            df["value"] = pd.to_numeric(df["value"], errors="coerce")
+            df["date"] = pd.to_datetime(df["date"], errors="coerce").dt.strftime("%Y-%m-%d")
+            df.drop(columns=["realtime_start", "realtime_end"], inplace=True, errors="ignore")
+            df.dropna(subset=["value"], inplace=True)
+
+            records = df.to_dict(orient="records")
+
+            # Cache it
+            series_data_collection.update_one(
+                {"series_id": sid},
+                {"$set": {"series_id": sid, "data": records, "last_fetched": datetime.utcnow()}},
+                upsert=True
+            )
+
+            all_data[sid] = records
+
+        except Exception as e:
+            logger.warning(f"Failed to fetch data for {sid}: {e}")
+            all_data[sid] = []
+
+    return JSONResponse(content=all_data, status_code=200)
+
+
+    # No matching date in the file so read from fred_economic_release.csv
+    # Otherwise, get the info from the fred_economic_release.csv and fetch from API
+    
+    # full_series_list = []
+    # for release in all_series:
+    #     series_list = release["series"]
+    #     full_series_list.append(series_list)
+    
+    # return JSONResponse(
+    #     content=json.loads(full_series_list.to_json(oritn="records", date_format="iso")),
+    #     status_code=200
+    # )
+
+    # print(full_series_list)
+
+    # existing_data = {}
+    # url = 'http://127.0.0.1:8000/fred/get_series'
+    # for series in full_series_list:
+    #     try:
+    #         params= {
+    #             "series_id": series
+    #         }
+    #         r = requests.get(url=url, params=params)
+    #         out = json.loads(r)
+    #         existing_data[series] = out
+    #     except Exception as e:
+    #         return JSONResponse(
+    #             content={"error": str(e)},
+    #             status_code=500
+    #         )
+    #     return JSONResponse(
+    #     content=json.loads(existing_data.to_json(orient="records", date_format="iso")),  # return just the records for this date
+    #     status_code=200
+    # )

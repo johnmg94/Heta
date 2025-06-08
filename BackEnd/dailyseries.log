@@ -1,0 +1,1949 @@
+2025-06-04 21:04:30,137 [INFO] Checking release: Advance Monthly Sales for Retail and Food Services (ID: 9)
+2025-06-04 21:04:30,171 [INFO] Fetching series from FRED API for release ID: 9
+2025-06-04 21:04:30,324 [INFO] First series ID received: RSXFS
+2025-06-04 21:04:30,327 [INFO] MongoDB upserted series: RSXFS (release ID: 9)
+2025-06-04 21:04:30,329 [INFO] MongoDB upserted series: RSAFS (release ID: 9)
+2025-06-04 21:04:30,331 [INFO] MongoDB upserted series: RSFHFS (release ID: 9)
+2025-06-04 21:04:30,333 [INFO] MongoDB upserted series: RSCCAS (release ID: 9)
+2025-06-04 21:04:30,336 [INFO] MongoDB upserted series: RSFSDP (release ID: 9)
+2025-06-04 21:04:30,340 [INFO] Checking release: Consumer Price Index (ID: 10)
+2025-06-04 21:04:30,342 [INFO] Fetching series from FRED API for release ID: 10
+2025-06-04 21:04:30,664 [ERROR] Request error for release ID 10: 200
+2025-06-04 21:04:30,665 [INFO] Checking release: Employment Cost Index (ID: 11)
+2025-06-04 21:04:30,668 [INFO] Fetching series from FRED API for release ID: 11
+2025-06-04 21:04:30,870 [ERROR] Request error for release ID 11: None
+2025-06-04 21:04:30,873 [INFO] Checking release: G.17 Industrial Production and Capacity Utilization (ID: 13)
+2025-06-04 21:04:30,876 [INFO] Fetching series from FRED API for release ID: 13
+2025-06-04 21:04:31,193 [INFO] First series ID received: INDPRO
+2025-06-04 21:04:31,195 [INFO] MongoDB upserted series: INDPRO (release ID: 13)
+2025-06-04 21:04:31,197 [INFO] MongoDB upserted series: IPB50001N (release ID: 13)
+2025-06-04 21:04:31,200 [INFO] MongoDB upserted series: IPG311A2S (release ID: 13)
+2025-06-04 21:04:31,205 [INFO] MongoDB upserted series: CAPUTLG3311A2S (release ID: 13)
+2025-06-04 21:04:31,209 [INFO] MongoDB upserted series: IPG2211A2N (release ID: 13)
+2025-06-04 21:04:31,209 [INFO] Checking release: G.19 Consumer Credit (ID: 14)
+2025-06-04 21:04:31,211 [INFO] Fetching series from FRED API for release ID: 14
+2025-06-04 21:04:31,440 [INFO] First series ID received: TERMCBCCALLNS
+2025-06-04 21:04:31,442 [INFO] MongoDB upserted series: TERMCBCCALLNS (release ID: 14)
+2025-06-04 21:04:31,444 [INFO] MongoDB upserted series: TERMCBAUTO48NS (release ID: 14)
+2025-06-04 21:04:31,446 [INFO] MongoDB upserted series: TOTALSL (release ID: 14)
+2025-06-04 21:04:31,448 [INFO] MongoDB upserted series: REVOLSL (release ID: 14)
+2025-06-04 21:04:31,455 [INFO] MongoDB upserted series: SLOAS (release ID: 14)
+2025-06-04 21:04:31,458 [INFO] Checking release: G.5 Foreign Exchange Rates (ID: 15)
+2025-06-04 21:04:31,460 [INFO] Fetching series from FRED API for release ID: 15
+2025-06-04 21:04:31,611 [ERROR] Request error for release ID 15: 200
+2025-06-04 21:04:31,612 [INFO] Checking release: H.10 Foreign Exchange Rates (ID: 17)
+2025-06-04 21:04:31,614 [INFO] Fetching series from FRED API for release ID: 17
+2025-06-04 21:04:31,759 [ERROR] Request error for release ID 17: None
+2025-06-04 21:04:31,760 [INFO] Checking release: H.15 Selected Interest Rates (ID: 18)
+2025-06-04 21:04:31,763 [INFO] Fetching series from FRED API for release ID: 18
+2025-06-04 21:04:32,008 [INFO] First series ID received: FEDFUNDS
+2025-06-04 21:04:32,010 [INFO] MongoDB upserted series: FEDFUNDS (release ID: 18)
+2025-06-04 21:04:32,013 [INFO] MongoDB upserted series: DGS10 (release ID: 18)
+2025-06-04 21:04:32,015 [INFO] MongoDB upserted series: DFF (release ID: 18)
+2025-06-04 21:04:32,018 [INFO] MongoDB upserted series: DFII10 (release ID: 18)
+2025-06-04 21:04:32,019 [INFO] MongoDB upserted series: DGS2 (release ID: 18)
+2025-06-04 21:04:32,022 [INFO] Checking release: H.3 Aggregate Reserves of Depository Institutions and the Monetary Base (ID: 19)
+2025-06-04 21:04:32,025 [INFO] Fetching series from FRED API for release ID: 19
+2025-06-04 21:04:32,296 [INFO] First series ID received: REQRESNS
+2025-06-04 21:04:32,300 [INFO] MongoDB upserted series: REQRESNS (release ID: 19)
+2025-06-04 21:04:32,302 [INFO] MongoDB upserted series: RESBALNS (release ID: 19)
+2025-06-04 21:04:32,305 [INFO] MongoDB upserted series: EXCRESNS (release ID: 19)
+2025-06-04 21:04:32,307 [INFO] MongoDB upserted series: BOGMBASEW (release ID: 19)
+2025-06-04 21:04:32,310 [INFO] MongoDB upserted series: DISCBORR (release ID: 19)
+2025-06-04 21:04:32,310 [INFO] Checking release: H.4.1 Factors Affecting Reserve Balances (ID: 20)
+2025-06-04 21:04:32,315 [INFO] Fetching series from FRED API for release ID: 20
+2025-06-04 21:04:32,754 [ERROR] Request error for release ID 20: 200
+2025-06-04 21:04:32,756 [INFO] Checking release: H.6 Money Stock Measures (ID: 21)
+2025-06-04 21:04:32,763 [INFO] Fetching series from FRED API for release ID: 21
+2025-06-04 21:04:32,959 [INFO] First series ID received: M2SL
+2025-06-04 21:04:32,962 [INFO] MongoDB upserted series: M2SL (release ID: 21)
+2025-06-04 21:04:32,963 [INFO] MongoDB upserted series: WM2NS (release ID: 21)
+2025-06-04 21:04:32,966 [INFO] MongoDB upserted series: M1SL (release ID: 21)
+2025-06-04 21:04:32,967 [INFO] MongoDB upserted series: BOGMBASE (release ID: 21)
+2025-06-04 21:04:32,970 [INFO] MongoDB upserted series: TOTRESNS (release ID: 21)
+2025-06-04 21:04:32,970 [INFO] Checking release: H.8 Assets and Liabilities of Commercial Banks in the United States (ID: 22)
+2025-06-04 21:04:32,973 [INFO] Fetching series from FRED API for release ID: 22
+2025-06-04 21:04:33,441 [INFO] First series ID received: CCLACBW027SBOG
+2025-06-04 21:04:33,444 [INFO] MongoDB upserted series: CCLACBW027SBOG (release ID: 22)
+2025-06-04 21:04:33,446 [INFO] MongoDB upserted series: DPSACBW027SBOG (release ID: 22)
+2025-06-04 21:04:33,449 [INFO] MongoDB upserted series: BUSLOANS (release ID: 22)
+2025-06-04 21:04:33,454 [INFO] MongoDB upserted series: CREACBM027NBOG (release ID: 22)
+2025-06-04 21:04:33,459 [INFO] MongoDB upserted series: CREACBW027SBOG (release ID: 22)
+2025-06-04 21:04:33,459 [INFO] Checking release: Manufacturing and Trade Inventories and Sales (ID: 25)
+2025-06-04 21:04:33,462 [INFO] Fetching series from FRED API for release ID: 25
+2025-06-04 21:04:33,595 [ERROR] Request error for release ID 25: 200
+2025-06-04 21:04:33,596 [INFO] Checking release: New Residential Construction (ID: 27)
+2025-06-04 21:04:33,599 [INFO] Fetching series from FRED API for release ID: 27
+2025-06-04 21:04:33,745 [ERROR] Request error for release ID 27: None
+2025-06-04 21:04:33,747 [INFO] Checking release: Producer Price Index (ID: 46)
+2025-06-04 21:04:33,750 [INFO] Fetching series from FRED API for release ID: 46
+2025-06-04 21:04:34,059 [ERROR] Request error for release ID 46: None
+2025-06-04 21:04:34,061 [INFO] Checking release: Productivity and Costs (ID: 47)
+2025-06-04 21:04:34,064 [INFO] Fetching series from FRED API for release ID: 47
+2025-06-04 21:04:34,319 [INFO] First series ID received: OPHNFB
+2025-06-04 21:04:34,323 [INFO] MongoDB upserted series: OPHNFB (release ID: 47)
+2025-06-04 21:04:34,325 [INFO] MongoDB upserted series: PRS85006092 (release ID: 47)
+2025-06-04 21:04:34,327 [INFO] MongoDB upserted series: PRS85006091 (release ID: 47)
+2025-06-04 21:04:34,330 [INFO] MongoDB upserted series: COMPRNFB (release ID: 47)
+2025-06-04 21:04:34,334 [INFO] MongoDB upserted series: OUTMS (release ID: 47)
+2025-06-04 21:04:34,338 [INFO] Checking release: U.S. International Transactions (ID: 49)
+2025-06-04 21:04:34,346 [INFO] Fetching series from FRED API for release ID: 49
+2025-06-04 21:04:34,662 [ERROR] Request error for release ID 49: 200
+2025-06-04 21:04:34,663 [INFO] Checking release: Employment Situation (ID: 50)
+2025-06-04 21:04:34,666 [INFO] Fetching series from FRED API for release ID: 50
+2025-06-04 21:04:35,099 [INFO] First series ID received: CES0500000003
+2025-06-04 21:04:35,103 [INFO] MongoDB upserted series: CES0500000003 (release ID: 50)
+2025-06-04 21:04:35,107 [INFO] MongoDB upserted series: AWHAETP (release ID: 50)
+2025-06-04 21:04:35,109 [INFO] MongoDB upserted series: CE16OV (release ID: 50)
+2025-06-04 21:04:35,111 [INFO] MongoDB upserted series: AHETPI (release ID: 50)
+2025-06-04 21:04:35,113 [INFO] MongoDB upserted series: CES4348400001 (release ID: 50)
+2025-06-04 21:04:35,114 [INFO] Checking release: U.S. International Trade in Goods and Services (ID: 51)
+2025-06-04 21:04:35,119 [INFO] Fetching series from FRED API for release ID: 51
+2025-06-04 21:04:35,478 [INFO] First series ID received: BOPGSTB
+2025-06-04 21:04:35,480 [INFO] MongoDB upserted series: BOPGSTB (release ID: 51)
+2025-06-04 21:04:35,482 [INFO] MongoDB upserted series: IMPCH (release ID: 51)
+2025-06-04 21:04:35,484 [INFO] MongoDB upserted series: BOPGTB (release ID: 51)
+2025-06-04 21:04:35,486 [INFO] MongoDB upserted series: BOPTEXP (release ID: 51)
+2025-06-04 21:04:35,489 [INFO] MongoDB upserted series: BOPTIMP (release ID: 51)
+2025-06-04 21:04:35,490 [INFO] Checking release: Z.1 Financial Accounts of the United States (ID: 52)
+2025-06-04 21:04:35,493 [INFO] Fetching series from FRED API for release ID: 52
+2025-06-04 21:04:36,742 [INFO] First series ID received: BCNSDODNS
+2025-06-04 21:04:36,746 [INFO] MongoDB upserted series: BCNSDODNS (release ID: 52)
+2025-06-04 21:04:36,748 [INFO] MongoDB upserted series: ASTMA (release ID: 52)
+2025-06-04 21:04:36,749 [INFO] MongoDB upserted series: BOGZ1FA106130003Q (release ID: 52)
+2025-06-04 21:04:36,751 [INFO] MongoDB upserted series: ASMRMA (release ID: 52)
+2025-06-04 21:04:36,754 [INFO] MongoDB upserted series: ASHMA (release ID: 52)
+2025-06-04 21:04:36,755 [INFO] Checking release: Gross Domestic Product (ID: 53)
+2025-06-04 21:04:36,758 [INFO] Fetching series from FRED API for release ID: 53
+2025-06-04 21:04:37,337 [INFO] First series ID received: A091RC1Q027SBEA
+2025-06-04 21:04:37,341 [INFO] MongoDB upserted series: A091RC1Q027SBEA (release ID: 53)
+2025-06-04 21:04:37,343 [INFO] MongoDB upserted series: A191RL1Q225SBEA (release ID: 53)
+2025-06-04 21:04:37,345 [INFO] MongoDB upserted series: A261RX1Q020SBEA (release ID: 53)
+2025-06-04 21:04:37,348 [INFO] MongoDB upserted series: A191RI1Q225SBEA (release ID: 53)
+2025-06-04 21:04:37,350 [INFO] MongoDB upserted series: A191RP1Q027SBEA (release ID: 53)
+2025-06-04 21:04:37,350 [INFO] Checking release: Personal Income and Outlays (ID: 54)
+2025-06-04 21:04:37,353 [INFO] Fetching series from FRED API for release ID: 54
+2025-06-04 21:04:37,550 [INFO] First series ID received: PSAVERT
+2025-06-04 21:04:37,553 [INFO] MongoDB upserted series: PSAVERT (release ID: 54)
+2025-06-04 21:04:37,557 [INFO] MongoDB upserted series: PCE (release ID: 54)
+2025-06-04 21:04:37,561 [INFO] MongoDB upserted series: PCEPI (release ID: 54)
+2025-06-04 21:04:37,567 [INFO] MongoDB upserted series: PCEPILFE (release ID: 54)
+2025-06-04 21:04:37,570 [INFO] MongoDB upserted series: DSPIC96 (release ID: 54)
+2025-06-04 21:04:37,571 [INFO] Checking release: Reports of Condition and Income for All Insured U.S. Commercial Banks (ID: 55)
+2025-06-04 21:04:37,577 [INFO] Fetching series from FRED API for release ID: 55
+2025-06-04 21:04:38,096 [INFO] First series ID received: EQTA
+2025-06-04 21:04:38,108 [INFO] MongoDB upserted series: EQTA (release ID: 55)
+2025-06-04 21:04:38,110 [INFO] MongoDB upserted series: FREQ3 (release ID: 55)
+2025-06-04 21:04:38,113 [INFO] MongoDB upserted series: FREQ (release ID: 55)
+2025-06-04 21:04:38,115 [INFO] MongoDB upserted series: ARROE (release ID: 55)
+2025-06-04 21:04:38,117 [INFO] MongoDB upserted series: AZTACAFSS (release ID: 55)
+2025-06-04 21:04:38,117 [INFO] Checking release: National Population Estimates (ID: 59)
+2025-06-04 21:04:38,120 [INFO] Fetching series from FRED API for release ID: 59
+2025-06-04 21:04:38,545 [INFO] First series ID received: POP
+2025-06-04 21:04:38,548 [INFO] MongoDB upserted series: POP (release ID: 59)
+2025-06-04 21:04:38,550 [INFO] MongoDB upserted series: POPH (release ID: 59)
+2025-06-04 21:04:38,551 [INFO] Checking release: Money Zero Maturity (MZM) (ID: 61)
+2025-06-04 21:04:38,555 [INFO] Fetching series from FRED API for release ID: 61
+2025-06-04 21:04:38,772 [INFO] First series ID received: MZM
+2025-06-04 21:04:38,775 [INFO] MongoDB upserted series: MZM (release ID: 61)
+2025-06-04 21:04:38,777 [INFO] MongoDB upserted series: MZMNS (release ID: 61)
+2025-06-04 21:04:38,779 [INFO] MongoDB upserted series: MZMSL (release ID: 61)
+2025-06-04 21:04:38,781 [INFO] MongoDB upserted series: WMZMNS (release ID: 61)
+2025-06-04 21:04:38,784 [INFO] MongoDB upserted series: MZMOWN (release ID: 61)
+2025-06-04 21:04:38,784 [INFO] Checking release: Monetary Services Index (MSI) (ID: 62)
+2025-06-04 21:04:38,787 [INFO] Fetching series from FRED API for release ID: 62
+2025-06-04 21:04:39,058 [ERROR] Request error for release ID 62: 200
+2025-06-04 21:04:39,059 [INFO] Checking release: M2 Related Series (ID: 63)
+2025-06-04 21:04:39,062 [INFO] Fetching series from FRED API for release ID: 63
+2025-06-04 21:04:39,230 [INFO] First series ID received: M2MSL
+2025-06-04 21:04:39,232 [INFO] MongoDB upserted series: M2MSL (release ID: 63)
+2025-06-04 21:04:39,234 [INFO] MongoDB upserted series: M2MNS (release ID: 63)
+2025-06-04 21:04:39,238 [INFO] MongoDB upserted series: M2MOWN (release ID: 63)
+2025-06-04 21:04:39,241 [INFO] Checking release: Long-Term U.S. Treasury Securities - Market Yield (ID: 64)
+2025-06-04 21:04:39,245 [INFO] Fetching series from FRED API for release ID: 64
+2025-06-04 21:04:39,501 [INFO] First series ID received: LTGS
+2025-06-04 21:04:39,504 [INFO] MongoDB upserted series: LTGS (release ID: 64)
+2025-06-04 21:04:39,504 [INFO] Checking release: Monthly Treasury Inflation-Indexed Securities (ID: 70)
+2025-06-04 21:04:39,508 [INFO] Fetching series from FRED API for release ID: 70
+2025-06-04 21:04:39,775 [INFO] First series ID received: TP5L02
+2025-06-04 21:04:39,778 [INFO] MongoDB upserted series: TP5L02 (release ID: 70)
+2025-06-04 21:04:39,782 [INFO] MongoDB upserted series: TP10J07 (release ID: 70)
+2025-06-04 21:04:39,785 [INFO] MongoDB upserted series: TP10J08 (release ID: 70)
+2025-06-04 21:04:39,787 [INFO] MongoDB upserted series: TP10J09 (release ID: 70)
+2025-06-04 21:04:39,790 [INFO] MongoDB upserted series: TP10J10 (release ID: 70)
+2025-06-04 21:04:39,791 [INFO] Checking release: Weekly Treasury Inflation-Indexed Securities (ID: 71)
+2025-06-04 21:04:39,797 [INFO] Fetching series from FRED API for release ID: 71
+2025-06-04 21:04:39,985 [INFO] First series ID received: WTP30A28
+2025-06-04 21:04:39,989 [INFO] MongoDB upserted series: WTP30A28 (release ID: 71)
+2025-06-04 21:04:39,992 [INFO] MongoDB upserted series: WTP10J07 (release ID: 71)
+2025-06-04 21:04:39,995 [INFO] MongoDB upserted series: WTP10J08 (release ID: 71)
+2025-06-04 21:04:40,000 [INFO] MongoDB upserted series: WTP30A29 (release ID: 71)
+2025-06-04 21:04:40,003 [INFO] MongoDB upserted series: WTP3HA32 (release ID: 71)
+2025-06-04 21:04:40,006 [INFO] Checking release: Daily Treasury Inflation-Indexed Securities (ID: 72)
+2025-06-04 21:04:40,009 [INFO] Fetching series from FRED API for release ID: 72
+2025-06-04 21:04:40,387 [INFO] First series ID received: DTP10J28
+2025-06-04 21:04:40,390 [INFO] MongoDB upserted series: DTP10J28 (release ID: 72)
+2025-06-04 21:04:40,393 [INFO] MongoDB upserted series: DTP10J30 (release ID: 72)
+2025-06-04 21:04:40,397 [INFO] MongoDB upserted series: DTP5A25 (release ID: 72)
+2025-06-04 21:04:40,403 [INFO] MongoDB upserted series: DTP20J29 (release ID: 72)
+2025-06-04 21:04:40,409 [INFO] MongoDB upserted series: DTP30A28 (release ID: 72)
+2025-06-04 21:04:40,410 [INFO] Checking release: St. Louis Monthly Reserves and Monetary Base (ID: 78)
+2025-06-04 21:04:40,417 [INFO] Fetching series from FRED API for release ID: 78
+2025-06-04 21:04:40,694 [INFO] First series ID received: AMBSL
+2025-06-04 21:04:40,696 [INFO] MongoDB upserted series: AMBSL (release ID: 78)
+2025-06-04 21:04:40,699 [INFO] MongoDB upserted series: AMBNS (release ID: 78)
+2025-06-04 21:04:40,701 [INFO] MongoDB upserted series: ADJRESSL (release ID: 78)
+2025-06-04 21:04:40,704 [INFO] MongoDB upserted series: DISAMBSL (release ID: 78)
+2025-06-04 21:04:40,708 [INFO] MongoDB upserted series: SBASENS (release ID: 78)
+2025-06-04 21:04:40,712 [INFO] Checking release: St. Louis Bi-Weekly Reserves and Monetary Base (ID: 79)
+2025-06-04 21:04:40,716 [INFO] Fetching series from FRED API for release ID: 79
+2025-06-04 21:04:40,998 [INFO] First series ID received: MULT
+2025-06-04 21:04:41,001 [INFO] MongoDB upserted series: MULT (release ID: 79)
+2025-06-04 21:04:41,004 [INFO] MongoDB upserted series: BASE (release ID: 79)
+2025-06-04 21:04:41,009 [INFO] MongoDB upserted series: DISMULT (release ID: 79)
+2025-06-04 21:04:41,011 [INFO] MongoDB upserted series: ADJRES (release ID: 79)
+2025-06-04 21:04:41,015 [INFO] MongoDB upserted series: ADJRAM (release ID: 79)
+2025-06-04 21:04:41,015 [INFO] Checking release: Treasury Bulletin (ID: 80)
+2025-06-04 21:04:41,018 [INFO] Fetching series from FRED API for release ID: 80
+2025-06-04 21:04:41,271 [ERROR] Request error for release ID 80: 200
+2025-06-04 21:04:41,272 [INFO] Checking release: Fiscal Year Budget Data (ID: 81)
+2025-06-04 21:04:41,275 [INFO] Fetching series from FRED API for release ID: 81
+2025-06-04 21:04:41,439 [ERROR] Request error for release ID 81: None
+2025-06-04 21:04:41,441 [INFO] Checking release: Economic Report of the President (ID: 82)
+2025-06-04 21:04:41,443 [INFO] Fetching series from FRED API for release ID: 82
+2025-06-04 21:04:41,714 [INFO] First series ID received: FYGFD
+2025-06-04 21:04:41,717 [INFO] MongoDB upserted series: FYGFD (release ID: 82)
+2025-06-04 21:04:41,719 [INFO] MongoDB upserted series: FYGFDPUB (release ID: 82)
+2025-06-04 21:04:41,719 [INFO] Checking release: Commercial Paper (ID: 86)
+2025-06-04 21:04:41,726 [INFO] Fetching series from FRED API for release ID: 86
+2025-06-04 21:04:42,033 [INFO] First series ID received: RIFSPPFAAD90NB
+2025-06-04 21:04:42,037 [INFO] MongoDB upserted series: RIFSPPFAAD90NB (release ID: 86)
+2025-06-04 21:04:42,042 [INFO] MongoDB upserted series: COMPOUT (release ID: 86)
+2025-06-04 21:04:42,045 [INFO] MongoDB upserted series: ABCOMP (release ID: 86)
+2025-06-04 21:04:42,047 [INFO] MongoDB upserted series: RIFSPPNA2P2D90NB (release ID: 86)
+2025-06-04 21:04:42,049 [INFO] MongoDB upserted series: RIFSPPNA2P2D30NB (release ID: 86)
+2025-06-04 21:04:42,049 [INFO] Checking release: Transitional Euro Country Exchange Rates (ID: 87)
+2025-06-04 21:04:42,055 [INFO] Fetching series from FRED API for release ID: 87
+2025-06-04 21:04:42,297 [INFO] First series ID received: EXGEUS
+2025-06-04 21:04:42,300 [INFO] MongoDB upserted series: EXGEUS (release ID: 87)
+2025-06-04 21:04:42,302 [INFO] MongoDB upserted series: EXFRUS (release ID: 87)
+2025-06-04 21:04:42,306 [INFO] MongoDB upserted series: EXGRUS (release ID: 87)
+2025-06-04 21:04:42,309 [INFO] MongoDB upserted series: EXITUS (release ID: 87)
+2025-06-04 21:04:42,311 [INFO] MongoDB upserted series: EXSPUS (release ID: 87)
+2025-06-04 21:04:42,312 [INFO] Checking release: Household Debt Service Ratios (ID: 89)
+2025-06-04 21:04:42,315 [INFO] Fetching series from FRED API for release ID: 89
+2025-06-04 21:04:42,636 [INFO] First series ID received: TDSP
+2025-06-04 21:04:42,640 [INFO] MongoDB upserted series: TDSP (release ID: 89)
+2025-06-04 21:04:42,642 [INFO] MongoDB upserted series: MDSP (release ID: 89)
+2025-06-04 21:04:42,645 [INFO] MongoDB upserted series: CDSP (release ID: 89)
+2025-06-04 21:04:42,647 [INFO] MongoDB upserted series: FODSP (release ID: 89)
+2025-06-04 21:04:42,647 [INFO] Checking release: Surveys of Consumers (ID: 91)
+2025-06-04 21:04:42,650 [INFO] Fetching series from FRED API for release ID: 91
+2025-06-04 21:04:42,969 [INFO] First series ID received: UMCSENT
+2025-06-04 21:04:42,973 [INFO] MongoDB upserted series: UMCSENT (release ID: 91)
+2025-06-04 21:04:42,976 [INFO] MongoDB upserted series: MICH (release ID: 91)
+2025-06-04 21:04:42,978 [INFO] MongoDB upserted series: UMCSENT1 (release ID: 91)
+2025-06-04 21:04:42,978 [INFO] Checking release: Selected Real Retail Sales Series (ID: 92)
+2025-06-04 21:04:42,980 [INFO] Fetching series from FRED API for release ID: 92
+2025-06-04 21:04:43,162 [INFO] First series ID received: RRSFS
+2025-06-04 21:04:43,164 [INFO] MongoDB upserted series: RRSFS (release ID: 92)
+2025-06-04 21:04:43,167 [INFO] MongoDB upserted series: RSALES (release ID: 92)
+2025-06-04 21:04:43,167 [INFO] Checking release: Supplemental Estimates, Motor Vehicles (ID: 93)
+2025-06-04 21:04:43,171 [INFO] Fetching series from FRED API for release ID: 93
+2025-06-04 21:04:43,363 [ERROR] Request error for release ID 93: 200
+2025-06-04 21:04:43,364 [INFO] Checking release: Survey of Secondary Market Prices and Yields, and Interest Rates for Home Loans (ID: 94)
+2025-06-04 21:04:43,367 [INFO] Fetching series from FRED API for release ID: 94
+2025-06-04 21:04:43,557 [ERROR] Request error for release ID 94: None
+2025-06-04 21:04:43,558 [INFO] Checking release: Manufacturer's Shipments, Inventories, and Orders (M3) Survey (ID: 95)
+2025-06-04 21:04:43,563 [INFO] Fetching series from FRED API for release ID: 95
+2025-06-04 21:04:43,888 [ERROR] Request error for release ID 95: None
+2025-06-04 21:04:43,890 [INFO] Checking release: New Residential Sales (ID: 97)
+2025-06-04 21:04:43,895 [INFO] Fetching series from FRED API for release ID: 97
+2025-06-04 21:04:44,176 [ERROR] Request error for release ID 97: None
+2025-06-04 21:04:44,178 [INFO] Checking release: Budget and Economic Outlook (ID: 99)
+2025-06-04 21:04:44,180 [INFO] Fetching series from FRED API for release ID: 99
+2025-06-04 21:04:44,327 [ERROR] Request error for release ID 99: None
+2025-06-04 21:04:44,328 [INFO] Checking release: Seasonal Credit Rate (ID: 100)
+2025-06-04 21:04:44,331 [INFO] Fetching series from FRED API for release ID: 100
+2025-06-04 21:04:44,468 [INFO] First series ID received: FLEXSC
+2025-06-04 21:04:44,471 [INFO] MongoDB upserted series: FLEXSC (release ID: 100)
+2025-06-04 21:04:44,471 [INFO] Checking release: FOMC Press Release (ID: 101)
+2025-06-04 21:04:44,475 [INFO] Fetching series from FRED API for release ID: 101
+2025-06-04 21:04:44,787 [ERROR] Request error for release ID 101: 200
+2025-06-04 21:04:44,788 [INFO] Checking release: Wall Street Journal (ID: 102)
+2025-06-04 21:04:44,792 [INFO] Fetching series from FRED API for release ID: 102
+2025-06-04 21:04:44,966 [INFO] First series ID received: OILPRICE
+2025-06-04 21:04:44,968 [INFO] MongoDB upserted series: OILPRICE (release ID: 102)
+2025-06-04 21:04:44,970 [INFO] MongoDB upserted series: GASPRICE (release ID: 102)
+2025-06-04 21:04:44,971 [INFO] Checking release: Discount Rate Meeting Minutes (ID: 103)
+2025-06-04 21:04:44,973 [INFO] Fetching series from FRED API for release ID: 103
+2025-06-04 21:04:45,191 [INFO] First series ID received: PCREDIT8
+2025-06-04 21:04:45,194 [INFO] MongoDB upserted series: PCREDIT8 (release ID: 103)
+2025-06-04 21:04:45,197 [INFO] MongoDB upserted series: DISCNTD8 (release ID: 103)
+2025-06-04 21:04:45,197 [INFO] Checking release: Federal Reserve Bulletin (ID: 104)
+2025-06-04 21:04:45,199 [INFO] Fetching series from FRED API for release ID: 104
+2025-06-04 21:04:45,351 [INFO] First series ID received: DISCOUNT
+2025-06-04 21:04:45,354 [INFO] MongoDB upserted series: DISCOUNT (release ID: 104)
+2025-06-04 21:04:45,354 [INFO] Checking release: St. Louis Weekly Reserves and Monetary Base (ID: 105)
+2025-06-04 21:04:45,364 [INFO] Fetching series from FRED API for release ID: 105
+2025-06-04 21:04:45,595 [INFO] First series ID received: WSBASE
+2025-06-04 21:04:45,598 [INFO] MongoDB upserted series: WSBASE (release ID: 105)
+2025-06-04 21:04:45,599 [INFO] Checking release: M2 Own Rate (ID: 106)
+2025-06-04 21:04:45,601 [INFO] Fetching series from FRED API for release ID: 106
+2025-06-04 21:04:45,912 [INFO] First series ID received: M2OWN
+2025-06-04 21:04:45,915 [INFO] MongoDB upserted series: M2OWN (release ID: 106)
+2025-06-04 21:04:45,916 [INFO] Checking release: Total Factor Productivity for Major Industries (ID: 107)
+2025-06-04 21:04:45,918 [INFO] Fetching series from FRED API for release ID: 107
+2025-06-04 21:04:46,353 [INFO] First series ID received: MPU9900063
+2025-06-04 21:04:46,356 [INFO] MongoDB upserted series: MPU9900063 (release ID: 107)
+2025-06-04 21:04:46,359 [INFO] MongoDB upserted series: MFPNFBS (release ID: 107)
+2025-06-04 21:04:46,361 [INFO] MongoDB upserted series: MPU4910063 (release ID: 107)
+2025-06-04 21:04:46,365 [INFO] MongoDB upserted series: MPU9900082 (release ID: 107)
+2025-06-04 21:04:46,368 [INFO] MongoDB upserted series: MFGOPH (release ID: 107)
+2025-06-04 21:04:46,369 [INFO] Checking release: State Coincident Indexes (ID: 109)
+2025-06-04 21:04:46,375 [INFO] Fetching series from FRED API for release ID: 109
+2025-06-04 21:04:46,524 [INFO] First series ID received: USPHCI
+2025-06-04 21:04:46,528 [INFO] MongoDB upserted series: USPHCI (release ID: 109)
+2025-06-04 21:04:46,530 [INFO] MongoDB upserted series: CAPHCI (release ID: 109)
+2025-06-04 21:04:46,533 [INFO] MongoDB upserted series: NYPHCI (release ID: 109)
+2025-06-04 21:04:46,535 [INFO] MongoDB upserted series: ORPHCI (release ID: 109)
+2025-06-04 21:04:46,537 [INFO] MongoDB upserted series: NCPHCI (release ID: 109)
+2025-06-04 21:04:46,538 [INFO] Checking release: Personal Income by State (ID: 110)
+2025-06-04 21:04:46,540 [INFO] Fetching series from FRED API for release ID: 110
+2025-06-04 21:04:46,847 [ERROR] Request error for release ID 110: 200
+2025-06-04 21:04:46,849 [INFO] Checking release: Annual Estimates of the Population of Metropolitan and Micropolitan Statistical Areas (ID: 111)
+2025-06-04 21:04:46,851 [INFO] Fetching series from FRED API for release ID: 111
+2025-06-04 21:04:47,057 [INFO] First series ID received: DFWPOP
+2025-06-04 21:04:47,063 [INFO] MongoDB upserted series: DFWPOP (release ID: 111)
+2025-06-04 21:04:47,065 [INFO] MongoDB upserted series: AUSPOP (release ID: 111)
+2025-06-04 21:04:47,068 [INFO] MongoDB upserted series: NVLPOP (release ID: 111)
+2025-06-04 21:04:47,071 [INFO] MongoDB upserted series: ATLPOP (release ID: 111)
+2025-06-04 21:04:47,075 [INFO] MongoDB upserted series: HTNPOP (release ID: 111)
+2025-06-04 21:04:47,077 [INFO] Checking release: State Employment and Unemployment (ID: 112)
+2025-06-04 21:04:47,079 [INFO] Fetching series from FRED API for release ID: 112
+2025-06-04 21:04:47,572 [ERROR] Request error for release ID 112: 200
+2025-06-04 21:04:47,575 [INFO] Checking release: Metropolitan Area Employment and Unemployment (ID: 113)
+2025-06-04 21:04:47,578 [INFO] Fetching series from FRED API for release ID: 113
+2025-06-04 21:04:47,981 [ERROR] Request error for release ID 113: None
+2025-06-04 21:04:47,983 [INFO] Checking release: Unemployment in States and Local Areas (all other areas) (ID: 116)
+2025-06-04 21:04:47,987 [INFO] Fetching series from FRED API for release ID: 116
+2025-06-04 21:04:48,891 [INFO] First series ID received: CALOSA7URN
+2025-06-04 21:04:48,901 [INFO] MongoDB upserted series: CALOSA7URN (release ID: 116)
+2025-06-04 21:04:48,908 [INFO] MongoDB upserted series: FLMIAM6URN (release ID: 116)
+2025-06-04 21:04:48,921 [INFO] MongoDB upserted series: CASANF0URN (release ID: 116)
+2025-06-04 21:04:48,924 [INFO] MongoDB upserted series: CASAND5URN (release ID: 116)
+2025-06-04 21:04:48,926 [INFO] MongoDB upserted series: CAORAN7URN (release ID: 116)
+2025-06-04 21:04:48,927 [INFO] Checking release: Annual Estimates of the Population for the U.S. and States, and for Puerto Rico (ID: 118)
+2025-06-04 21:04:48,930 [INFO] Fetching series from FRED API for release ID: 118
+2025-06-04 21:04:49,160 [INFO] First series ID received: CAPOP
+2025-06-04 21:04:49,163 [INFO] MongoDB upserted series: CAPOP (release ID: 118)
+2025-06-04 21:04:49,165 [INFO] MongoDB upserted series: FLPOP (release ID: 118)
+2025-06-04 21:04:49,167 [INFO] MongoDB upserted series: TXPOP (release ID: 118)
+2025-06-04 21:04:49,171 [INFO] MongoDB upserted series: NYPOP (release ID: 118)
+2025-06-04 21:04:49,180 [INFO] MongoDB upserted series: AZPOP (release ID: 118)
+2025-06-04 21:04:49,185 [INFO] Checking release: Annual Estimates of the Population for Counties (ID: 119)
+2025-06-04 21:04:49,187 [INFO] Fetching series from FRED API for release ID: 119
+2025-06-04 21:04:49,615 [INFO] First series ID received: CASANF0POP
+2025-06-04 21:04:49,618 [INFO] MongoDB upserted series: CASANF0POP (release ID: 119)
+2025-06-04 21:04:49,620 [INFO] MongoDB upserted series: CALOSA7POP (release ID: 119)
+2025-06-04 21:04:49,623 [INFO] MongoDB upserted series: FLMIAM6POP (release ID: 119)
+2025-06-04 21:04:49,627 [INFO] MongoDB upserted series: AZMARI3POP (release ID: 119)
+2025-06-04 21:04:49,631 [INFO] MongoDB upserted series: CAORAN7POP (release ID: 119)
+2025-06-04 21:04:49,632 [INFO] Checking release: H.6 Historical Data (ID: 121)
+2025-06-04 21:04:49,636 [INFO] Fetching series from FRED API for release ID: 121
+2025-06-04 21:04:49,907 [INFO] First series ID received: M3
+2025-06-04 21:04:49,910 [INFO] MongoDB upserted series: M3 (release ID: 121)
+2025-06-04 21:04:49,913 [INFO] MongoDB upserted series: WM3NS (release ID: 121)
+2025-06-04 21:04:49,916 [INFO] MongoDB upserted series: TOTTIME (release ID: 121)
+2025-06-04 21:04:49,918 [INFO] MongoDB upserted series: WTOTTMNS (release ID: 121)
+2025-06-04 21:04:49,920 [INFO] MongoDB upserted series: WLGTIME (release ID: 121)
+2025-06-04 21:04:49,921 [INFO] Checking release: H.4.1 Factors Affecting Reserve Balances (data not included in press release) (ID: 122)
+2025-06-04 21:04:49,927 [INFO] Fetching series from FRED API for release ID: 122
+2025-06-04 21:04:50,132 [INFO] First series ID received: CURRCIR
+2025-06-04 21:04:50,135 [INFO] MongoDB upserted series: CURRCIR (release ID: 122)
+2025-06-04 21:04:50,138 [INFO] MongoDB upserted series: RSBKCRNS (release ID: 122)
+2025-06-04 21:04:50,140 [INFO] MongoDB upserted series: TREASURY (release ID: 122)
+2025-06-04 21:04:50,142 [INFO] Checking release: G.13 Selected Interest Rates (ID: 131)
+2025-06-04 21:04:50,147 [INFO] Fetching series from FRED API for release ID: 131
+2025-06-04 21:04:50,421 [INFO] First series ID received: TB3MA
+2025-06-04 21:04:50,424 [INFO] MongoDB upserted series: TB3MA (release ID: 131)
+2025-06-04 21:04:50,427 [INFO] MongoDB upserted series: LTGOVTBD (release ID: 131)
+2025-06-04 21:04:50,430 [INFO] MongoDB upserted series: BA3M (release ID: 131)
+2025-06-04 21:04:50,432 [INFO] MongoDB upserted series: CP3M (release ID: 131)
+2025-06-04 21:04:50,434 [INFO] MongoDB upserted series: TB6MA (release ID: 131)
+2025-06-04 21:04:50,435 [INFO] Checking release: BEA Regions Employment and Unemployment (ID: 138)
+2025-06-04 21:04:50,438 [INFO] Fetching series from FRED API for release ID: 138
+2025-06-04 21:04:50,590 [ERROR] Request error for release ID 138: 200
+2025-06-04 21:04:50,592 [INFO] Checking release: Gross Domestic Product by State (ID: 140)
+2025-06-04 21:04:50,595 [INFO] Fetching series from FRED API for release ID: 140
+2025-06-04 21:04:50,966 [INFO] First series ID received: ALNGSP
+2025-06-04 21:04:50,969 [INFO] MongoDB upserted series: ALNGSP (release ID: 140)
+2025-06-04 21:04:50,971 [INFO] MongoDB upserted series: AKNGSP (release ID: 140)
+2025-06-04 21:04:50,973 [INFO] MongoDB upserted series: ALNQGSP (release ID: 140)
+2025-06-04 21:04:50,978 [INFO] MongoDB upserted series: ARNQGSP (release ID: 140)
+2025-06-04 21:04:50,981 [INFO] MongoDB upserted series: ALRQGSP (release ID: 140)
+2025-06-04 21:04:50,982 [INFO] Checking release: Annual Survey of State Government Tax Collections (ID: 143)
+2025-06-04 21:04:50,985 [INFO] Fetching series from FRED API for release ID: 143
+2025-06-04 21:04:51,467 [INFO] First series ID received: KYTOTLTAX
+2025-06-04 21:04:51,470 [INFO] MongoDB upserted series: KYTOTLTAX (release ID: 143)
+2025-06-04 21:04:51,472 [INFO] MongoDB upserted series: ALTLINCTAX (release ID: 143)
+2025-06-04 21:04:51,475 [INFO] MongoDB upserted series: HIALCOTAX (release ID: 143)
+2025-06-04 21:04:51,478 [INFO] MongoDB upserted series: FLPROPTAX (release ID: 143)
+2025-06-04 21:04:51,481 [INFO] MongoDB upserted series: AKFUELTAX (release ID: 143)
+2025-06-04 21:04:51,482 [INFO] Checking release: Residential Vacancies and Homeownership Annual Statistics (ID: 144)
+2025-06-04 21:04:51,485 [INFO] Fetching series from FRED API for release ID: 144
+2025-06-04 21:04:51,674 [ERROR] Request error for release ID 144: 200
+2025-06-04 21:04:51,675 [INFO] Checking release: Housing Units Authorized By Building Permits (ID: 148)
+2025-06-04 21:04:51,678 [INFO] Fetching series from FRED API for release ID: 148
+2025-06-04 21:04:52,185 [INFO] First series ID received: AUST448BPPRIV
+2025-06-04 21:04:52,188 [INFO] MongoDB upserted series: AUST448BPPRIV (release ID: 148)
+2025-06-04 21:04:52,190 [INFO] MongoDB upserted series: ATLA013BPPRIVSA (release ID: 148)
+2025-06-04 21:04:52,193 [INFO] MongoDB upserted series: AZBPPRIV (release ID: 148)
+2025-06-04 21:04:52,196 [INFO] MongoDB upserted series: AUST448BP1FH (release ID: 148)
+2025-06-04 21:04:52,199 [INFO] MongoDB upserted series: BOST625BPPRIV (release ID: 148)
+2025-06-04 21:04:52,199 [INFO] Checking release: Health Insurance Coverage (ID: 152)
+2025-06-04 21:04:52,202 [INFO] Fetching series from FRED API for release ID: 152
+2025-06-04 21:04:52,679 [ERROR] Request error for release ID 152: 200
+2025-06-04 21:04:52,680 [INFO] Checking release: BEA Regions Health Insurance Coverage (ID: 153)
+2025-06-04 21:04:52,683 [INFO] Fetching series from FRED API for release ID: 153
+2025-06-04 21:04:53,104 [INFO] First series ID received: BEAFWHICCOVER
+2025-06-04 21:04:53,107 [INFO] MongoDB upserted series: BEAFWHICCOVER (release ID: 153)
+2025-06-04 21:04:53,110 [INFO] MongoDB upserted series: BEAFWHICNCPCT (release ID: 153)
+2025-06-04 21:04:53,113 [INFO] MongoDB upserted series: BEAFWHICNOTCOV (release ID: 153)
+2025-06-04 21:04:53,115 [INFO] MongoDB upserted series: BEAFWHICTOTAL (release ID: 153)
+2025-06-04 21:04:53,118 [INFO] MongoDB upserted series: BEAGLHICCOVER (release ID: 153)
+2025-06-04 21:04:53,118 [INFO] Checking release: Australian Foreign Exchange Transactions (ID: 165)
+2025-06-04 21:04:53,123 [INFO] Fetching series from FRED API for release ID: 165
+2025-06-04 21:04:53,491 [INFO] First series ID received: AUINTDDL
+2025-06-04 21:04:53,495 [INFO] MongoDB upserted series: AUINTDDL (release ID: 165)
+2025-06-04 21:04:53,497 [INFO] MongoDB upserted series: AUINTDGT (release ID: 165)
+2025-06-04 21:04:53,498 [INFO] Checking release: German Foreign Exchange Intervention (ID: 166)
+2025-06-04 21:04:53,500 [INFO] Fetching series from FRED API for release ID: 166
+2025-06-04 21:04:53,679 [INFO] First series ID received: DEINTDUSDDM
+2025-06-04 21:04:53,682 [INFO] MongoDB upserted series: DEINTDUSDDM (release ID: 166)
+2025-06-04 21:04:53,684 [INFO] MongoDB upserted series: DEINTDEMS (release ID: 166)
+2025-06-04 21:04:53,685 [INFO] Checking release: Italian Foreign Exchange Intervention (ID: 167)
+2025-06-04 21:04:53,687 [INFO] Fetching series from FRED API for release ID: 167
+2025-06-04 21:04:54,003 [INFO] First series ID received: ITINTDRES
+2025-06-04 21:04:54,008 [INFO] MongoDB upserted series: ITINTDRES (release ID: 167)
+2025-06-04 21:04:54,009 [INFO] Checking release: Swiss Foreign Exchange Intervention (ID: 168)
+2025-06-04 21:04:54,012 [INFO] Fetching series from FRED API for release ID: 168
+2025-06-04 21:04:54,413 [INFO] First series ID received: CHINTDCHFUSD
+2025-06-04 21:04:54,416 [INFO] MongoDB upserted series: CHINTDCHFUSD (release ID: 168)
+2025-06-04 21:04:54,419 [INFO] MongoDB upserted series: CHINTDCHFDM (release ID: 168)
+2025-06-04 21:04:54,421 [INFO] MongoDB upserted series: CHINTDUSDDM (release ID: 168)
+2025-06-04 21:04:54,423 [INFO] MongoDB upserted series: CHINTDUSDJPY (release ID: 168)
+2025-06-04 21:04:54,424 [INFO] Checking release: Turkish Foreign Exchange Intervention (ID: 169)
+2025-06-04 21:04:54,429 [INFO] Fetching series from FRED API for release ID: 169
+2025-06-04 21:04:54,720 [INFO] First series ID received: TRINTDEXR
+2025-06-04 21:04:54,724 [INFO] MongoDB upserted series: TRINTDEXR (release ID: 169)
+2025-06-04 21:04:54,725 [INFO] Checking release: U.S. Foreign Exchange Intervention (ID: 170)
+2025-06-04 21:04:54,729 [INFO] Fetching series from FRED API for release ID: 170
+2025-06-04 21:04:55,029 [INFO] First series ID received: USINTDMRKTJPY
+2025-06-04 21:04:55,032 [INFO] MongoDB upserted series: USINTDMRKTJPY (release ID: 170)
+2025-06-04 21:04:55,034 [INFO] MongoDB upserted series: USINTDMRKTDM (release ID: 170)
+2025-06-04 21:04:55,037 [INFO] MongoDB upserted series: USINTDMRKTOTH (release ID: 170)
+2025-06-04 21:04:55,039 [INFO] MongoDB upserted series: USINTDCSJPY (release ID: 170)
+2025-06-04 21:04:55,043 [INFO] MongoDB upserted series: USINTDCSDM (release ID: 170)
+2025-06-04 21:04:55,044 [INFO] Checking release: House Price Index (ID: 171)
+2025-06-04 21:04:55,049 [INFO] Fetching series from FRED API for release ID: 171
+2025-06-04 21:04:55,702 [INFO] First series ID received: ATNHPIUS12420Q
+2025-06-04 21:04:55,704 [INFO] MongoDB upserted series: ATNHPIUS12420Q (release ID: 171)
+2025-06-04 21:04:55,707 [INFO] MongoDB upserted series: ATNHPIUS06037A (release ID: 171)
+2025-06-04 21:04:55,709 [INFO] MongoDB upserted series: ATNHPIUS14454Q (release ID: 171)
+2025-06-04 21:04:55,715 [INFO] MongoDB upserted series: ATNHPIUS19124Q (release ID: 171)
+2025-06-04 21:04:55,719 [INFO] MongoDB upserted series: ATNHPIUS19740Q (release ID: 171)
+2025-06-04 21:04:55,720 [INFO] Checking release: Japan Foreign Exchange Intervention (ID: 172)
+2025-06-04 21:04:55,723 [INFO] Fetching series from FRED API for release ID: 172
+2025-06-04 21:04:56,154 [INFO] First series ID received: JPINTDUSDJPY
+2025-06-04 21:04:56,157 [INFO] MongoDB upserted series: JPINTDUSDJPY (release ID: 172)
+2025-06-04 21:04:56,160 [INFO] MongoDB upserted series: JPINTDDMEJPY (release ID: 172)
+2025-06-04 21:04:56,163 [INFO] MongoDB upserted series: JPINTDEXR (release ID: 172)
+2025-06-04 21:04:56,166 [INFO] MongoDB upserted series: JPINTDUSDRP (release ID: 172)
+2025-06-04 21:04:56,168 [INFO] Checking release: BEA Regions Housing Units Authorized By Building Permits (ID: 173)
+2025-06-04 21:04:56,181 [INFO] Fetching series from FRED API for release ID: 173
+2025-06-04 21:04:56,566 [ERROR] Request error for release ID 173: 200
+2025-06-04 21:04:56,567 [INFO] Checking release: Personal Income by County and Metropolitan Area (ID: 175)
+2025-06-04 21:04:56,570 [INFO] Fetching series from FRED API for release ID: 175
+2025-06-04 21:04:57,089 [ERROR] Request error for release ID 175: None
+2025-06-04 21:04:57,091 [INFO] Checking release: Mexican Foreign Exchange Intervention (ID: 178)
+2025-06-04 21:04:57,094 [INFO] Fetching series from FRED API for release ID: 178
+2025-06-04 21:04:57,587 [INFO] First series ID received: MEXINTDUSD
+2025-06-04 21:04:57,590 [INFO] MongoDB upserted series: MEXINTDUSD (release ID: 178)
+2025-06-04 21:04:57,591 [INFO] Checking release: Quarterly Retail E-Commerce Sales (ID: 179)
+2025-06-04 21:04:57,595 [INFO] Fetching series from FRED API for release ID: 179
+2025-06-04 21:04:57,787 [INFO] First series ID received: ECOMPCTSA
+2025-06-04 21:04:57,789 [INFO] MongoDB upserted series: ECOMPCTSA (release ID: 179)
+2025-06-04 21:04:57,791 [INFO] MongoDB upserted series: ECOMSA (release ID: 179)
+2025-06-04 21:04:57,794 [INFO] MongoDB upserted series: ECOMNSA (release ID: 179)
+2025-06-04 21:04:57,797 [INFO] MongoDB upserted series: ECOMPCTNSA (release ID: 179)
+2025-06-04 21:04:57,797 [INFO] Checking release: Unemployment Insurance Weekly Claims Report (ID: 180)
+2025-06-04 21:04:57,799 [INFO] Fetching series from FRED API for release ID: 180
+2025-06-04 21:04:57,989 [INFO] First series ID received: ICSA
+2025-06-04 21:04:57,994 [INFO] MongoDB upserted series: ICSA (release ID: 180)
+2025-06-04 21:04:57,997 [INFO] MongoDB upserted series: CCSA (release ID: 180)
+2025-06-04 21:04:57,999 [INFO] MongoDB upserted series: IC4WSA (release ID: 180)
+2025-06-04 21:04:58,003 [INFO] MongoDB upserted series: CC4WSA (release ID: 180)
+2025-06-04 21:04:58,005 [INFO] MongoDB upserted series: ICNSA (release ID: 180)
+2025-06-04 21:04:58,006 [INFO] Checking release: Gasoline and Diesel Fuel Update (ID: 183)
+2025-06-04 21:04:58,010 [INFO] Fetching series from FRED API for release ID: 183
+2025-06-04 21:04:58,298 [INFO] First series ID received: GASREGW
+2025-06-04 21:04:58,301 [INFO] MongoDB upserted series: GASREGW (release ID: 183)
+2025-06-04 21:04:58,303 [INFO] MongoDB upserted series: GASDESW (release ID: 183)
+2025-06-04 21:04:58,305 [INFO] MongoDB upserted series: GASREGCOVW (release ID: 183)
+2025-06-04 21:04:58,309 [INFO] MongoDB upserted series: GASREGCOVM (release ID: 183)
+2025-06-04 21:04:58,312 [INFO] MongoDB upserted series: GASREGM (release ID: 183)
+2025-06-04 21:04:58,312 [INFO] Checking release: Interest Rate on Reserve Balances (ID: 185)
+2025-06-04 21:04:58,314 [INFO] Fetching series from FRED API for release ID: 185
+2025-06-04 21:04:58,494 [INFO] First series ID received: IORB
+2025-06-04 21:04:58,497 [INFO] MongoDB upserted series: IORB (release ID: 185)
+2025-06-04 21:04:58,499 [INFO] MongoDB upserted series: IOER (release ID: 185)
+2025-06-04 21:04:58,502 [INFO] MongoDB upserted series: IORR (release ID: 185)
+2025-06-04 21:04:58,504 [INFO] MongoDB upserted series: INTEXC2 (release ID: 185)
+2025-06-04 21:04:58,506 [INFO] MongoDB upserted series: INTEXC1 (release ID: 185)
+2025-06-04 21:04:58,507 [INFO] Checking release: G.5A Foreign Exchange Rates (ID: 186)
+2025-06-04 21:04:58,509 [INFO] Fetching series from FRED API for release ID: 186
+2025-06-04 21:04:58,818 [INFO] First series ID received: AEXUSEU
+2025-06-04 21:04:58,821 [INFO] MongoDB upserted series: AEXUSEU (release ID: 186)
+2025-06-04 21:04:58,824 [INFO] MongoDB upserted series: AEXCHUS (release ID: 186)
+2025-06-04 21:04:58,827 [INFO] MongoDB upserted series: AEXJPUS (release ID: 186)
+2025-06-04 21:04:58,832 [INFO] MongoDB upserted series: AEXMAUS (release ID: 186)
+2025-06-04 21:04:58,835 [INFO] MongoDB upserted series: AEXUSUK (release ID: 186)
+2025-06-04 21:04:58,836 [INFO] Checking release: St. Louis Fed Financial Stress Index (ID: 187)
+2025-06-04 21:04:58,838 [INFO] Fetching series from FRED API for release ID: 187
+2025-06-04 21:04:59,123 [INFO] First series ID received: STLFSI4
+2025-06-04 21:04:59,126 [INFO] MongoDB upserted series: STLFSI4 (release ID: 187)
+2025-06-04 21:04:59,129 [INFO] MongoDB upserted series: STLFSI3 (release ID: 187)
+2025-06-04 21:04:59,131 [INFO] MongoDB upserted series: STLFSI2 (release ID: 187)
+2025-06-04 21:04:59,134 [INFO] MongoDB upserted series: STLFSI (release ID: 187)
+2025-06-04 21:04:59,134 [INFO] Checking release: U.S. Import and Export Price Indexes (ID: 188)
+2025-06-04 21:04:59,137 [INFO] Fetching series from FRED API for release ID: 188
+2025-06-04 21:04:59,580 [INFO] First series ID received: IR
+2025-06-04 21:04:59,583 [INFO] MongoDB upserted series: IR (release ID: 188)
+2025-06-04 21:04:59,585 [INFO] MongoDB upserted series: IC131 (release ID: 188)
+2025-06-04 21:04:59,588 [INFO] MongoDB upserted series: IQ (release ID: 188)
+2025-06-04 21:04:59,590 [INFO] MongoDB upserted series: IQ12260 (release ID: 188)
+2025-06-04 21:04:59,593 [INFO] MongoDB upserted series: IR14200 (release ID: 188)
+2025-06-04 21:04:59,593 [INFO] Checking release: Primary Mortgage Market Survey (ID: 190)
+2025-06-04 21:04:59,597 [INFO] Fetching series from FRED API for release ID: 190
+2025-06-04 21:04:59,944 [INFO] First series ID received: MORTGAGE30US
+2025-06-04 21:04:59,947 [INFO] MongoDB upserted series: MORTGAGE30US (release ID: 190)
+2025-06-04 21:04:59,950 [INFO] MongoDB upserted series: MORTGAGE15US (release ID: 190)
+2025-06-04 21:04:59,952 [INFO] MongoDB upserted series: MORTGAGE5US (release ID: 190)
+2025-06-04 21:04:59,954 [INFO] MongoDB upserted series: MORTGAGE1US (release ID: 190)
+2025-06-04 21:04:59,956 [INFO] MongoDB upserted series: MORTPTS30US (release ID: 190)
+2025-06-04 21:04:59,956 [INFO] Checking release: Senior Loan Officer Opinion Survey on Bank Lending Practices (ID: 191)
+2025-06-04 21:04:59,958 [INFO] Fetching series from FRED API for release ID: 191
+2025-06-04 21:05:00,487 [INFO] First series ID received: DRTSCILM
+2025-06-04 21:05:00,490 [INFO] MongoDB upserted series: DRTSCILM (release ID: 191)
+2025-06-04 21:05:00,492 [INFO] MongoDB upserted series: DRTSCLCC (release ID: 191)
+2025-06-04 21:05:00,495 [INFO] MongoDB upserted series: DRTSCIS (release ID: 191)
+2025-06-04 21:05:00,497 [INFO] MongoDB upserted series: SUBLPDRCSC (release ID: 191)
+2025-06-04 21:05:00,501 [INFO] MongoDB upserted series: STDSAUTO (release ID: 191)
+2025-06-04 21:05:00,501 [INFO] Checking release: Job Openings and Labor Turnover Survey (ID: 192)
+2025-06-04 21:05:00,504 [INFO] Fetching series from FRED API for release ID: 192
+2025-06-04 21:05:00,973 [ERROR] Request error for release ID 192: 200
+2025-06-04 21:05:00,975 [INFO] Checking release: Money Velocity (ID: 193)
+2025-06-04 21:05:00,979 [INFO] Fetching series from FRED API for release ID: 193
+2025-06-04 21:05:01,238 [INFO] First series ID received: M2V
+2025-06-04 21:05:01,241 [INFO] MongoDB upserted series: M2V (release ID: 193)
+2025-06-04 21:05:01,244 [INFO] MongoDB upserted series: M1V (release ID: 193)
+2025-06-04 21:05:01,248 [INFO] MongoDB upserted series: MZMV (release ID: 193)
+2025-06-04 21:05:01,249 [INFO] Checking release: ADP National Employment Report (ID: 194)
+2025-06-04 21:05:01,252 [INFO] Fetching series from FRED API for release ID: 194
+2025-06-04 21:05:01,685 [INFO] First series ID received: ADPWNUSNERSA
+2025-06-04 21:05:01,688 [INFO] MongoDB upserted series: ADPWNUSNERSA (release ID: 194)
+2025-06-04 21:05:01,690 [INFO] MongoDB upserted series: NPPTTL (release ID: 194)
+2025-06-04 21:05:01,693 [INFO] MongoDB upserted series: ADPMNUSNERSA (release ID: 194)
+2025-06-04 21:05:01,695 [INFO] MongoDB upserted series: ADPMNUSNERNSA (release ID: 194)
+2025-06-04 21:05:01,698 [INFO] MongoDB upserted series: ADPWINDMANNERSA (release ID: 194)
+2025-06-04 21:05:01,698 [INFO] Checking release: Kansas City Financial Stress Index (ID: 198)
+2025-06-04 21:05:01,701 [INFO] Fetching series from FRED API for release ID: 198
+2025-06-04 21:05:02,088 [INFO] First series ID received: KCFSI
+2025-06-04 21:05:02,091 [INFO] MongoDB upserted series: KCFSI (release ID: 198)
+2025-06-04 21:05:02,091 [INFO] Checking release: S&P CoreLogic Case-Shiller Home Price Indices (ID: 199)
+2025-06-04 21:05:02,094 [INFO] Fetching series from FRED API for release ID: 199
+2025-06-04 21:05:02,484 [INFO] First series ID received: CSUSHPINSA
+2025-06-04 21:05:02,486 [INFO] MongoDB upserted series: CSUSHPINSA (release ID: 199)
+2025-06-04 21:05:02,488 [INFO] MongoDB upserted series: CSUSHPISA (release ID: 199)
+2025-06-04 21:05:02,491 [INFO] MongoDB upserted series: SPCS20RSA (release ID: 199)
+2025-06-04 21:05:02,493 [INFO] MongoDB upserted series: SFXRSA (release ID: 199)
+2025-06-04 21:05:02,498 [INFO] MongoDB upserted series: LXXRSA (release ID: 199)
+2025-06-04 21:05:02,499 [INFO] Checking release: CBOE Market Statistics (ID: 200)
+2025-06-04 21:05:02,501 [INFO] Fetching series from FRED API for release ID: 200
+2025-06-04 21:05:02,865 [INFO] First series ID received: VIXCLS
+2025-06-04 21:05:02,868 [INFO] MongoDB upserted series: VIXCLS (release ID: 200)
+2025-06-04 21:05:02,871 [INFO] MongoDB upserted series: GVZCLS (release ID: 200)
+2025-06-04 21:05:02,873 [INFO] MongoDB upserted series: OVXCLS (release ID: 200)
+2025-06-04 21:05:02,875 [INFO] MongoDB upserted series: VXVCLS (release ID: 200)
+2025-06-04 21:05:02,878 [INFO] MongoDB upserted series: VXNCLS (release ID: 200)
+2025-06-04 21:05:02,880 [INFO] Checking release: International Indexes of Consumer Prices (ID: 201)
+2025-06-04 21:05:02,883 [INFO] Fetching series from FRED API for release ID: 201
+2025-06-04 21:05:03,148 [INFO] First series ID received: USACPIBLS
+2025-06-04 21:05:03,152 [INFO] MongoDB upserted series: USACPIBLS (release ID: 201)
+2025-06-04 21:05:03,155 [INFO] MongoDB upserted series: CANCPIBLS (release ID: 201)
+2025-06-04 21:05:03,160 [INFO] MongoDB upserted series: JPNCPIBLS (release ID: 201)
+2025-06-04 21:05:03,222 [INFO] MongoDB upserted series: DEUCPIBLS (release ID: 201)
+2025-06-04 21:05:03,232 [INFO] MongoDB upserted series: FRACPIBLS (release ID: 201)
+2025-06-04 21:05:03,233 [INFO] Checking release: International Unemployment Rates and Employment Indexes (ID: 202)
+2025-06-04 21:05:03,254 [INFO] Fetching series from FRED API for release ID: 202
+2025-06-04 21:05:03,477 [INFO] First series ID received: JPNURAMS
+2025-06-04 21:05:03,481 [INFO] MongoDB upserted series: JPNURAMS (release ID: 202)
+2025-06-04 21:05:03,484 [INFO] MongoDB upserted series: AUSEIAM (release ID: 202)
+2025-06-04 21:05:03,487 [INFO] MongoDB upserted series: AUSEIAQ (release ID: 202)
+2025-06-04 21:05:03,489 [INFO] MongoDB upserted series: AUSURAMS (release ID: 202)
+2025-06-04 21:05:03,493 [INFO] MongoDB upserted series: AUSURAQS (release ID: 202)
+2025-06-04 21:05:03,494 [INFO] Checking release: International Comparisons of Annual Labor Force Statistics (ID: 203)
+2025-06-04 21:05:03,498 [INFO] Fetching series from FRED API for release ID: 203
+2025-06-04 21:05:03,737 [INFO] First series ID received: USAPEFANA
+2025-06-04 21:05:03,783 [INFO] MongoDB upserted series: USAPEFANA (release ID: 203)
+2025-06-04 21:05:03,786 [INFO] MongoDB upserted series: USAPEMANA (release ID: 203)
+2025-06-04 21:05:03,788 [INFO] MongoDB upserted series: GBRLFPRNA (release ID: 203)
+2025-06-04 21:05:03,790 [INFO] MongoDB upserted series: DEUPEFANA (release ID: 203)
+2025-06-04 21:05:03,792 [INFO] MongoDB upserted series: JPNLFPRNA (release ID: 203)
+2025-06-04 21:05:03,793 [INFO] Checking release: International Comparisons of GDP per Capita and per Hour (ID: 204)
+2025-06-04 21:05:03,797 [INFO] Fetching series from FRED API for release ID: 204
+2025-06-04 21:05:04,142 [INFO] First series ID received: JPNRGDPC
+2025-06-04 21:05:04,146 [INFO] MongoDB upserted series: JPNRGDPC (release ID: 204)
+2025-06-04 21:05:04,149 [INFO] MongoDB upserted series: CANRGDPC (release ID: 204)
+2025-06-04 21:05:04,151 [INFO] MongoDB upserted series: KORRGDPC (release ID: 204)
+2025-06-04 21:05:04,155 [INFO] MongoDB upserted series: KORRGDPR (release ID: 204)
+2025-06-04 21:05:04,157 [INFO] MongoDB upserted series: JPNRGDPR (release ID: 204)
+2025-06-04 21:05:04,157 [INFO] Checking release: Main Economic Indicators (ID: 205)
+2025-06-04 21:05:04,160 [INFO] Fetching series from FRED API for release ID: 205
+2025-06-04 21:05:05,105 [INFO] First series ID received: ARGCCUSMA02STM
+2025-06-04 21:05:05,108 [INFO] MongoDB upserted series: ARGCCUSMA02STM (release ID: 205)
+2025-06-04 21:05:05,112 [INFO] MongoDB upserted series: ARGCPALTT01GPM (release ID: 205)
+2025-06-04 21:05:05,115 [INFO] MongoDB upserted series: AUSGDPRQDSMEI (release ID: 205)
+2025-06-04 21:05:05,118 [INFO] MongoDB upserted series: AUSCPIALLQINMEI (release ID: 205)
+2025-06-04 21:05:05,121 [INFO] MongoDB upserted series: ARGCPALTT01IXNBM (release ID: 205)
+2025-06-04 21:05:05,121 [INFO] Checking release: Quarterly National Accounts (ID: 206)
+2025-06-04 21:05:05,124 [INFO] Fetching series from FRED API for release ID: 206
+2025-06-04 21:05:05,378 [INFO] First series ID received: USAGFCFQDSNAQ
+2025-06-04 21:05:05,382 [INFO] MongoDB upserted series: USAGFCFQDSNAQ (release ID: 206)
+2025-06-04 21:05:05,384 [INFO] MongoDB upserted series: GBRPFCEQDSNAQ (release ID: 206)
+2025-06-04 21:05:05,388 [INFO] MongoDB upserted series: GBRGFCEQDSNAQ (release ID: 206)
+2025-06-04 21:05:05,392 [INFO] MongoDB upserted series: USAPFCEQDSNAQ (release ID: 206)
+2025-06-04 21:05:05,395 [INFO] MongoDB upserted series: DEUGFCEQDSNAQ (release ID: 206)
+2025-06-04 21:05:05,396 [INFO] Checking release: State Leading Indexes (ID: 208)
+2025-06-04 21:05:05,400 [INFO] Fetching series from FRED API for release ID: 208
+2025-06-04 21:05:05,623 [INFO] First series ID received: USSLIND
+2025-06-04 21:05:05,626 [INFO] MongoDB upserted series: USSLIND (release ID: 208)
+2025-06-04 21:05:05,628 [INFO] MongoDB upserted series: CASLIND (release ID: 208)
+2025-06-04 21:05:05,632 [INFO] MongoDB upserted series: ARSLIND (release ID: 208)
+2025-06-04 21:05:05,635 [INFO] MongoDB upserted series: MTSLIND (release ID: 208)
+2025-06-04 21:05:05,636 [INFO] MongoDB upserted series: ORSLIND (release ID: 208)
+2025-06-04 21:05:05,638 [INFO] Checking release: ICE BofA Indices (ID: 209)
+2025-06-04 21:05:05,640 [INFO] Fetching series from FRED API for release ID: 209
+2025-06-04 21:05:05,999 [INFO] First series ID received: BAMLH0A0HYM2
+2025-06-04 21:05:06,002 [INFO] MongoDB upserted series: BAMLH0A0HYM2 (release ID: 209)
+2025-06-04 21:05:06,005 [INFO] MongoDB upserted series: BAMLH0A0HYM2EY (release ID: 209)
+2025-06-04 21:05:06,008 [INFO] MongoDB upserted series: BAMLC0A4CBBB (release ID: 209)
+2025-06-04 21:05:06,010 [INFO] MongoDB upserted series: BAMLC0A0CM (release ID: 209)
+2025-06-04 21:05:06,012 [INFO] MongoDB upserted series: BAMLC0A4CBBBEY (release ID: 209)
+2025-06-04 21:05:06,013 [INFO] Checking release: Spot Prices (ID: 212)
+2025-06-04 21:05:06,016 [INFO] Fetching series from FRED API for release ID: 212
+2025-06-04 21:05:06,292 [INFO] First series ID received: DCOILWTICO
+2025-06-04 21:05:06,296 [INFO] MongoDB upserted series: DCOILWTICO (release ID: 212)
+2025-06-04 21:05:06,299 [INFO] MongoDB upserted series: DCOILBRENTEU (release ID: 212)
+2025-06-04 21:05:06,303 [INFO] MongoDB upserted series: MCOILBRENTEU (release ID: 212)
+2025-06-04 21:05:06,307 [INFO] MongoDB upserted series: MCOILWTICO (release ID: 212)
+2025-06-04 21:05:06,310 [INFO] MongoDB upserted series: WJFUELUSGULF (release ID: 212)
+2025-06-04 21:05:06,314 [INFO] Checking release: E.2 Survey of Terms of Business Lending (ID: 216)
+2025-06-04 21:05:06,318 [INFO] Fetching series from FRED API for release ID: 216
+2025-06-04 21:05:06,664 [INFO] First series ID received: EEANQ
+2025-06-04 21:05:06,669 [INFO] MongoDB upserted series: EEANQ (release ID: 216)
+2025-06-04 21:05:06,672 [INFO] MongoDB upserted series: EDANQ (release ID: 216)
+2025-06-04 21:05:06,676 [INFO] MongoDB upserted series: EAAMNQ (release ID: 216)
+2025-06-04 21:05:06,679 [INFO] MongoDB upserted series: EEBXSSNQ (release ID: 216)
+2025-06-04 21:05:06,682 [INFO] MongoDB upserted series: EAAXSSNQ (release ID: 216)
+2025-06-04 21:05:06,683 [INFO] Checking release: Chicago Fed National Activity Index (ID: 219)
+2025-06-04 21:05:06,686 [INFO] Fetching series from FRED API for release ID: 219
+2025-06-04 21:05:06,876 [INFO] First series ID received: CFNAI
+2025-06-04 21:05:06,880 [INFO] MongoDB upserted series: CFNAI (release ID: 219)
+2025-06-04 21:05:06,884 [INFO] MongoDB upserted series: CFNAIMA3 (release ID: 219)
+2025-06-04 21:05:06,888 [INFO] MongoDB upserted series: CFNAIDIFF (release ID: 219)
+2025-06-04 21:05:06,891 [INFO] MongoDB upserted series: CANDH (release ID: 219)
+2025-06-04 21:05:06,893 [INFO] MongoDB upserted series: SOANDI (release ID: 219)
+2025-06-04 21:05:06,894 [INFO] Checking release: Chicago Fed National Financial Conditions Index (ID: 221)
+2025-06-04 21:05:06,897 [INFO] Fetching series from FRED API for release ID: 221
+2025-06-04 21:05:07,195 [INFO] First series ID received: NFCI
+2025-06-04 21:05:07,200 [INFO] MongoDB upserted series: NFCI (release ID: 221)
+2025-06-04 21:05:07,202 [INFO] MongoDB upserted series: ANFCI (release ID: 221)
+2025-06-04 21:05:07,205 [INFO] MongoDB upserted series: NFCILEVERAGE (release ID: 221)
+2025-06-04 21:05:07,209 [INFO] MongoDB upserted series: NFCICREDIT (release ID: 221)
+2025-06-04 21:05:07,211 [INFO] MongoDB upserted series: NFCIRISK (release ID: 221)
+2025-06-04 21:05:07,212 [INFO] Checking release: Quarterly Starts and Completions by Purpose and Design (ID: 228)
+2025-06-04 21:05:07,216 [INFO] Fetching series from FRED API for release ID: 228
+2025-06-04 21:05:07,522 [ERROR] Request error for release ID 228: 200
+2025-06-04 21:05:07,523 [INFO] Checking release: Construction Spending (ID: 229)
+2025-06-04 21:05:07,526 [INFO] Fetching series from FRED API for release ID: 229
+2025-06-04 21:05:07,725 [INFO] First series ID received: TTLCONS
+2025-06-04 21:05:07,728 [INFO] MongoDB upserted series: TTLCONS (release ID: 229)
+2025-06-04 21:05:07,731 [INFO] MongoDB upserted series: TLMFGCONS (release ID: 229)
+2025-06-04 21:05:07,734 [INFO] MongoDB upserted series: TLNRESCONS (release ID: 229)
+2025-06-04 21:05:07,737 [INFO] MongoDB upserted series: TLRESCONS (release ID: 229)
+2025-06-04 21:05:07,739 [INFO] MongoDB upserted series: TLCOMCONS (release ID: 229)
+2025-06-04 21:05:07,739 [INFO] Checking release: International Comparisons of Manufacturing Productivity and Unit Labor Cost Trends (ID: 230)
+2025-06-04 21:05:07,742 [INFO] Fetching series from FRED API for release ID: 230
+2025-06-04 21:05:08,035 [INFO] First series ID received: BELFXUS
+2025-06-04 21:05:08,038 [INFO] MongoDB upserted series: BELFXUS (release ID: 230)
+2025-06-04 21:05:08,040 [INFO] MongoDB upserted series: GBREPMFG (release ID: 230)
+2025-06-04 21:05:08,043 [INFO] MongoDB upserted series: DEUFXUS (release ID: 230)
+2025-06-04 21:05:08,045 [INFO] MongoDB upserted series: DEUOTPT (release ID: 230)
+2025-06-04 21:05:08,050 [INFO] MongoDB upserted series: ITARHCMF (release ID: 230)
+2025-06-04 21:05:08,051 [INFO] Checking release: Charge-Off and Delinquency Rates on Loans and Leases at Commercial Banks (ID: 231)
+2025-06-04 21:05:08,054 [INFO] Fetching series from FRED API for release ID: 231
+2025-06-04 21:05:08,340 [ERROR] Request error for release ID 231: 200
+2025-06-04 21:05:08,341 [INFO] Checking release: World Development Indicators (ID: 234)
+2025-06-04 21:05:08,343 [INFO] Fetching series from FRED API for release ID: 234
+2025-06-04 21:05:08,708 [INFO] First series ID received: FPCPITOTLZGUSA
+2025-06-04 21:05:08,712 [INFO] MongoDB upserted series: FPCPITOTLZGUSA (release ID: 234)
+2025-06-04 21:05:08,717 [INFO] MongoDB upserted series: FPCPITOTLZGJPN (release ID: 234)
+2025-06-04 21:05:08,721 [INFO] MongoDB upserted series: FPCPITOTLZGGBR (release ID: 234)
+2025-06-04 21:05:08,724 [INFO] MongoDB upserted series: DEBTTLJPA188A (release ID: 234)
+2025-06-04 21:05:08,726 [INFO] MongoDB upserted series: FPCPITOTLZGCHN (release ID: 234)
+2025-06-04 21:05:08,727 [INFO] Checking release: Financial Soundness Indicators (ID: 238)
+2025-06-04 21:05:08,733 [INFO] Fetching series from FRED API for release ID: 238
+2025-06-04 21:05:08,936 [INFO] First series ID received: COMREPUSQ159N
+2025-06-04 21:05:08,941 [INFO] MongoDB upserted series: COMREPUSQ159N (release ID: 238)
+2025-06-04 21:05:08,944 [INFO] MongoDB upserted series: HDTGPDUSQ163N (release ID: 238)
+2025-06-04 21:05:08,948 [INFO] MongoDB upserted series: TOTDTEUSQ163N (release ID: 238)
+2025-06-04 21:05:08,953 [INFO] MongoDB upserted series: HDTGPDCAQ163N (release ID: 238)
+2025-06-04 21:05:08,956 [INFO] MongoDB upserted series: COMREPAUQ159N (release ID: 238)
+2025-06-04 21:05:08,957 [INFO] Checking release: International Financial Statistics (ID: 239)
+2025-06-04 21:05:08,960 [INFO] Fetching series from FRED API for release ID: 239
+2025-06-04 21:05:09,321 [INFO] First series ID received: INTDSRUSM193N
+2025-06-04 21:05:09,325 [INFO] MongoDB upserted series: INTDSRUSM193N (release ID: 239)
+2025-06-04 21:05:09,327 [INFO] MongoDB upserted series: MYAGM2USM052S (release ID: 239)
+2025-06-04 21:05:09,331 [INFO] MongoDB upserted series: MYAGM2CNM189N (release ID: 239)
+2025-06-04 21:05:09,338 [INFO] MongoDB upserted series: INTDSRJPM193N (release ID: 239)
+2025-06-04 21:05:09,342 [INFO] MongoDB upserted series: INTDSRCNM193N (release ID: 239)
+2025-06-04 21:05:09,343 [INFO] Checking release: World Economic Outlook (ID: 240)
+2025-06-04 21:05:09,349 [INFO] Fetching series from FRED API for release ID: 240
+2025-06-04 21:05:09,570 [INFO] First series ID received: GGGDTACAA188N
+2025-06-04 21:05:09,574 [INFO] MongoDB upserted series: GGGDTACAA188N (release ID: 240)
+2025-06-04 21:05:09,576 [INFO] MongoDB upserted series: GGGDTACNA188N (release ID: 240)
+2025-06-04 21:05:09,578 [INFO] MongoDB upserted series: GGGDTAGRC188N (release ID: 240)
+2025-06-04 21:05:09,581 [INFO] MongoDB upserted series: GGGDTAITA188N (release ID: 240)
+2025-06-04 21:05:09,583 [INFO] MongoDB upserted series: GGGDTADEA188N (release ID: 240)
+2025-06-04 21:05:09,584 [INFO] Checking release: Recession Indicators Series (ID: 242)
+2025-06-04 21:05:09,587 [INFO] Fetching series from FRED API for release ID: 242
+2025-06-04 21:05:10,026 [INFO] First series ID received: USREC
+2025-06-04 21:05:10,037 [INFO] MongoDB upserted series: USREC (release ID: 242)
+2025-06-04 21:05:10,046 [INFO] MongoDB upserted series: USRECD (release ID: 242)
+2025-06-04 21:05:10,051 [INFO] MongoDB upserted series: USRECDM (release ID: 242)
+2025-06-04 21:05:10,058 [INFO] MongoDB upserted series: EUROREC (release ID: 242)
+2025-06-04 21:05:10,062 [INFO] MongoDB upserted series: USRECM (release ID: 242)
+2025-06-04 21:05:10,063 [INFO] Checking release: Summary Measures of the Foreign Exchange Value of the Dollar (ID: 245)
+2025-06-04 21:05:10,069 [INFO] Fetching series from FRED API for release ID: 245
+2025-06-04 21:05:10,296 [INFO] First series ID received: RTWEXBGS
+2025-06-04 21:05:10,301 [INFO] MongoDB upserted series: RTWEXBGS (release ID: 245)
+2025-06-04 21:05:10,304 [INFO] MongoDB upserted series: RTWEXEMEGS (release ID: 245)
+2025-06-04 21:05:10,306 [INFO] MongoDB upserted series: TWEXBPA (release ID: 245)
+2025-06-04 21:05:10,308 [INFO] MongoDB upserted series: RTWEXAFEGS (release ID: 245)
+2025-06-04 21:05:10,311 [INFO] MongoDB upserted series: TWEXMPA (release ID: 245)
+2025-06-04 21:05:10,312 [INFO] Checking release: Income and Poverty in the United States (ID: 249)
+2025-06-04 21:05:10,315 [INFO] Fetching series from FRED API for release ID: 249
+2025-06-04 21:05:10,600 [INFO] First series ID received: MEHOINUSA672N
+2025-06-04 21:05:10,603 [INFO] MongoDB upserted series: MEHOINUSA672N (release ID: 249)
+2025-06-04 21:05:10,609 [INFO] MongoDB upserted series: MEPAINUSA672N (release ID: 249)
+2025-06-04 21:05:10,612 [INFO] MongoDB upserted series: MEHOINUSA646N (release ID: 249)
+2025-06-04 21:05:10,615 [INFO] MongoDB upserted series: MEPAINUSA646N (release ID: 249)
+2025-06-04 21:05:10,618 [INFO] MongoDB upserted series: MEFAINUSA646N (release ID: 249)
+2025-06-04 21:05:10,620 [INFO] Checking release: Harmonized Indices of Consumer Prices (HICP) (ID: 251)
+2025-06-04 21:05:10,623 [INFO] Fetching series from FRED API for release ID: 251
+2025-06-04 21:05:11,199 [INFO] First series ID received: CP0000EZ19M086NEST
+2025-06-04 21:05:11,202 [INFO] MongoDB upserted series: CP0000EZ19M086NEST (release ID: 251)
+2025-06-04 21:05:11,206 [INFO] MongoDB upserted series: CP0000USM086NEST (release ID: 251)
+2025-06-04 21:05:11,208 [INFO] MongoDB upserted series: 00XEFDEZ19M086NEST (release ID: 251)
+2025-06-04 21:05:11,212 [INFO] MongoDB upserted series: 00XTOBEZ19M086NEST (release ID: 251)
+2025-06-04 21:05:11,227 [INFO] MongoDB upserted series: CP0110EZ19M086NEST (release ID: 251)
+2025-06-04 21:05:11,228 [INFO] Checking release: Travel Volume Trends (ID: 254)
+2025-06-04 21:05:11,235 [INFO] Fetching series from FRED API for release ID: 254
+2025-06-04 21:05:11,515 [INFO] First series ID received: M12MTVUSM227NFWA
+2025-06-04 21:05:11,519 [INFO] MongoDB upserted series: M12MTVUSM227NFWA (release ID: 254)
+2025-06-04 21:05:11,521 [INFO] MongoDB upserted series: TRFVOLUSM227NFWA (release ID: 254)
+2025-06-04 21:05:11,524 [INFO] MongoDB upserted series: TRFVOLUSM227SFWA (release ID: 254)
+2025-06-04 21:05:11,526 [INFO] MongoDB upserted series: M12MTVUSM227SFWA (release ID: 254)
+2025-06-04 21:05:11,527 [INFO] Checking release: NBER Macrohistory Database (ID: 257)
+2025-06-04 21:05:11,530 [INFO] Fetching series from FRED API for release ID: 257
+2025-06-04 21:05:12,190 [INFO] First series ID received: M0264AUSM500NNBR
+2025-06-04 21:05:12,194 [INFO] MongoDB upserted series: M0264AUSM500NNBR (release ID: 257)
+2025-06-04 21:05:12,196 [INFO] MongoDB upserted series: A08139USA052NNBR (release ID: 257)
+2025-06-04 21:05:12,200 [INFO] MongoDB upserted series: M0263AUSM500NNBR (release ID: 257)
+2025-06-04 21:05:12,204 [INFO] MongoDB upserted series: A14187USA163NNBR (release ID: 257)
+2025-06-04 21:05:12,207 [INFO] MongoDB upserted series: A01108USA258NNBR (release ID: 257)
+2025-06-04 21:05:12,207 [INFO] Checking release: Penn World Table 7.1 (ID: 258)
+2025-06-04 21:05:12,210 [INFO] Fetching series from FRED API for release ID: 258
+2025-06-04 21:05:12,757 [INFO] First series ID received: FXRATEPKA618NUPN
+2025-06-04 21:05:12,760 [INFO] MongoDB upserted series: FXRATEPKA618NUPN (release ID: 258)
+2025-06-04 21:05:12,763 [INFO] MongoDB upserted series: FXRATEKEA618NUPN (release ID: 258)
+2025-06-04 21:05:12,766 [INFO] MongoDB upserted series: FXRATEGHA618NUPN (release ID: 258)
+2025-06-04 21:05:12,770 [INFO] MongoDB upserted series: GNPGDPUSA156NUPN (release ID: 258)
+2025-06-04 21:05:12,773 [INFO] MongoDB upserted series: FXRATEVEA618NUPN (release ID: 258)
+2025-06-04 21:05:12,773 [INFO] Checking release: CredAbility Consumer Distress Index (ID: 260)
+2025-06-04 21:05:12,775 [INFO] Fetching series from FRED API for release ID: 260
+2025-06-04 21:05:13,266 [INFO] First series ID received: CCDIOAQ156N
+2025-06-04 21:05:13,270 [INFO] MongoDB upserted series: CCDIOAQ156N (release ID: 260)
+2025-06-04 21:05:13,272 [INFO] MongoDB upserted series: CCDIHBQ156N (release ID: 260)
+2025-06-04 21:05:13,276 [INFO] MongoDB upserted series: CCDIOA26900Q156N (release ID: 260)
+2025-06-04 21:05:13,278 [INFO] MongoDB upserted series: CCDIOAAKQ156N (release ID: 260)
+2025-06-04 21:05:13,282 [INFO] MongoDB upserted series: CCDIEMQ156N (release ID: 260)
+2025-06-04 21:05:13,282 [INFO] Checking release: U.S. Recession Probabilities (ID: 261)
+2025-06-04 21:05:13,286 [INFO] Fetching series from FRED API for release ID: 261
+2025-06-04 21:05:13,513 [INFO] First series ID received: RECPROUSM156N
+2025-06-04 21:05:13,517 [INFO] MongoDB upserted series: RECPROUSM156N (release ID: 261)
+2025-06-04 21:05:13,518 [INFO] Checking release: Failures and Assistance Transactions (ID: 262)
+2025-06-04 21:05:13,520 [INFO] Fetching series from FRED API for release ID: 262
+2025-06-04 21:05:13,772 [INFO] First series ID received: BKFTTLA641N
+2025-06-04 21:05:13,776 [INFO] MongoDB upserted series: BKFTTLA641N (release ID: 262)
+2025-06-04 21:05:13,779 [INFO] MongoDB upserted series: BKTTPIA641N (release ID: 262)
+2025-06-04 21:05:13,783 [INFO] MongoDB upserted series: BKCCLNA641N (release ID: 262)
+2025-06-04 21:05:13,789 [INFO] MongoDB upserted series: BKIFDCA641N (release ID: 262)
+2025-06-04 21:05:13,793 [INFO] MongoDB upserted series: BKIFSCA641N (release ID: 262)
+2025-06-04 21:05:13,793 [INFO] Checking release: Debt to Gross Domestic Product Ratios (ID: 263)
+2025-06-04 21:05:13,799 [INFO] Fetching series from FRED API for release ID: 263
+2025-06-04 21:05:14,013 [INFO] First series ID received: GFDEGDQ188S
+2025-06-04 21:05:14,018 [INFO] MongoDB upserted series: GFDEGDQ188S (release ID: 263)
+2025-06-04 21:05:14,020 [INFO] MongoDB upserted series: FYFSGDA188S (release ID: 263)
+2025-06-04 21:05:14,025 [INFO] MongoDB upserted series: GFDGDPA188S (release ID: 263)
+2025-06-04 21:05:14,028 [INFO] MongoDB upserted series: FYONGDA188S (release ID: 263)
+2025-06-04 21:05:14,031 [INFO] MongoDB upserted series: FYOIGDA188S (release ID: 263)
+2025-06-04 21:05:14,033 [INFO] Checking release: Weekly U.S. and State Bond Prices, 1855-1865 (ID: 264)
+2025-06-04 21:05:14,038 [INFO] Fetching series from FRED API for release ID: 264
+2025-06-04 21:05:14,380 [INFO] First series ID received: HSTBNDW052N
+2025-06-04 21:05:14,385 [INFO] MongoDB upserted series: HSTBNDW052N (release ID: 264)
+2025-06-04 21:05:14,388 [INFO] MongoDB upserted series: HSTBNDCAW052N (release ID: 264)
+2025-06-04 21:05:14,390 [INFO] MongoDB upserted series: HSTBNDGAW052N (release ID: 264)
+2025-06-04 21:05:14,394 [INFO] MongoDB upserted series: HSTBNDINW052N (release ID: 264)
+2025-06-04 21:05:14,397 [INFO] MongoDB upserted series: HSTBNDKYW052N (release ID: 264)
+2025-06-04 21:05:14,398 [INFO] Checking release: Bank of Japan Accounts (ID: 266)
+2025-06-04 21:05:14,402 [INFO] Fetching series from FRED API for release ID: 266
+2025-06-04 21:05:14,588 [INFO] First series ID received: JPNASSETS
+2025-06-04 21:05:14,592 [INFO] MongoDB upserted series: JPNASSETS (release ID: 266)
+2025-06-04 21:05:14,592 [INFO] Checking release: National Accounts - GDP (Eurostat) (ID: 267)
+2025-06-04 21:05:14,595 [INFO] Fetching series from FRED API for release ID: 267
+2025-06-04 21:05:14,899 [INFO] First series ID received: CLVMNACSCAB1GQDE
+2025-06-04 21:05:14,902 [INFO] MongoDB upserted series: CLVMNACSCAB1GQDE (release ID: 267)
+2025-06-04 21:05:14,905 [INFO] MongoDB upserted series: CLVMNACSCAB1GQIT (release ID: 267)
+2025-06-04 21:05:14,908 [INFO] MongoDB upserted series: CLVMNACSCAB1GQFR (release ID: 267)
+2025-06-04 21:05:14,911 [INFO] MongoDB upserted series: CLVMEURSCAB1GQEA19 (release ID: 267)
+2025-06-04 21:05:14,914 [INFO] MongoDB upserted series: CLVMNACSCAB1GQUK (release ID: 267)
+2025-06-04 21:05:14,916 [INFO] Checking release: United Kingdom Main Aggregates of National Accounts (ID: 268)
+2025-06-04 21:05:14,920 [INFO] Fetching series from FRED API for release ID: 268
+2025-06-04 21:05:15,143 [INFO] First series ID received: UKNGDP
+2025-06-04 21:05:15,146 [INFO] MongoDB upserted series: UKNGDP (release ID: 268)
+2025-06-04 21:05:15,146 [INFO] Checking release: National Accounts of Japan (ID: 269)
+2025-06-04 21:05:15,149 [INFO] Fetching series from FRED API for release ID: 269
+2025-06-04 21:05:15,332 [INFO] First series ID received: JPNRGDPEXP
+2025-06-04 21:05:15,335 [INFO] MongoDB upserted series: JPNRGDPEXP (release ID: 269)
+2025-06-04 21:05:15,338 [INFO] MongoDB upserted series: JPNNGDP (release ID: 269)
+2025-06-04 21:05:15,341 [INFO] MongoDB upserted series: JPNRGDPNGS (release ID: 269)
+2025-06-04 21:05:15,344 [INFO] MongoDB upserted series: JPNRGDPPRI (release ID: 269)
+2025-06-04 21:05:15,347 [INFO] MongoDB upserted series: JPNRGDPCH (release ID: 269)
+2025-06-04 21:05:15,348 [INFO] Checking release: Bankstats (Monetary & Financial Statistics) (ID: 270)
+2025-06-04 21:05:15,351 [INFO] Fetching series from FRED API for release ID: 270
+2025-06-04 21:05:15,609 [INFO] First series ID received: UKASSETS
+2025-06-04 21:05:15,613 [INFO] MongoDB upserted series: UKASSETS (release ID: 270)
+2025-06-04 21:05:15,614 [INFO] Checking release: Weekly Financial Statements of the Eurosystem (ID: 271)
+2025-06-04 21:05:15,618 [INFO] Fetching series from FRED API for release ID: 271
+2025-06-04 21:05:15,817 [INFO] First series ID received: ECBASSETSW
+2025-06-04 21:05:15,821 [INFO] MongoDB upserted series: ECBASSETSW (release ID: 271)
+2025-06-04 21:05:15,834 [INFO] MongoDB upserted series: ECBASSETS (release ID: 271)
+2025-06-04 21:05:15,847 [INFO] Checking release: University of Louisville and Oklahoma State University: LoDI National Index (ID: 274)
+2025-06-04 21:05:15,851 [INFO] Fetching series from FRED API for release ID: 274
+2025-06-04 21:05:16,041 [INFO] First series ID received: LODINIM066N
+2025-06-04 21:05:16,045 [INFO] MongoDB upserted series: LODINIM066N (release ID: 274)
+2025-06-04 21:05:16,046 [INFO] Checking release: Global Financial Development (ID: 275)
+2025-06-04 21:05:16,049 [INFO] Fetching series from FRED API for release ID: 275
+2025-06-04 21:05:16,451 [INFO] First series ID received: DDAI02USA643NWDB
+2025-06-04 21:05:16,456 [INFO] MongoDB upserted series: DDAI02USA643NWDB (release ID: 275)
+2025-06-04 21:05:16,460 [INFO] MongoDB upserted series: DDAI01QAA642NWDB (release ID: 275)
+2025-06-04 21:05:16,463 [INFO] MongoDB upserted series: DDAI01ETA642NWDB (release ID: 275)
+2025-06-04 21:05:16,469 [INFO] MongoDB upserted series: DDAI01PKA642NWDB (release ID: 275)
+2025-06-04 21:05:16,472 [INFO] MongoDB upserted series: DDAI02NGA643NWDB (release ID: 275)
+2025-06-04 21:05:16,473 [INFO] Checking release: Economic Policy Uncertainty (ID: 279)
+2025-06-04 21:05:16,477 [INFO] Fetching series from FRED API for release ID: 279
+2025-06-04 21:05:16,699 [INFO] First series ID received: USEPUINDXD
+2025-06-04 21:05:16,704 [INFO] MongoDB upserted series: USEPUINDXD (release ID: 279)
+2025-06-04 21:05:16,707 [INFO] MongoDB upserted series: GEPUCURRENT (release ID: 279)
+2025-06-04 21:05:16,710 [INFO] MongoDB upserted series: EMVOVERALLEMV (release ID: 279)
+2025-06-04 21:05:16,713 [INFO] MongoDB upserted series: CHNMAINLANDEPU (release ID: 279)
+2025-06-04 21:05:16,716 [INFO] MongoDB upserted series: WLEMUINDXD (release ID: 279)
+2025-06-04 21:05:16,717 [INFO] Checking release: Cass Freight Index Report (ID: 280)
+2025-06-04 21:05:16,720 [INFO] Fetching series from FRED API for release ID: 280
+2025-06-04 21:05:16,915 [INFO] First series ID received: FRGSHPUSM649NCIS
+2025-06-04 21:05:16,919 [INFO] MongoDB upserted series: FRGSHPUSM649NCIS (release ID: 280)
+2025-06-04 21:05:16,922 [INFO] MongoDB upserted series: FRGEXPUSM649NCIS (release ID: 280)
+2025-06-04 21:05:16,922 [INFO] Checking release: Supplemental Estimates, Underlying Detail Tables (ID: 281)
+2025-06-04 21:05:16,925 [INFO] Fetching series from FRED API for release ID: 281
+2025-06-04 21:05:17,126 [INFO] First series ID received: DHSGRC0
+2025-06-04 21:05:17,129 [INFO] MongoDB upserted series: DHSGRC0 (release ID: 281)
+2025-06-04 21:05:17,133 [INFO] MongoDB upserted series: INVCMRMT (release ID: 281)
+2025-06-04 21:05:17,136 [INFO] MongoDB upserted series: CMRMT (release ID: 281)
+2025-06-04 21:05:17,139 [INFO] MongoDB upserted series: S210400 (release ID: 281)
+2025-06-04 21:05:17,142 [INFO] MongoDB upserted series: HMRMT (release ID: 281)
+2025-06-04 21:05:17,142 [INFO] Checking release: Supplemental Estimates, Underlying Detail Tables, Spliced Series (ID: 282)
+2025-06-04 21:05:17,145 [INFO] Fetching series from FRED API for release ID: 282
+2025-06-04 21:05:17,349 [INFO] First series ID received: CMRMTSPL
+2025-06-04 21:05:17,354 [INFO] MongoDB upserted series: CMRMTSPL (release ID: 282)
+2025-06-04 21:05:17,357 [INFO] MongoDB upserted series: INVCMRMTSPL (release ID: 282)
+2025-06-04 21:05:17,360 [INFO] MongoDB upserted series: CQRMTSPL (release ID: 282)
+2025-06-04 21:05:17,363 [INFO] MongoDB upserted series: INVCQRMTSPL (release ID: 282)
+2025-06-04 21:05:17,363 [INFO] Checking release: H.3 Aggregate Reserves of Depository Institutions and the Monetary Base  (data not included in press release) (ID: 283)
+2025-06-04 21:05:17,367 [INFO] Fetching series from FRED API for release ID: 283
+2025-06-04 21:05:17,557 [INFO] First series ID received: EXCSRESNS
+2025-06-04 21:05:17,560 [INFO] MongoDB upserted series: EXCSRESNS (release ID: 283)
+2025-06-04 21:05:17,563 [INFO] MongoDB upserted series: EXCSRESNW (release ID: 283)
+2025-06-04 21:05:17,564 [INFO] Checking release: Penn World Table 10.01 (ID: 285)
+2025-06-04 21:05:17,567 [INFO] Fetching series from FRED API for release ID: 285
+2025-06-04 21:05:17,893 [INFO] First series ID received: AVHWPEUSA065NRUG
+2025-06-04 21:05:17,897 [INFO] MongoDB upserted series: AVHWPEUSA065NRUG (release ID: 285)
+2025-06-04 21:05:17,900 [INFO] MongoDB upserted series: CKSPPPUSA666NRUG (release ID: 285)
+2025-06-04 21:05:17,903 [INFO] MongoDB upserted series: AVHWPEINA065NRUG (release ID: 285)
+2025-06-04 21:05:17,906 [INFO] MongoDB upserted series: AVHWPEJPA065NRUG (release ID: 285)
+2025-06-04 21:05:17,910 [INFO] MongoDB upserted series: AVHWPECAA065NRUG (release ID: 285)
+2025-06-04 21:05:17,910 [INFO] Checking release: Federal Recovery Programs and BEA Statistics (ID: 286)
+2025-06-04 21:05:17,913 [INFO] Fetching series from FRED API for release ID: 286
+2025-06-04 21:05:18,180 [INFO] First series ID received: GROINVQ027SBEA
+2025-06-04 21:05:18,184 [INFO] MongoDB upserted series: GROINVQ027SBEA (release ID: 286)
+2025-06-04 21:05:18,188 [INFO] MongoDB upserted series: CONEXPQ027SBEA (release ID: 286)
+2025-06-04 21:05:18,190 [INFO] MongoDB upserted series: MWTPTCQ027SBEA (release ID: 286)
+2025-06-04 21:05:18,193 [INFO] MongoDB upserted series: NLEBORQ027SBEA (release ID: 286)
+2025-06-04 21:05:18,195 [INFO] MongoDB upserted series: PCTOTHQ027SBEA (release ID: 286)
+2025-06-04 21:05:18,195 [INFO] Checking release: Nikkei Indexes (ID: 287)
+2025-06-04 21:05:18,201 [INFO] Fetching series from FRED API for release ID: 287
+2025-06-04 21:05:18,384 [INFO] First series ID received: NIKKEI225
+2025-06-04 21:05:18,388 [INFO] MongoDB upserted series: NIKKEI225 (release ID: 287)
+2025-06-04 21:05:18,388 [INFO] Checking release: Quarterly Services Survey (ID: 288)
+2025-06-04 21:05:18,391 [INFO] Fetching series from FRED API for release ID: 288
+2025-06-04 21:05:18,703 [INFO] First series ID received: REV622ALLEST144QSA
+2025-06-04 21:05:18,706 [INFO] MongoDB upserted series: REV622ALLEST144QSA (release ID: 288)
+2025-06-04 21:05:18,708 [INFO] MongoDB upserted series: REV6221AMSA (release ID: 288)
+2025-06-04 21:05:18,711 [INFO] MongoDB upserted series: REV53TAXABL144QNSA (release ID: 288)
+2025-06-04 21:05:18,713 [INFO] MongoDB upserted series: INPAT622ALLEST176QNSA (release ID: 288)
+2025-06-04 21:05:18,716 [INFO] MongoDB upserted series: REV622ALLEST144QNSA (release ID: 288)
+2025-06-04 21:05:18,719 [INFO] Checking release: Service Annual Survey (ID: 289)
+2025-06-04 21:05:18,725 [INFO] Fetching series from FRED API for release ID: 289
+2025-06-04 21:05:19,131 [ERROR] Request error for release ID 289: 200
+2025-06-04 21:05:19,135 [INFO] Checking release: Monthly Wholesale Trade: Sales and Inventories (ID: 290)
+2025-06-04 21:05:19,139 [INFO] Fetching series from FRED API for release ID: 290
+2025-06-04 21:05:19,424 [ERROR] Request error for release ID 290: None
+2025-06-04 21:05:19,426 [INFO] Checking release: Chicago Fed Midwest Manufacturing Index (ID: 292)
+2025-06-04 21:05:19,429 [INFO] Fetching series from FRED API for release ID: 292
+2025-06-04 21:05:19,616 [ERROR] Request error for release ID 292: None
+2025-06-04 21:05:19,618 [INFO] Checking release: Sticky Wages and Sectoral Labor Comovement (ID: 295)
+2025-06-04 21:05:19,621 [INFO] Fetching series from FRED API for release ID: 295
+2025-06-04 21:05:19,910 [INFO] First series ID received: PIRIC
+2025-06-04 21:05:19,914 [INFO] MongoDB upserted series: PIRIC (release ID: 295)
+2025-06-04 21:05:19,918 [INFO] MongoDB upserted series: INVDEF (release ID: 295)
+2025-06-04 21:05:19,921 [INFO] MongoDB upserted series: CONSDEF (release ID: 295)
+2025-06-04 21:05:19,926 [INFO] MongoDB upserted series: NINV (release ID: 295)
+2025-06-04 21:05:19,930 [INFO] MongoDB upserted series: PERIC (release ID: 295)
+2025-06-04 21:05:19,931 [INFO] Checking release: Housing Vacancies and Homeownership (ID: 296)
+2025-06-04 21:05:19,936 [INFO] Fetching series from FRED API for release ID: 296
+2025-06-04 21:05:20,224 [INFO] First series ID received: RHORUSQ156N
+2025-06-04 21:05:20,227 [INFO] MongoDB upserted series: RHORUSQ156N (release ID: 296)
+2025-06-04 21:05:20,229 [INFO] MongoDB upserted series: RRVRUSQ156N (release ID: 296)
+2025-06-04 21:05:20,233 [INFO] MongoDB upserted series: ETOTALUSQ176N (release ID: 296)
+2025-06-04 21:05:20,237 [INFO] MongoDB upserted series: TTLHHM156N (release ID: 296)
+2025-06-04 21:05:20,241 [INFO] MongoDB upserted series: RSAHORUSQ156S (release ID: 296)
+2025-06-04 21:05:20,243 [INFO] Checking release: Texas Employment Data (ID: 298)
+2025-06-04 21:05:20,248 [INFO] Fetching series from FRED API for release ID: 298
+2025-06-04 21:05:20,653 [INFO] First series ID received: TX0000000MC175FRBDAL
+2025-06-04 21:05:20,657 [INFO] MongoDB upserted series: TX0000000MC175FRBDAL (release ID: 298)
+2025-06-04 21:05:20,659 [INFO] MongoDB upserted series: TX10211000M175FRBDAL (release ID: 298)
+2025-06-04 21:05:20,662 [INFO] MongoDB upserted series: ELPSA175MFRBDAL (release ID: 298)
+2025-06-04 21:05:20,665 [INFO] MongoDB upserted series: FWANRMCA158MFRBDAL (release ID: 298)
+2025-06-04 21:05:20,672 [INFO] MongoDB upserted series: FWANRMCA175MFRBDAL (release ID: 298)
+2025-06-04 21:05:20,675 [INFO] Checking release: Real Money Stock Measures (ID: 301)
+2025-06-04 21:05:20,678 [INFO] Fetching series from FRED API for release ID: 301
+2025-06-04 21:05:20,934 [INFO] First series ID received: M2REAL
+2025-06-04 21:05:20,937 [INFO] MongoDB upserted series: M2REAL (release ID: 301)
+2025-06-04 21:05:20,940 [INFO] MongoDB upserted series: M1REAL (release ID: 301)
+2025-06-04 21:05:20,943 [INFO] MongoDB upserted series: AMBSLREAL (release ID: 301)
+2025-06-04 21:05:20,946 [INFO] MongoDB upserted series: MZMREAL (release ID: 301)
+2025-06-04 21:05:20,947 [INFO] Checking release: Cleveland Financial Stress Index (ID: 302)
+2025-06-04 21:05:20,952 [INFO] Fetching series from FRED API for release ID: 302
+2025-06-04 21:05:21,242 [INFO] First series ID received: CFSI
+2025-06-04 21:05:21,246 [INFO] MongoDB upserted series: CFSI (release ID: 302)
+2025-06-04 21:05:21,248 [INFO] MongoDB upserted series: SMCD678FRBCLE (release ID: 302)
+2025-06-04 21:05:21,253 [INFO] MongoDB upserted series: CMBSSD678FRBCLE (release ID: 302)
+2025-06-04 21:05:21,261 [INFO] MongoDB upserted series: FINBETAD678FRBCLE (release ID: 302)
+2025-06-04 21:05:21,263 [INFO] MongoDB upserted series: RMBSSD678FRBCLE (release ID: 302)
+2025-06-04 21:05:21,264 [INFO] Checking release: Interest Rate Spreads (ID: 304)
+2025-06-04 21:05:21,275 [INFO] Fetching series from FRED API for release ID: 304
+2025-06-04 21:05:21,478 [INFO] First series ID received: T10Y2Y
+2025-06-04 21:05:21,480 [INFO] MongoDB upserted series: T10Y2Y (release ID: 304)
+2025-06-04 21:05:21,485 [INFO] MongoDB upserted series: T10Y3M (release ID: 304)
+2025-06-04 21:05:21,488 [INFO] MongoDB upserted series: T10YIE (release ID: 304)
+2025-06-04 21:05:21,491 [INFO] MongoDB upserted series: T5YIE (release ID: 304)
+2025-06-04 21:05:21,494 [INFO] MongoDB upserted series: T5YIFR (release ID: 304)
+2025-06-04 21:05:21,494 [INFO] Checking release: Swiss National Bank Monthly Statistical Bulletin (ID: 305)
+2025-06-04 21:05:21,497 [INFO] Fetching series from FRED API for release ID: 305
+2025-06-04 21:05:21,753 [INFO] First series ID received: SNBMONTBASE
+2025-06-04 21:05:21,757 [INFO] MongoDB upserted series: SNBMONTBASE (release ID: 305)
+2025-06-04 21:05:21,759 [INFO] MongoDB upserted series: SNBREMBALPOS (release ID: 305)
+2025-06-04 21:05:21,762 [INFO] MongoDB upserted series: SNBFORCURPOS (release ID: 305)
+2025-06-04 21:05:21,764 [INFO] MongoDB upserted series: SNBSECRPORT (release ID: 305)
+2025-06-04 21:05:21,770 [INFO] MongoDB upserted series: SNBMMT (release ID: 305)
+2025-06-04 21:05:21,776 [INFO] Checking release: Swiss National Bank Historical Time Series (ID: 306)
+2025-06-04 21:05:21,779 [INFO] Fetching series from FRED API for release ID: 306
+2025-06-04 21:05:22,008 [INFO] First series ID received: CHTOTBALSHRGNBNKS
+2025-06-04 21:05:22,012 [INFO] MongoDB upserted series: CHTOTBALSHRGNBNKS (release ID: 306)
+2025-06-04 21:05:22,015 [INFO] MongoDB upserted series: CHTOTBALSHSWISSBNKS (release ID: 306)
+2025-06-04 21:05:22,019 [INFO] MongoDB upserted series: CHTOTBALRAIFFEISEN (release ID: 306)
+2025-06-04 21:05:22,022 [INFO] MongoDB upserted series: CHTOTBALSHALLBNKS (release ID: 306)
+2025-06-04 21:05:22,029 [INFO] MongoDB upserted series: CHTOTBALSHBIGBNKS (release ID: 306)
+2025-06-04 21:05:22,030 [INFO] Checking release: State and Metro Area Employment, Hours, and Earnings (ID: 308)
+2025-06-04 21:05:22,033 [INFO] Fetching series from FRED API for release ID: 308
+2025-06-04 21:05:24,233 [ERROR] Request error for release ID 308: 200
+2025-06-04 21:05:24,237 [INFO] Checking release: Currency and Coin Services (ID: 311)
+2025-06-04 21:05:24,241 [INFO] Fetching series from FRED API for release ID: 311
+2025-06-04 21:05:24,474 [ERROR] Request error for release ID 311: None
+2025-06-04 21:05:24,476 [INFO] Checking release: Sticky Price CPI (ID: 313)
+2025-06-04 21:05:24,479 [INFO] Fetching series from FRED API for release ID: 313
+2025-06-04 21:05:24,678 [INFO] First series ID received: CORESTICKM159SFRBATL
+2025-06-04 21:05:24,682 [INFO] MongoDB upserted series: CORESTICKM159SFRBATL (release ID: 313)
+2025-06-04 21:05:24,685 [INFO] MongoDB upserted series: STICKCPIM157SFRBATL (release ID: 313)
+2025-06-04 21:05:24,690 [INFO] MongoDB upserted series: CRESTKCPIXSLTRM159SFRBATL (release ID: 313)
+2025-06-04 21:05:24,693 [INFO] MongoDB upserted series: CORESTICKM158SFRBATL (release ID: 313)
+2025-06-04 21:05:24,698 [INFO] MongoDB upserted series: STICKCPIXSHLTRM159SFRBATL (release ID: 313)
+2025-06-04 21:05:24,699 [INFO] Checking release: Current Median CPI (ID: 315)
+2025-06-04 21:05:24,704 [INFO] Fetching series from FRED API for release ID: 315
+2025-06-04 21:05:24,938 [INFO] First series ID received: MEDCPIM158SFRBCLE
+2025-06-04 21:05:24,942 [INFO] MongoDB upserted series: MEDCPIM158SFRBCLE (release ID: 315)
+2025-06-04 21:05:24,945 [INFO] MongoDB upserted series: TRMMEANCPIM158SFRBCLE (release ID: 315)
+2025-06-04 21:05:24,948 [INFO] MongoDB upserted series: MEDCPIM159SFRBCLE (release ID: 315)
+2025-06-04 21:05:24,951 [INFO] MongoDB upserted series: MEDCPIM094SFRBCLE (release ID: 315)
+2025-06-04 21:05:24,956 [INFO] MongoDB upserted series: MEDCPIM157SFRBCLE (release ID: 315)
+2025-06-04 21:05:24,959 [INFO] Checking release: G.20 Finance Companies (ID: 316)
+2025-06-04 21:05:24,978 [INFO] Fetching series from FRED API for release ID: 316
+2025-06-04 21:05:25,344 [INFO] First series ID received: RIELPCFAUNQ
+2025-06-04 21:05:25,346 [INFO] MongoDB upserted series: RIELPCFAUNQ (release ID: 316)
+2025-06-04 21:05:25,349 [INFO] MongoDB upserted series: DTCTLVEUANQ (release ID: 316)
+2025-06-04 21:05:25,353 [INFO] MongoDB upserted series: DTCOLNVHFNM (release ID: 316)
+2025-06-04 21:05:25,356 [INFO] MongoDB upserted series: DTCTLVEUMNQ (release ID: 316)
+2025-06-04 21:05:25,359 [INFO] MongoDB upserted series: DTCTLVULNM (release ID: 316)
+2025-06-04 21:05:25,360 [INFO] Checking release: National Rates and Rate Caps - Monthly Update (ID: 317)
+2025-06-04 21:05:25,363 [INFO] Fetching series from FRED API for release ID: 317
+2025-06-04 21:05:25,571 [INFO] First series ID received: SNDR
+2025-06-04 21:05:25,596 [INFO] MongoDB upserted series: SNDR (release ID: 317)
+2025-06-04 21:05:25,606 [INFO] MongoDB upserted series: MMTY (release ID: 317)
+2025-06-04 21:05:25,617 [INFO] MongoDB upserted series: NDR12MCD (release ID: 317)
+2025-06-04 21:05:25,630 [INFO] MongoDB upserted series: TY12MCD (release ID: 317)
+2025-06-04 21:05:25,636 [INFO] MongoDB upserted series: MMNDR (release ID: 317)
+2025-06-04 21:05:25,652 [INFO] Checking release: BIS Effective Exchange Rate Indices (ID: 319)
+2025-06-04 21:05:25,658 [INFO] Fetching series from FRED API for release ID: 319
+2025-06-04 21:05:25,954 [INFO] First series ID received: RBUSBIS
+2025-06-04 21:05:25,958 [INFO] MongoDB upserted series: RBUSBIS (release ID: 319)
+2025-06-04 21:05:25,961 [INFO] MongoDB upserted series: RBJPBIS (release ID: 319)
+2025-06-04 21:05:25,963 [INFO] MongoDB upserted series: RBCNBIS (release ID: 319)
+2025-06-04 21:05:25,965 [INFO] MongoDB upserted series: RBINBIS (release ID: 319)
+2025-06-04 21:05:25,968 [INFO] MongoDB upserted series: RBTRBIS (release ID: 319)
+2025-06-04 21:05:25,970 [INFO] Checking release: Tech Pulse (ID: 320)
+2025-06-04 21:05:25,975 [INFO] Fetching series from FRED API for release ID: 320
+2025-06-04 21:05:26,207 [INFO] First series ID received: SFTPINDM114SFRBSF
+2025-06-04 21:05:26,210 [INFO] MongoDB upserted series: SFTPINDM114SFRBSF (release ID: 320)
+2025-06-04 21:05:26,213 [INFO] MongoDB upserted series: SFTPAGRM158SFRBSF (release ID: 320)
+2025-06-04 21:05:26,216 [INFO] MongoDB upserted series: SFTPGR12M159SFRBSF (release ID: 320)
+2025-06-04 21:05:26,219 [INFO] MongoDB upserted series: SFTPGRM157SFRBSF (release ID: 320)
+2025-06-04 21:05:26,220 [INFO] Checking release: Empire State Manufacturing Survey (ID: 321)
+2025-06-04 21:05:26,224 [INFO] Fetching series from FRED API for release ID: 321
+2025-06-04 21:05:26,465 [INFO] First series ID received: GACDISA066MSFRBNY
+2025-06-04 21:05:26,469 [INFO] MongoDB upserted series: GACDISA066MSFRBNY (release ID: 321)
+2025-06-04 21:05:26,475 [INFO] MongoDB upserted series: CEFDISA066MSFRBNY (release ID: 321)
+2025-06-04 21:05:26,478 [INFO] MongoDB upserted series: NOCDISA066MSFRBNY (release ID: 321)
+2025-06-04 21:05:26,480 [INFO] MongoDB upserted series: TSFDISA066MSFRBNY (release ID: 321)
+2025-06-04 21:05:26,484 [INFO] MongoDB upserted series: PPCDISA066MSFRBNY (release ID: 321)
+2025-06-04 21:05:26,484 [INFO] Checking release: Business Leaders Survey (ID: 322)
+2025-06-04 21:05:26,491 [INFO] Fetching series from FRED API for release ID: 322
+2025-06-04 21:05:26,772 [INFO] First series ID received: BACDINA066MNFRBNY
+2025-06-04 21:05:26,776 [INFO] MongoDB upserted series: BACDINA066MNFRBNY (release ID: 322)
+2025-06-04 21:05:26,778 [INFO] MongoDB upserted series: WPFINA156MNFRBNY (release ID: 322)
+2025-06-04 21:05:26,781 [INFO] MongoDB upserted series: BCFNNA156MNFRBNY (release ID: 322)
+2025-06-04 21:05:26,785 [INFO] MongoDB upserted series: EMFDINA066MNFRBNY (release ID: 322)
+2025-06-04 21:05:26,790 [INFO] MongoDB upserted series: BCCDINA066MNFRBNY (release ID: 322)
+2025-06-04 21:05:26,792 [INFO] Checking release: Trimmed Mean PCE Inflation Rate (ID: 323)
+2025-06-04 21:05:26,796 [INFO] Fetching series from FRED API for release ID: 323
+2025-06-04 21:05:27,017 [INFO] First series ID received: PCETRIM12M159SFRBDAL
+2025-06-04 21:05:27,022 [INFO] MongoDB upserted series: PCETRIM12M159SFRBDAL (release ID: 323)
+2025-06-04 21:05:27,025 [INFO] MongoDB upserted series: PCETRIM1M158SFRBDAL (release ID: 323)
+2025-06-04 21:05:27,029 [INFO] MongoDB upserted series: PCETRIM6M680SFRBDAL (release ID: 323)
+2025-06-04 21:05:27,029 [INFO] Checking release: Credit to Non-Financial Sector (ID: 325)
+2025-06-04 21:05:27,033 [INFO] Fetching series from FRED API for release ID: 325
+2025-06-04 21:05:27,422 [INFO] First series ID received: CRDQUSAPABIS
+2025-06-04 21:05:27,425 [INFO] MongoDB upserted series: CRDQUSAPABIS (release ID: 325)
+2025-06-04 21:05:27,427 [INFO] MongoDB upserted series: QCNPAM770A (release ID: 325)
+2025-06-04 21:05:27,430 [INFO] MongoDB upserted series: QGBPAM770A (release ID: 325)
+2025-06-04 21:05:27,432 [INFO] MongoDB upserted series: CRDQCNAPABIS (release ID: 325)
+2025-06-04 21:05:27,435 [INFO] MongoDB upserted series: CRDQUSANABIS (release ID: 325)
+2025-06-04 21:05:27,436 [INFO] Checking release: Summary of Economic Projections (ID: 326)
+2025-06-04 21:05:27,441 [INFO] Fetching series from FRED API for release ID: 326
+2025-06-04 21:05:27,720 [INFO] First series ID received: FEDTARMD
+2025-06-04 21:05:27,723 [INFO] MongoDB upserted series: FEDTARMD (release ID: 326)
+2025-06-04 21:05:27,725 [INFO] MongoDB upserted series: GDPC1CTM (release ID: 326)
+2025-06-04 21:05:27,728 [INFO] MongoDB upserted series: FEDTARMDLR (release ID: 326)
+2025-06-04 21:05:27,730 [INFO] MongoDB upserted series: GDPC1MD (release ID: 326)
+2025-06-04 21:05:27,733 [INFO] MongoDB upserted series: PCECTPICTM (release ID: 326)
+2025-06-04 21:05:27,734 [INFO] Checking release: International Debt Securities (ID: 327)
+2025-06-04 21:05:27,739 [INFO] Fetching series from FRED API for release ID: 327
+2025-06-04 21:05:28,161 [INFO] First series ID received: DMMISTRIAOFCCA
+2025-06-04 21:05:28,164 [INFO] MongoDB upserted series: DMMISTRIAOFCCA (release ID: 327)
+2025-06-04 21:05:28,166 [INFO] MongoDB upserted series: DBNLTRIAOGGPH (release ID: 327)
+2025-06-04 21:05:28,168 [INFO] MongoDB upserted series: DBNLTRIAONCTW (release ID: 327)
+2025-06-04 21:05:28,173 [INFO] MongoDB upserted series: DSAMRIAOAERAR (release ID: 327)
+2025-06-04 21:05:28,175 [INFO] MongoDB upserted series: DSAMRIAOAIKR (release ID: 327)
+2025-06-04 21:05:28,176 [INFO] Checking release: NASDAQ (ID: 328)
+2025-06-04 21:05:28,179 [INFO] Fetching series from FRED API for release ID: 328
+2025-06-04 21:05:28,394 [INFO] First series ID received: NASDAQCOM
+2025-06-04 21:05:28,398 [INFO] MongoDB upserted series: NASDAQCOM (release ID: 328)
+2025-06-04 21:05:28,401 [INFO] MongoDB upserted series: NASDAQ100 (release ID: 328)
+2025-06-04 21:05:28,402 [INFO] Checking release: Education Statistics (ID: 329)
+2025-06-04 21:05:28,408 [INFO] Fetching series from FRED API for release ID: 329
+2025-06-04 21:05:28,617 [INFO] First series ID received: BARTERICMP25UPZSUSA
+2025-06-04 21:05:28,621 [INFO] MongoDB upserted series: BARTERICMP25UPZSUSA (release ID: 329)
+2025-06-04 21:05:28,625 [INFO] MongoDB upserted series: BARTERICMP25UPZSDEU (release ID: 329)
+2025-06-04 21:05:28,629 [INFO] MongoDB upserted series: BARTERICMP25UPZSCRI (release ID: 329)
+2025-06-04 21:05:28,632 [INFO] MongoDB upserted series: BARTERICMP25UPZSNLD (release ID: 329)
+2025-06-04 21:05:28,636 [INFO] MongoDB upserted series: BARTERICMP25UPZSSGP (release ID: 329)
+2025-06-04 21:05:28,638 [INFO] Checking release: Educational Attainment (ID: 330)
+2025-06-04 21:05:28,643 [INFO] Fetching series from FRED API for release ID: 330
+2025-06-04 21:05:29,186 [ERROR] Request error for release ID 330: 200
+2025-06-04 21:05:29,190 [INFO] Checking release: Gross Domestic Product by Industry (ID: 331)
+2025-06-04 21:05:29,195 [INFO] Fetching series from FRED API for release ID: 331
+2025-06-04 21:05:29,500 [INFO] First series ID received: VAPGDPMA
+2025-06-04 21:05:29,504 [INFO] MongoDB upserted series: VAPGDPMA (release ID: 331)
+2025-06-04 21:05:29,509 [INFO] MongoDB upserted series: CPGDPAI (release ID: 331)
+2025-06-04 21:05:29,512 [INFO] MongoDB upserted series: GOAI (release ID: 331)
+2025-06-04 21:05:29,515 [INFO] MongoDB upserted series: VAPGDPFI (release ID: 331)
+2025-06-04 21:05:29,519 [INFO] MongoDB upserted series: VAPGDPC (release ID: 331)
+2025-06-04 21:05:29,520 [INFO] Checking release: Weekly and Hourly Earnings from the Current Population Survey (ID: 332)
+2025-06-04 21:05:29,525 [INFO] Fetching series from FRED API for release ID: 332
+2025-06-04 21:05:29,991 [INFO] First series ID received: LES1252881600Q
+2025-06-04 21:05:29,994 [INFO] MongoDB upserted series: LES1252881600Q (release ID: 332)
+2025-06-04 21:05:29,997 [INFO] MongoDB upserted series: LES1252881500Q (release ID: 332)
+2025-06-04 21:05:30,000 [INFO] MongoDB upserted series: LES1252881900Q (release ID: 332)
+2025-06-04 21:05:30,004 [INFO] MongoDB upserted series: LEU0252918500Q (release ID: 332)
+2025-06-04 21:05:30,008 [INFO] MongoDB upserted series: LEU0252881600A (release ID: 332)
+2025-06-04 21:05:30,008 [INFO] Checking release: Chicago Fed Midwest Economy Index (ID: 333)
+2025-06-04 21:05:30,012 [INFO] Fetching series from FRED API for release ID: 333
+2025-06-04 21:05:30,254 [INFO] First series ID received: CONSUILM683SFRBCHI
+2025-06-04 21:05:30,258 [INFO] MongoDB upserted series: CONSUILM683SFRBCHI (release ID: 333)
+2025-06-04 21:05:30,261 [INFO] MongoDB upserted series: CONSUWIM683SFRBCHI (release ID: 333)
+2025-06-04 21:05:30,264 [INFO] MongoDB upserted series: MANUFACTURINGM683SFRBCHI (release ID: 333)
+2025-06-04 21:05:30,270 [INFO] MongoDB upserted series: MEIM683SFRBCHI (release ID: 333)
+2025-06-04 21:05:30,274 [INFO] MongoDB upserted series: RSERVIAM683SFRBCHI (release ID: 333)
+2025-06-04 21:05:30,276 [INFO] Checking release: Labor Force Status Flows from the Current Population Survey (ID: 334)
+2025-06-04 21:05:30,280 [INFO] Fetching series from FRED API for release ID: 334
+2025-06-04 21:05:30,481 [INFO] First series ID received: LNS17400000
+2025-06-04 21:05:30,485 [INFO] MongoDB upserted series: LNS17400000 (release ID: 334)
+2025-06-04 21:05:30,488 [INFO] MongoDB upserted series: LNS17100000 (release ID: 334)
+2025-06-04 21:05:30,498 [INFO] MongoDB upserted series: LNS17200000 (release ID: 334)
+2025-06-04 21:05:30,502 [INFO] MongoDB upserted series: LNS17600000 (release ID: 334)
+2025-06-04 21:05:30,512 [INFO] MongoDB upserted series: LNS17500000 (release ID: 334)
+2025-06-04 21:05:30,515 [INFO] Checking release: Selected Property Price Series (ID: 336)
+2025-06-04 21:05:30,519 [INFO] Fetching series from FRED API for release ID: 336
+2025-06-04 21:05:30,871 [INFO] First series ID received: QCAR628BIS
+2025-06-04 21:05:30,877 [INFO] MongoDB upserted series: QCAR628BIS (release ID: 336)
+2025-06-04 21:05:30,880 [INFO] MongoDB upserted series: QJPN628BIS (release ID: 336)
+2025-06-04 21:05:30,884 [INFO] MongoDB upserted series: QCNR628BIS (release ID: 336)
+2025-06-04 21:05:30,890 [INFO] MongoDB upserted series: QUSR628BIS (release ID: 336)
+2025-06-04 21:05:30,900 [INFO] MongoDB upserted series: QAUR628BIS (release ID: 336)
+2025-06-04 21:05:30,900 [INFO] Checking release: Federal Reserve Board of Governors Labor Market Conditions Index (ID: 337)
+2025-06-04 21:05:30,909 [INFO] Fetching series from FRED API for release ID: 337
+2025-06-04 21:05:31,164 [INFO] First series ID received: FRBLMCI
+2025-06-04 21:05:31,168 [INFO] MongoDB upserted series: FRBLMCI (release ID: 337)
+2025-06-04 21:05:31,169 [INFO] Checking release: Kansas City Fed Labor Market Conditions Indicators (ID: 341)
+2025-06-04 21:05:31,173 [INFO] Fetching series from FRED API for release ID: 341
+2025-06-04 21:05:31,383 [INFO] First series ID received: FRBKCLMCILA
+2025-06-04 21:05:31,387 [INFO] MongoDB upserted series: FRBKCLMCILA (release ID: 341)
+2025-06-04 21:05:31,391 [INFO] MongoDB upserted series: FRBKCLMCIM (release ID: 341)
+2025-06-04 21:05:31,392 [INFO] Checking release: Natural Gas Spot and Futures Prices (NYMEX) (ID: 342)
+2025-06-04 21:05:31,396 [INFO] Fetching series from FRED API for release ID: 342
+2025-06-04 21:05:31,587 [INFO] First series ID received: DHHNGSP
+2025-06-04 21:05:31,591 [INFO] MongoDB upserted series: DHHNGSP (release ID: 342)
+2025-06-04 21:05:31,595 [INFO] MongoDB upserted series: MHHNGSP (release ID: 342)
+2025-06-04 21:05:31,598 [INFO] MongoDB upserted series: WHHNGSP (release ID: 342)
+2025-06-04 21:05:31,605 [INFO] MongoDB upserted series: MNGLCP (release ID: 342)
+2025-06-04 21:05:31,612 [INFO] MongoDB upserted series: AHHNGSP (release ID: 342)
+2025-06-04 21:05:31,614 [INFO] Checking release: Metro Area Economic Conditions Indexes (ID: 343)
+2025-06-04 21:05:31,624 [INFO] Fetching series from FRED API for release ID: 343
+2025-06-04 21:05:31,897 [INFO] First series ID received: ATLAGRIDX
+2025-06-04 21:05:31,902 [INFO] MongoDB upserted series: ATLAGRIDX (release ID: 343)
+2025-06-04 21:05:31,909 [INFO] MongoDB upserted series: LSVAGRIDX (release ID: 343)
+2025-06-04 21:05:31,914 [INFO] MongoDB upserted series: RCPAGRIDX (release ID: 343)
+2025-06-04 21:05:31,919 [INFO] MongoDB upserted series: STWAGRIDX (release ID: 343)
+2025-06-04 21:05:31,928 [INFO] MongoDB upserted series: ABQAGRIDX (release ID: 343)
+2025-06-04 21:05:31,929 [INFO] Checking release: Research Consumer Price Index (ID: 345)
+2025-06-04 21:05:31,933 [INFO] Fetching series from FRED API for release ID: 345
+2025-06-04 21:05:32,133 [INFO] First series ID received: CPIEALL
+2025-06-04 21:05:32,136 [INFO] MongoDB upserted series: CPIEALL (release ID: 345)
+2025-06-04 21:05:32,139 [INFO] MongoDB upserted series: CPIEHOUSE (release ID: 345)
+2025-06-04 21:05:32,142 [INFO] MongoDB upserted series: CPIEMEDCARE (release ID: 345)
+2025-06-04 21:05:32,145 [INFO] MongoDB upserted series: CPIEBEV (release ID: 345)
+2025-06-04 21:05:32,148 [INFO] MongoDB upserted series: CPIEOTRGS (release ID: 345)
+2025-06-04 21:05:32,148 [INFO] Checking release: Small Area Income and Poverty Estimates (ID: 346)
+2025-06-04 21:05:32,152 [INFO] Fetching series from FRED API for release ID: 346
+2025-06-04 21:05:33,359 [INFO] First series ID received: AGEXMMO29A647NCEN
+2025-06-04 21:05:33,362 [INFO] MongoDB upserted series: AGEXMMO29A647NCEN (release ID: 346)
+2025-06-04 21:05:33,365 [INFO] MongoDB upserted series: BR37000NCA647NCEN (release ID: 346)
+2025-06-04 21:05:33,368 [INFO] MongoDB upserted series: AGEXMAZ4A647NCEN (release ID: 346)
+2025-06-04 21:05:33,372 [INFO] MongoDB upserted series: BR25000MAA647NCEN (release ID: 346)
+2025-06-04 21:05:33,381 [INFO] MongoDB upserted series: CBR17031ILA647NCEN (release ID: 346)
+2025-06-04 21:05:33,381 [INFO] Checking release: Transportation Services Index and Seasonally-Adjusted Transportation Data (ID: 349)
+2025-06-04 21:05:33,385 [INFO] Fetching series from FRED API for release ID: 349
+2025-06-04 21:05:33,618 [INFO] First series ID received: TRUCKD11
+2025-06-04 21:05:33,621 [INFO] MongoDB upserted series: TRUCKD11 (release ID: 349)
+2025-06-04 21:05:33,625 [INFO] MongoDB upserted series: TSIFRGHT (release ID: 349)
+2025-06-04 21:05:33,628 [INFO] MongoDB upserted series: RAILFRTCARLOADSD11 (release ID: 349)
+2025-06-04 21:05:33,632 [INFO] MongoDB upserted series: LOADFACTOR (release ID: 349)
+2025-06-04 21:05:33,634 [INFO] MongoDB upserted series: RAILFRTINTERMODAL (release ID: 349)
+2025-06-04 21:05:33,635 [INFO] Checking release: Manufacturing Business Outlook Survey (ID: 351)
+2025-06-04 21:05:33,638 [INFO] Fetching series from FRED API for release ID: 351
+2025-06-04 21:05:33,868 [INFO] First series ID received: GACDFSA066MSFRBPHI
+2025-06-04 21:05:33,872 [INFO] MongoDB upserted series: GACDFSA066MSFRBPHI (release ID: 351)
+2025-06-04 21:05:33,875 [INFO] MongoDB upserted series: CEFDFSA066MSFRBPHI (release ID: 351)
+2025-06-04 21:05:33,878 [INFO] MongoDB upserted series: NOFDFSA066MSFRBPHI (release ID: 351)
+2025-06-04 21:05:33,882 [INFO] MongoDB upserted series: NECDFSA066MSFRBPHI (release ID: 351)
+2025-06-04 21:05:33,884 [INFO] MongoDB upserted series: DTCDFNA066MNFRBPHI (release ID: 351)
+2025-06-04 21:05:33,885 [INFO] Checking release: Nonmanufacturing Business Outlook Survey (ID: 352)
+2025-06-04 21:05:33,889 [INFO] Fetching series from FRED API for release ID: 352
+2025-06-04 21:05:34,153 [INFO] First series ID received: NOBNDIF066MSFRBPHI
+2025-06-04 21:05:34,158 [INFO] MongoDB upserted series: NOBNDIF066MSFRBPHI (release ID: 352)
+2025-06-04 21:05:34,162 [INFO] MongoDB upserted series: PPBNDIF066MSFRBPHI (release ID: 352)
+2025-06-04 21:05:34,165 [INFO] MongoDB upserted series: AWBNNC156MNFRBPHI (release ID: 352)
+2025-06-04 21:05:34,168 [INFO] MongoDB upserted series: AWBNNC156MSFRBPHI (release ID: 352)
+2025-06-04 21:05:34,171 [INFO] MongoDB upserted series: NFBNINC156MSFRBPHI (release ID: 352)
+2025-06-04 21:05:34,172 [INFO] Checking release: Alternative Measures of Labor Underutilization for States (ID: 353)
+2025-06-04 21:05:34,177 [INFO] Fetching series from FRED API for release ID: 353
+2025-06-04 21:05:34,462 [ERROR] Request error for release ID 353: 200
+2025-06-04 21:05:34,463 [INFO] Checking release: An Arbitrage-Free Three-Factor Term Structure Model and the Recent Behavior of Long-Term Yields and Distant-Horizon Forward Rates (ID: 354)
+2025-06-04 21:05:34,466 [INFO] Fetching series from FRED API for release ID: 354
+2025-06-04 21:05:34,770 [INFO] First series ID received: THREEFYTP10
+2025-06-04 21:05:34,776 [INFO] MongoDB upserted series: THREEFYTP10 (release ID: 354)
+2025-06-04 21:05:34,780 [INFO] MongoDB upserted series: THREEFY10 (release ID: 354)
+2025-06-04 21:05:34,785 [INFO] MongoDB upserted series: THREEFF10 (release ID: 354)
+2025-06-04 21:05:34,790 [INFO] MongoDB upserted series: THREEFF2 (release ID: 354)
+2025-06-04 21:05:34,797 [INFO] MongoDB upserted series: THREEFF1 (release ID: 354)
+2025-06-04 21:05:34,799 [INFO] Checking release: Minimum Wage Rates (ID: 355)
+2025-06-04 21:05:34,803 [INFO] Fetching series from FRED API for release ID: 355
+2025-06-04 21:05:35,005 [INFO] First series ID received: FEDMINNFRWG
+2025-06-04 21:05:35,008 [INFO] MongoDB upserted series: FEDMINNFRWG (release ID: 355)
+2025-06-04 21:05:35,012 [INFO] MongoDB upserted series: FEDMINFRMWG (release ID: 355)
+2025-06-04 21:05:35,012 [INFO] Checking release: Fixed Assets (ID: 356)
+2025-06-04 21:05:35,015 [INFO] Fetching series from FRED API for release ID: 356
+2025-06-04 21:05:35,272 [ERROR] Request error for release ID 356: 200
+2025-06-04 21:05:35,274 [INFO] Checking release: Hours of Wage and Salary Workers on Nonfarm Payrolls by Sector (ID: 357)
+2025-06-04 21:05:35,278 [INFO] Fetching series from FRED API for release ID: 357
+2025-06-04 21:05:35,474 [INFO] First series ID received: TOTLQ
+2025-06-04 21:05:35,478 [INFO] MongoDB upserted series: TOTLQ (release ID: 357)
+2025-06-04 21:05:35,481 [INFO] MongoDB upserted series: PRSCQ (release ID: 357)
+2025-06-04 21:05:35,485 [INFO] MongoDB upserted series: MNFCQ (release ID: 357)
+2025-06-04 21:05:35,489 [INFO] MongoDB upserted series: CNSTA (release ID: 357)
+2025-06-04 21:05:35,495 [INFO] MongoDB upserted series: CNSTQ (release ID: 357)
+2025-06-04 21:05:35,496 [INFO] Checking release: Number of Exporters and Known Value for All Countries on a State-by-State Basis (ID: 358)
+2025-06-04 21:05:35,499 [INFO] Fetching series from FRED API for release ID: 358
+2025-06-04 21:05:36,010 [INFO] First series ID received: AKAGOA475SCEN
+2025-06-04 21:05:36,014 [INFO] MongoDB upserted series: AKAGOA475SCEN (release ID: 358)
+2025-06-04 21:05:36,016 [INFO] MongoDB upserted series: AKDZAA475SCEN (release ID: 358)
+2025-06-04 21:05:36,019 [INFO] MongoDB upserted series: ALBFAA052SCEN (release ID: 358)
+2025-06-04 21:05:36,022 [INFO] MongoDB upserted series: ALBIHA052SCEN (release ID: 358)
+2025-06-04 21:05:36,026 [INFO] MongoDB upserted series: ALFSMA475SCEN (release ID: 358)
+2025-06-04 21:05:36,032 [INFO] Checking release: U.S. International Investment Position (ID: 359)
+2025-06-04 21:05:36,042 [INFO] Fetching series from FRED API for release ID: 359
+2025-06-04 21:05:36,270 [INFO] First series ID received: IIPUSNETIQ
+2025-06-04 21:05:36,276 [INFO] MongoDB upserted series: IIPUSNETIQ (release ID: 359)
+2025-06-04 21:05:36,280 [INFO] MongoDB upserted series: IIPUSNETIA (release ID: 359)
+2025-06-04 21:05:36,283 [INFO] MongoDB upserted series: IIPPORTAQ (release ID: 359)
+2025-06-04 21:05:36,287 [INFO] MongoDB upserted series: IIPFINANCNQ (release ID: 359)
+2025-06-04 21:05:36,291 [INFO] MongoDB upserted series: IIPFINAAGQ (release ID: 359)
+2025-06-04 21:05:36,293 [INFO] Checking release: Health Care Satellite Account (ID: 360)
+2025-06-04 21:05:36,298 [INFO] Fetching series from FRED API for release ID: 360
+2025-06-04 21:05:36,609 [INFO] First series ID received: HLTHSCPCHCSA
+2025-06-04 21:05:36,613 [INFO] MongoDB upserted series: HLTHSCPCHCSA (release ID: 360)
+2025-06-04 21:05:36,619 [INFO] MongoDB upserted series: HLTHSCEXPHCSA (release ID: 360)
+2025-06-04 21:05:36,622 [INFO] MongoDB upserted series: PHMEPRPIHCSA (release ID: 360)
+2025-06-04 21:05:36,628 [INFO] MongoDB upserted series: HLTHSCPIMEPS (release ID: 360)
+2025-06-04 21:05:36,631 [INFO] MongoDB upserted series: MNINEIEXPBLEND (release ID: 360)
+2025-06-04 21:05:36,632 [INFO] Checking release: Quarterly Census of Employment and Wages (ID: 362)
+2025-06-04 21:05:36,636 [INFO] Fetching series from FRED API for release ID: 362
+2025-06-04 21:05:36,990 [INFO] First series ID received: ENU0107320510
+2025-06-04 21:05:36,995 [INFO] MongoDB upserted series: ENU0107320510 (release ID: 362)
+2025-06-04 21:05:36,998 [INFO] MongoDB upserted series: ENU0606120510 (release ID: 362)
+2025-06-04 21:05:37,001 [INFO] MongoDB upserted series: ENU1318120510 (release ID: 362)
+2025-06-04 21:05:37,005 [INFO] MongoDB upserted series: ENU0112520510 (release ID: 362)
+2025-06-04 21:05:37,010 [INFO] MongoDB upserted series: ENU0603120510 (release ID: 362)
+2025-06-04 21:05:37,014 [INFO] Checking release: Monthly Treasury Statement (ID: 363)
+2025-06-04 21:05:37,017 [INFO] Fetching series from FRED API for release ID: 363
+2025-06-04 21:05:37,223 [INFO] First series ID received: MTSDS133FMS
+2025-06-04 21:05:37,230 [INFO] MongoDB upserted series: MTSDS133FMS (release ID: 363)
+2025-06-04 21:05:37,234 [INFO] MongoDB upserted series: MTSO133FMS (release ID: 363)
+2025-06-04 21:05:37,239 [INFO] MongoDB upserted series: MTSR133FMS (release ID: 363)
+2025-06-04 21:05:37,270 [INFO] MongoDB upserted series: MTSMFBP133FMS (release ID: 363)
+2025-06-04 21:05:37,275 [INFO] MongoDB upserted series: MTSMFBOM133FMS (release ID: 363)
+2025-06-04 21:05:37,276 [INFO] Checking release: St. Louis Fed Price Pressures Measures (ID: 364)
+2025-06-04 21:05:37,281 [INFO] Fetching series from FRED API for release ID: 364
+2025-06-04 21:05:37,522 [INFO] First series ID received: STLPPM
+2025-06-04 21:05:37,528 [INFO] MongoDB upserted series: STLPPM (release ID: 364)
+2025-06-04 21:05:37,532 [INFO] MongoDB upserted series: STLPPMDEF (release ID: 364)
+2025-06-04 21:05:37,535 [INFO] MongoDB upserted series: STLPPMLOW (release ID: 364)
+2025-06-04 21:05:37,540 [INFO] MongoDB upserted series: STLPPMMID (release ID: 364)
+2025-06-04 21:05:37,541 [INFO] Checking release: Primary Commodity Prices (ID: 365)
+2025-06-04 21:05:37,546 [INFO] Fetching series from FRED API for release ID: 365
+2025-06-04 21:05:37,833 [INFO] First series ID received: PNGASJPUSDM
+2025-06-04 21:05:37,838 [INFO] MongoDB upserted series: PNGASJPUSDM (release ID: 365)
+2025-06-04 21:05:37,842 [INFO] MongoDB upserted series: PURANUSDM (release ID: 365)
+2025-06-04 21:05:37,847 [INFO] MongoDB upserted series: POLVOILUSDM (release ID: 365)
+2025-06-04 21:05:37,853 [INFO] MongoDB upserted series: PWHEAMTUSDM (release ID: 365)
+2025-06-04 21:05:37,858 [INFO] MongoDB upserted series: PCOPPUSDM (release ID: 365)
+2025-06-04 21:05:37,859 [INFO] Checking release: Asia and Pacific Regional Economic Outlook (ID: 366)
+2025-06-04 21:05:37,864 [INFO] Fetching series from FRED API for release ID: 366
+2025-06-04 21:05:38,147 [INFO] First series ID received: JPNPCPIPCPPPT
+2025-06-04 21:05:38,151 [INFO] MongoDB upserted series: JPNPCPIPCPPPT (release ID: 366)
+2025-06-04 21:05:38,155 [INFO] MongoDB upserted series: CHNBCABP6USD (release ID: 366)
+2025-06-04 21:05:38,159 [INFO] MongoDB upserted series: VNMPCPIPCPPPT (release ID: 366)
+2025-06-04 21:05:38,163 [INFO] MongoDB upserted series: TWNPCPIPCPPPT (release ID: 366)
+2025-06-04 21:05:38,166 [INFO] MongoDB upserted series: JPNBCABP6USD (release ID: 366)
+2025-06-04 21:05:38,168 [INFO] Checking release: Western Hemisphere Regional Economic Outlook (ID: 367)
+2025-06-04 21:05:38,173 [INFO] Fetching series from FRED API for release ID: 367
+2025-06-04 21:05:38,458 [INFO] First series ID received: USABCAGDPBP6
+2025-06-04 21:05:38,463 [INFO] MongoDB upserted series: USABCAGDPBP6 (release ID: 367)
+2025-06-04 21:05:38,466 [INFO] MongoDB upserted series: MEXBCAGDPBP6 (release ID: 367)
+2025-06-04 21:05:38,469 [INFO] MongoDB upserted series: USAGGRGDP (release ID: 367)
+2025-06-04 21:05:38,484 [INFO] MongoDB upserted series: BRABCAGDPBP6 (release ID: 367)
+2025-06-04 21:05:38,487 [INFO] MongoDB upserted series: USAGGXONLBGDP (release ID: 367)
+2025-06-04 21:05:38,488 [INFO] Checking release: Middle East and Central Asia Regional Economic Outlook (ID: 368)
+2025-06-04 21:05:38,495 [INFO] Fetching series from FRED API for release ID: 368
+2025-06-04 21:05:38,770 [INFO] First series ID received: PAKDGDPGDPPT
+2025-06-04 21:05:38,774 [INFO] MongoDB upserted series: PAKDGDPGDPPT (release ID: 368)
+2025-06-04 21:05:38,778 [INFO] MongoDB upserted series: SAUPZPIOILBEGUSD (release ID: 368)
+2025-06-04 21:05:38,782 [INFO] MongoDB upserted series: SAUNGDPMOMBD (release ID: 368)
+2025-06-04 21:05:38,786 [INFO] MongoDB upserted series: IRNNXGOCMBD (release ID: 368)
+2025-06-04 21:05:38,793 [INFO] MongoDB upserted series: AREPCPIPCHPT (release ID: 368)
+2025-06-04 21:05:38,801 [INFO] Checking release: Sub-Saharan Africa Regional Economic Outlook (ID: 369)
+2025-06-04 21:05:38,804 [INFO] Fetching series from FRED API for release ID: 369
+2025-06-04 21:05:39,181 [INFO] First series ID received: NGANGDPRPCPPPT
+2025-06-04 21:05:39,185 [INFO] MongoDB upserted series: NGANGDPRPCPPPT (release ID: 369)
+2025-06-04 21:05:39,187 [INFO] MongoDB upserted series: NGAGGXG01GDPPT (release ID: 369)
+2025-06-04 21:05:39,190 [INFO] MongoDB upserted series: ETHEREERIX (release ID: 369)
+2025-06-04 21:05:39,194 [INFO] MongoDB upserted series: ETHNGDPRPCPPPT (release ID: 369)
+2025-06-04 21:05:39,196 [INFO] MongoDB upserted series: ETHGGXG01GDPPT (release ID: 369)
+2025-06-04 21:05:39,198 [INFO] Checking release: Financial Access Survey (ID: 370)
+2025-06-04 21:05:39,202 [INFO] Fetching series from FRED API for release ID: 370
+2025-06-04 21:05:39,591 [INFO] First series ID received: AFGFCMAANUM
+2025-06-04 21:05:39,595 [INFO] MongoDB upserted series: AFGFCMAANUM (release ID: 370)
+2025-06-04 21:05:39,598 [INFO] MongoDB upserted series: BDIFCRODCANUM (release ID: 370)
+2025-06-04 21:05:39,601 [INFO] MongoDB upserted series: ARGFCACNUM (release ID: 370)
+2025-06-04 21:05:39,605 [INFO] MongoDB upserted series: ARGFCSODDSXDC (release ID: 370)
+2025-06-04 21:05:39,611 [INFO] MongoDB upserted series: AUTFCLODDXDC (release ID: 370)
+2025-06-04 21:05:39,611 [INFO] Checking release: Hornstein-Kudlyak-Lange Non-Employment Index (ID: 371)
+2025-06-04 21:05:39,616 [INFO] Fetching series from FRED API for release ID: 371
+2025-06-04 21:05:39,804 [INFO] First series ID received: NEIM156SFRBRIC
+2025-06-04 21:05:39,810 [INFO] MongoDB upserted series: NEIM156SFRBRIC (release ID: 371)
+2025-06-04 21:05:39,814 [INFO] MongoDB upserted series: NEIPTERM156SFRBRIC (release ID: 371)
+2025-06-04 21:05:39,815 [INFO] Checking release: Chicago Fed Survey of Economic Conditions (ID: 372)
+2025-06-04 21:05:39,819 [INFO] Fetching series from FRED API for release ID: 372
+2025-06-04 21:05:40,046 [INFO] First series ID received: CFSBCACTIVITYMFG
+2025-06-04 21:05:40,050 [INFO] MongoDB upserted series: CFSBCACTIVITYMFG (release ID: 372)
+2025-06-04 21:05:40,053 [INFO] MongoDB upserted series: CFSBCCAPXEXP (release ID: 372)
+2025-06-04 21:05:40,057 [INFO] MongoDB upserted series: CFSBCACTIVITYNMFG (release ID: 372)
+2025-06-04 21:05:40,062 [INFO] MongoDB upserted series: CFSBCOUTLOOK (release ID: 372)
+2025-06-04 21:05:40,065 [INFO] MongoDB upserted series: CFSBCHIRINGEXP (release ID: 372)
+2025-06-04 21:05:40,066 [INFO] Checking release: GDP-Based Recession Indicator Index (ID: 373)
+2025-06-04 21:05:40,071 [INFO] Fetching series from FRED API for release ID: 373
+2025-06-04 21:05:40,389 [INFO] First series ID received: JHDUSRGDPBR
+2025-06-04 21:05:40,395 [INFO] MongoDB upserted series: JHDUSRGDPBR (release ID: 373)
+2025-06-04 21:05:40,398 [INFO] MongoDB upserted series: JHGDPBRINDX (release ID: 373)
+2025-06-04 21:05:40,399 [INFO] Checking release: Texas Manufacturing Outlook Survey (ID: 374)
+2025-06-04 21:05:40,403 [INFO] Fetching series from FRED API for release ID: 374
+2025-06-04 21:05:40,700 [INFO] First series ID received: BACTSAMFRBDAL
+2025-06-04 21:05:40,703 [INFO] MongoDB upserted series: BACTSAMFRBDAL (release ID: 374)
+2025-06-04 21:05:40,707 [INFO] MongoDB upserted series: PRMIUAMFRBDAL (release ID: 374)
+2025-06-04 21:05:40,711 [INFO] MongoDB upserted series: FPRMSAMFRBDAL (release ID: 374)
+2025-06-04 21:05:40,715 [INFO] MongoDB upserted series: FCEXPSAMFRBDAL (release ID: 374)
+2025-06-04 21:05:40,718 [INFO] MongoDB upserted series: VNWOSAMFRBDAL (release ID: 374)
+2025-06-04 21:05:40,719 [INFO] Checking release: Overnight Bank Funding Rate Data (ID: 375)
+2025-06-04 21:05:40,730 [INFO] Fetching series from FRED API for release ID: 375
+2025-06-04 21:05:40,934 [INFO] First series ID received: OBFR
+2025-06-04 21:05:40,937 [INFO] MongoDB upserted series: OBFR (release ID: 375)
+2025-06-04 21:05:40,941 [INFO] MongoDB upserted series: OBFRVOL (release ID: 375)
+2025-06-04 21:05:40,945 [INFO] MongoDB upserted series: OBFR1 (release ID: 375)
+2025-06-04 21:05:40,948 [INFO] MongoDB upserted series: OBFR99 (release ID: 375)
+2025-06-04 21:05:40,952 [INFO] MongoDB upserted series: OBFR25 (release ID: 375)
+2025-06-04 21:05:40,952 [INFO] Checking release: Texas Service Sector Outlook Survey (ID: 376)
+2025-06-04 21:05:40,958 [INFO] Fetching series from FRED API for release ID: 376
+2025-06-04 21:05:41,204 [INFO] First series ID received: TSSOSCOLKSAMFRBDAL
+2025-06-04 21:05:41,207 [INFO] MongoDB upserted series: TSSOSCOLKSAMFRBDAL (release ID: 376)
+2025-06-04 21:05:41,211 [INFO] MongoDB upserted series: TSSOSBACTSAMFRBDAL (release ID: 376)
+2025-06-04 21:05:41,215 [INFO] MongoDB upserted series: TSSOSEMPSAMFRBDAL (release ID: 376)
+2025-06-04 21:05:41,217 [INFO] MongoDB upserted series: TSSOSREVSAMFRBDAL (release ID: 376)
+2025-06-04 21:05:41,220 [INFO] MongoDB upserted series: TSSOSFEMPSAMFRBDAL (release ID: 376)
+2025-06-04 21:05:41,221 [INFO] Checking release: Texas Retail Outlook Survey (ID: 377)
+2025-06-04 21:05:41,225 [INFO] Fetching series from FRED API for release ID: 377
+2025-06-04 21:05:41,519 [INFO] First series ID received: TROSCOLKSAMFRBDAL
+2025-06-04 21:05:41,523 [INFO] MongoDB upserted series: TROSCOLKSAMFRBDAL (release ID: 377)
+2025-06-04 21:05:41,526 [INFO] MongoDB upserted series: TROSBACTSAMFRBDAL (release ID: 377)
+2025-06-04 21:05:41,529 [INFO] MongoDB upserted series: TROSCOLKUAMFRBDAL (release ID: 377)
+2025-06-04 21:05:41,532 [INFO] MongoDB upserted series: TROSEMPUAMFRBDAL (release ID: 377)
+2025-06-04 21:05:41,535 [INFO] MongoDB upserted series: TROSFCOLKSAMFRBDAL (release ID: 377)
+2025-06-04 21:05:41,536 [INFO] Checking release: Federal Funds Data (ID: 378)
+2025-06-04 21:05:41,539 [INFO] Fetching series from FRED API for release ID: 378
+2025-06-04 21:05:41,823 [WARNING] Rate limit hit for release ID: 378
+2025-06-04 21:05:41,825 [INFO] Checking release: Temporary Open Market Operations (ID: 379)
+2025-06-04 21:05:41,829 [INFO] Fetching series from FRED API for release ID: 379
+2025-06-04 21:05:42,014 [WARNING] Rate limit hit for release ID: 379
+2025-06-04 21:05:42,015 [INFO] Checking release: Real Trade-Weighted Value of the Dollar by U.S. State (ID: 382)
+2025-06-04 21:05:42,020 [INFO] Fetching series from FRED API for release ID: 382
+2025-06-04 21:05:42,317 [WARNING] Rate limit hit for release ID: 382
+2025-06-04 21:05:42,318 [INFO] Checking release: Market Value of U.S. Government Debt (ID: 383)
+2025-06-04 21:05:42,322 [INFO] Fetching series from FRED API for release ID: 383
+2025-06-04 21:05:42,499 [WARNING] Rate limit hit for release ID: 383
+2025-06-04 21:05:42,499 [INFO] Checking release: Characteristics of Minimum Wage Workers (ID: 384)
+2025-06-04 21:05:42,503 [INFO] Fetching series from FRED API for release ID: 384
+2025-06-04 21:05:42,686 [WARNING] Rate limit hit for release ID: 384
+2025-06-04 21:05:42,686 [INFO] Checking release: GDPNow (ID: 386)
+2025-06-04 21:05:42,692 [INFO] Fetching series from FRED API for release ID: 386
+2025-06-04 21:05:42,891 [WARNING] Rate limit hit for release ID: 386
+2025-06-04 21:05:42,892 [INFO] Checking release: Minimum Wage Rate by State (ID: 387)
+2025-06-04 21:05:42,897 [INFO] Fetching series from FRED API for release ID: 387
+2025-06-04 21:05:43,087 [WARNING] Rate limit hit for release ID: 387
+2025-06-04 21:05:43,088 [INFO] Checking release: Banking and Monetary Statistics, 1914-1941 (ID: 388)
+2025-06-04 21:05:43,093 [INFO] Fetching series from FRED API for release ID: 388
+2025-06-04 21:05:43,289 [WARNING] Rate limit hit for release ID: 388
+2025-06-04 21:05:43,290 [INFO] Checking release: A Millennium of Macroeconomic Data for the UK (ID: 389)
+2025-06-04 21:05:43,295 [INFO] Fetching series from FRED API for release ID: 389
+2025-06-04 21:05:43,471 [WARNING] Rate limit hit for release ID: 389
+2025-06-04 21:05:43,472 [INFO] Checking release: Personal Consumption Expenditures by State (ID: 391)
+2025-06-04 21:05:43,475 [INFO] Fetching series from FRED API for release ID: 391
+2025-06-04 21:05:43,775 [WARNING] Rate limit hit for release ID: 391
+2025-06-04 21:05:43,776 [INFO] Checking release: Spliced Oil Price (ID: 394)
+2025-06-04 21:05:43,781 [INFO] Fetching series from FRED API for release ID: 394
+2025-06-04 21:05:43,957 [WARNING] Rate limit hit for release ID: 394
+2025-06-04 21:05:43,958 [INFO] Checking release: Families and Living Arrangements (ID: 395)
+2025-06-04 21:05:43,961 [INFO] Fetching series from FRED API for release ID: 395
+2025-06-04 21:05:44,203 [WARNING] Rate limit hit for release ID: 395
+2025-06-04 21:05:44,204 [INFO] Checking release: G.17.2 Retail Instalment Credit at Furniture and Household Appliance Stores (ID: 396)
+2025-06-04 21:05:44,214 [INFO] Fetching series from FRED API for release ID: 396
+2025-06-04 21:05:44,403 [WARNING] Rate limit hit for release ID: 396
+2025-06-04 21:05:44,404 [INFO] Checking release: Gross Domestic Product by County and Metropolitan Area (ID: 397)
+2025-06-04 21:05:44,410 [INFO] Fetching series from FRED API for release ID: 397
+2025-06-04 21:05:44,599 [WARNING] Rate limit hit for release ID: 397
+2025-06-04 21:05:44,600 [INFO] Checking release: Net Migration Flows for Counties and County Equivalents in the United States (ID: 399)
+2025-06-04 21:05:44,604 [INFO] Fetching series from FRED API for release ID: 399
+2025-06-04 21:05:44,787 [WARNING] Rate limit hit for release ID: 399
+2025-06-04 21:05:44,787 [INFO] Checking release: St. Louis Fed Economic News Index (ID: 400)
+2025-06-04 21:05:44,791 [INFO] Fetching series from FRED API for release ID: 400
+2025-06-04 21:05:44,967 [WARNING] Rate limit hit for release ID: 400
+2025-06-04 21:05:44,968 [INFO] Checking release: SOI Tax Stats - Historical Data Tables (ID: 401)
+2025-06-04 21:05:44,972 [INFO] Fetching series from FRED API for release ID: 401
+2025-06-04 21:05:45,169 [WARNING] Rate limit hit for release ID: 401
+2025-06-04 21:05:45,169 [INFO] Checking release: Corporate Bond Yield Curve (ID: 402)
+2025-06-04 21:05:45,174 [INFO] Fetching series from FRED API for release ID: 402
+2025-06-04 21:05:45,349 [WARNING] Rate limit hit for release ID: 402
+2025-06-04 21:05:45,350 [INFO] Checking release: Real Personal Income for States and Metropolitan Areas (ID: 403)
+2025-06-04 21:05:45,354 [INFO] Fetching series from FRED API for release ID: 403
+2025-06-04 21:05:45,543 [WARNING] Rate limit hit for release ID: 403
+2025-06-04 21:05:45,544 [INFO] Checking release: Homeownership Rate (ID: 406)
+2025-06-04 21:05:45,549 [INFO] Fetching series from FRED API for release ID: 406
+2025-06-04 21:05:45,716 [WARNING] Rate limit hit for release ID: 406
+2025-06-04 21:05:45,716 [INFO] Checking release: Disconnected Youth (ID: 408)
+2025-06-04 21:05:45,720 [INFO] Fetching series from FRED API for release ID: 408
+2025-06-04 21:05:46,026 [WARNING] Rate limit hit for release ID: 408
+2025-06-04 21:05:46,027 [INFO] Checking release: Equifax Credit Quality (ID: 409)
+2025-06-04 21:05:46,032 [INFO] Fetching series from FRED API for release ID: 409
+2025-06-04 21:05:46,329 [WARNING] Rate limit hit for release ID: 409
+2025-06-04 21:05:46,329 [INFO] Checking release: Offenses Known to Law Enforcement (ID: 410)
+2025-06-04 21:05:46,332 [INFO] Fetching series from FRED API for release ID: 410
+2025-06-04 21:05:46,499 [WARNING] Rate limit hit for release ID: 410
+2025-06-04 21:05:46,500 [INFO] Checking release: Single Parent Households with Children (ID: 412)
+2025-06-04 21:05:46,503 [INFO] Fetching series from FRED API for release ID: 412
+2025-06-04 21:05:46,683 [WARNING] Rate limit hit for release ID: 412
+2025-06-04 21:05:46,684 [INFO] Checking release: Burdened Households (ID: 413)
+2025-06-04 21:05:46,687 [INFO] Fetching series from FRED API for release ID: 413
+2025-06-04 21:05:46,870 [WARNING] Rate limit hit for release ID: 413
+2025-06-04 21:05:46,870 [INFO] Checking release: Income Inequality (ID: 414)
+2025-06-04 21:05:46,873 [INFO] Fetching series from FRED API for release ID: 414
+2025-06-04 21:05:47,057 [WARNING] Rate limit hit for release ID: 414
+2025-06-04 21:05:47,058 [INFO] Checking release: Mean Commute Time (ID: 415)
+2025-06-04 21:05:47,060 [INFO] Fetching series from FRED API for release ID: 415
+2025-06-04 21:05:47,248 [WARNING] Rate limit hit for release ID: 415
+2025-06-04 21:05:47,249 [INFO] Checking release: County Poverty Status (ID: 416)
+2025-06-04 21:05:47,252 [INFO] Fetching series from FRED API for release ID: 416
+2025-06-04 21:05:47,429 [WARNING] Rate limit hit for release ID: 416
+2025-06-04 21:05:47,430 [INFO] Checking release: Preventable Hospital Admissions (ID: 417)
+2025-06-04 21:05:47,433 [INFO] Fetching series from FRED API for release ID: 417
+2025-06-04 21:05:47,604 [WARNING] Rate limit hit for release ID: 417
+2025-06-04 21:05:47,605 [INFO] Checking release: Racial Dissimilarity Index (ID: 419)
+2025-06-04 21:05:47,607 [INFO] Fetching series from FRED API for release ID: 419
+2025-06-04 21:05:47,864 [WARNING] Rate limit hit for release ID: 419
+2025-06-04 21:05:47,864 [INFO] Checking release: U.S. Treasury-Owned Gold (ID: 426)
+2025-06-04 21:05:47,868 [INFO] Fetching series from FRED API for release ID: 426
+2025-06-04 21:05:48,172 [WARNING] Rate limit hit for release ID: 426
+2025-06-04 21:05:48,173 [INFO] Checking release: Moody's Daily Corporate Bond Yield Averages (ID: 427)
+2025-06-04 21:05:48,178 [INFO] Fetching series from FRED API for release ID: 427
+2025-06-04 21:05:48,453 [WARNING] Rate limit hit for release ID: 427
+2025-06-04 21:05:48,453 [INFO] Checking release: DHI Hiring Indicators (ID: 428)
+2025-06-04 21:05:48,456 [INFO] Fetching series from FRED API for release ID: 428
+2025-06-04 21:05:48,647 [WARNING] Rate limit hit for release ID: 428
+2025-06-04 21:05:48,647 [INFO] Checking release: County Population Estimates By Race And Ethnicity (ID: 429)
+2025-06-04 21:05:48,650 [INFO] Fetching series from FRED API for release ID: 429
+2025-06-04 21:05:48,843 [WARNING] Rate limit hit for release ID: 429
+2025-06-04 21:05:48,844 [INFO] Checking release: County Median Age (ID: 430)
+2025-06-04 21:05:48,848 [INFO] Fetching series from FRED API for release ID: 430
+2025-06-04 21:05:49,020 [WARNING] Rate limit hit for release ID: 430
+2025-06-04 21:05:49,021 [INFO] Checking release: Premature Death Rate (ID: 431)
+2025-06-04 21:05:49,025 [INFO] Fetching series from FRED API for release ID: 431
+2025-06-04 21:05:49,214 [WARNING] Rate limit hit for release ID: 431
+2025-06-04 21:05:49,214 [INFO] Checking release: New Patent Assignments (ID: 432)
+2025-06-04 21:05:49,217 [INFO] Fetching series from FRED API for release ID: 432
+2025-06-04 21:05:49,392 [WARNING] Rate limit hit for release ID: 432
+2025-06-04 21:05:49,392 [INFO] Checking release: Age-Adjusted Premature Death Rate (ID: 433)
+2025-06-04 21:05:49,396 [INFO] Fetching series from FRED API for release ID: 433
+2025-06-04 21:05:49,583 [WARNING] Rate limit hit for release ID: 433
+2025-06-04 21:05:49,584 [INFO] Checking release: Quarterly Financial Report (ID: 434)
+2025-06-04 21:05:49,587 [INFO] Fetching series from FRED API for release ID: 434
+2025-06-04 21:05:49,784 [WARNING] Rate limit hit for release ID: 434
+2025-06-04 21:05:49,784 [INFO] Checking release: Advance Economic Indicators (ID: 435)
+2025-06-04 21:05:49,787 [INFO] Fetching series from FRED API for release ID: 435
+2025-06-04 21:05:50,117 [WARNING] Rate limit hit for release ID: 435
+2025-06-04 21:05:50,117 [INFO] Checking release: Monthly Retail Trade and Food Services (ID: 436)
+2025-06-04 21:05:50,120 [INFO] Fetching series from FRED API for release ID: 436
+2025-06-04 21:05:50,323 [WARNING] Rate limit hit for release ID: 436
+2025-06-04 21:05:50,324 [INFO] Checking release: Mean Household Wages Adjusted by Cost of Living (ID: 439)
+2025-06-04 21:05:50,327 [INFO] Fetching series from FRED API for release ID: 439
+2025-06-04 21:05:50,634 [WARNING] Rate limit hit for release ID: 439
+2025-06-04 21:05:50,635 [INFO] Checking release: Coinbase Index (ID: 440)
+2025-06-04 21:05:50,638 [INFO] Fetching series from FRED API for release ID: 440
+2025-06-04 21:05:50,845 [WARNING] Rate limit hit for release ID: 440
+2025-06-04 21:05:50,847 [INFO] Checking release: Coinbase Cryptocurrencies (ID: 441)
+2025-06-04 21:05:50,852 [INFO] Fetching series from FRED API for release ID: 441
+2025-06-04 21:05:51,141 [WARNING] Rate limit hit for release ID: 441
+2025-06-04 21:05:51,141 [INFO] Checking release: Business Formation Statistics (ID: 443)
+2025-06-04 21:05:51,147 [INFO] Fetching series from FRED API for release ID: 443
+2025-06-04 21:05:51,448 [WARNING] Rate limit hit for release ID: 443
+2025-06-04 21:05:51,449 [INFO] Checking release: Secured Overnight Financing Rate Data (ID: 445)
+2025-06-04 21:05:51,453 [INFO] Fetching series from FRED API for release ID: 445
+2025-06-04 21:05:51,635 [WARNING] Rate limit hit for release ID: 445
+2025-06-04 21:05:51,635 [INFO] Checking release: Labor Force Participation by State (ID: 446)
+2025-06-04 21:05:51,639 [INFO] Fetching series from FRED API for release ID: 446
+2025-06-04 21:05:52,067 [WARNING] Rate limit hit for release ID: 446
+2025-06-04 21:05:52,068 [INFO] Checking release: U.S. Trade in Goods by State, by NAICS-Based Product (ID: 449)
+2025-06-04 21:05:52,072 [INFO] Fetching series from FRED API for release ID: 449
+2025-06-04 21:05:52,370 [WARNING] Rate limit hit for release ID: 449
+2025-06-04 21:05:52,370 [INFO] Checking release: Quarterly Survey of Public Pensions (ID: 450)
+2025-06-04 21:05:52,372 [INFO] Fetching series from FRED API for release ID: 450
+2025-06-04 21:05:52,677 [WARNING] Rate limit hit for release ID: 450
+2025-06-04 21:05:52,677 [INFO] Checking release: Distributional Financial Accounts (ID: 453)
+2025-06-04 21:05:52,680 [INFO] Fetching series from FRED API for release ID: 453
+2025-06-04 21:05:52,987 [WARNING] Rate limit hit for release ID: 453
+2025-06-04 21:05:52,988 [INFO] Checking release: Average Price Data (ID: 454)
+2025-06-04 21:05:52,993 [INFO] Fetching series from FRED API for release ID: 454
+2025-06-04 21:05:53,226 [WARNING] Rate limit hit for release ID: 454
+2025-06-04 21:05:53,226 [INFO] Checking release: Quarterly Summary of State & Local Tax Revenue (ID: 455)
+2025-06-04 21:05:53,231 [INFO] Fetching series from FRED API for release ID: 455
+2025-06-04 21:05:53,473 [WARNING] Rate limit hit for release ID: 455
+2025-06-04 21:05:53,473 [INFO] Checking release: Sahm Rule Recession Indicator (ID: 456)
+2025-06-04 21:05:53,477 [INFO] Fetching series from FRED API for release ID: 456
+2025-06-04 21:05:53,692 [WARNING] Rate limit hit for release ID: 456
+2025-06-04 21:05:53,711 [INFO] Checking release: Cotton Production in New England (ID: 458)
+2025-06-04 21:05:53,730 [INFO] Fetching series from FRED API for release ID: 458
+2025-06-04 21:05:54,040 [WARNING] Rate limit hit for release ID: 458
+2025-06-04 21:05:54,067 [INFO] Checking release: Survey of Business Uncertainty (ID: 459)
+2025-06-04 21:05:54,076 [INFO] Fetching series from FRED API for release ID: 459
+2025-06-04 21:05:54,449 [WARNING] Rate limit hit for release ID: 459
+2025-06-04 21:05:54,449 [INFO] Checking release: Seasonal Factors for Domestic Auto and Truck Production (ID: 460)
+2025-06-04 21:05:54,452 [INFO] Fetching series from FRED API for release ID: 460
+2025-06-04 21:05:54,653 [WARNING] Rate limit hit for release ID: 460
+2025-06-04 21:05:54,654 [INFO] Checking release: Energy-Related CO2 Emissions by State (ID: 461)
+2025-06-04 21:05:54,658 [INFO] Fetching series from FRED API for release ID: 461
+2025-06-04 21:05:54,868 [WARNING] Rate limit hit for release ID: 461
+2025-06-04 21:05:54,869 [INFO] Checking release: Housing Inventory Core Metrics (ID: 462)
+2025-06-04 21:05:54,872 [INFO] Fetching series from FRED API for release ID: 462
+2025-06-04 21:05:55,238 [WARNING] Rate limit hit for release ID: 462
+2025-06-04 21:05:55,239 [INFO] Checking release: Market Hotness Index (ID: 463)
+2025-06-04 21:05:55,243 [INFO] Fetching series from FRED API for release ID: 463
+2025-06-04 21:05:55,484 [WARNING] Rate limit hit for release ID: 463
+2025-06-04 21:05:55,485 [INFO] Checking release: Weekly Economic Index (Lewis-Mertens-Stock) (ID: 465)
+2025-06-04 21:05:55,489 [INFO] Fetching series from FRED API for release ID: 465
+2025-06-04 21:05:55,750 [WARNING] Rate limit hit for release ID: 465
+2025-06-04 21:05:55,751 [INFO] Checking release: Weekly Business Formation Statistics (ID: 468)
+2025-06-04 21:05:55,753 [INFO] Fetching series from FRED API for release ID: 468
+2025-06-04 21:05:55,927 [WARNING] Rate limit hit for release ID: 468
+2025-06-04 21:05:55,928 [INFO] Checking release: State Unemployment Insurance Weekly Claims Report (ID: 469)
+2025-06-04 21:05:55,930 [INFO] Fetching series from FRED API for release ID: 469
+2025-06-04 21:05:56,262 [WARNING] Rate limit hit for release ID: 469
+2025-06-04 21:05:56,262 [INFO] Checking release: World Uncertainty Index (ID: 470)
+2025-06-04 21:05:56,266 [INFO] Fetching series from FRED API for release ID: 470
+2025-06-04 21:05:56,461 [WARNING] Rate limit hit for release ID: 470
+2025-06-04 21:05:56,462 [INFO] Checking release: Manufactured Housing Survey (ID: 471)
+2025-06-04 21:05:56,466 [INFO] Fetching series from FRED API for release ID: 471
+2025-06-04 21:05:56,671 [WARNING] Rate limit hit for release ID: 471
+2025-06-04 21:05:56,671 [INFO] Checking release: Daily Federal Funds Rate (ID: 472)
+2025-06-04 21:05:56,674 [INFO] Fetching series from FRED API for release ID: 472
+2025-06-04 21:05:56,866 [WARNING] Rate limit hit for release ID: 472
+2025-06-04 21:05:56,866 [INFO] Checking release: Optimal Blue Mortgage Market Indices (ID: 473)
+2025-06-04 21:05:56,870 [INFO] Fetching series from FRED API for release ID: 473
+2025-06-04 21:05:57,184 [WARNING] Rate limit hit for release ID: 473
+2025-06-04 21:05:57,185 [INFO] Checking release: Job Postings on Indeed (ID: 476)
+2025-06-04 21:05:57,189 [INFO] Fetching series from FRED API for release ID: 476
+2025-06-04 21:05:57,394 [WARNING] Rate limit hit for release ID: 476
+2025-06-04 21:05:57,395 [INFO] Checking release: Monthly State Retail Sales (ID: 477)
+2025-06-04 21:05:57,399 [INFO] Fetching series from FRED API for release ID: 477
+2025-06-04 21:05:57,698 [WARNING] Rate limit hit for release ID: 477
+2025-06-04 21:05:57,699 [INFO] Checking release: Pandemic Claims Weekly Report (ID: 478)
+2025-06-04 21:05:57,703 [INFO] Fetching series from FRED API for release ID: 478
+2025-06-04 21:05:57,940 [WARNING] Rate limit hit for release ID: 478
+2025-06-04 21:05:57,941 [INFO] Checking release: Consumer Expenditure Surveys (ID: 479)
+2025-06-04 21:05:57,944 [INFO] Fetching series from FRED API for release ID: 479
+2025-06-04 21:05:58,172 [WARNING] Rate limit hit for release ID: 479
+2025-06-04 21:05:58,172 [INFO] Checking release: Total Energy (ID: 480)
+2025-06-04 21:05:58,176 [INFO] Fetching series from FRED API for release ID: 480
+2025-06-04 21:05:58,397 [WARNING] Rate limit hit for release ID: 480
+2025-06-04 21:05:58,397 [INFO] Checking release: The Federal Reserve System's Weekly Balance Sheet Since 1914 (ID: 481)
+2025-06-04 21:05:58,401 [INFO] Fetching series from FRED API for release ID: 481
+2025-06-04 21:05:58,618 [WARNING] Rate limit hit for release ID: 481
+2025-06-04 21:05:58,619 [INFO] Checking release: FDIC Quarterly Banking Profile (ID: 482)
+2025-06-04 21:05:58,621 [INFO] Fetching series from FRED API for release ID: 482
+2025-06-04 21:05:58,839 [WARNING] Rate limit hit for release ID: 482
+2025-06-04 21:05:58,840 [INFO] Checking release: SOFR Averages and Index Data (ID: 483)
+2025-06-04 21:05:58,845 [INFO] Fetching series from FRED API for release ID: 483
+2025-06-04 21:05:59,026 [WARNING] Rate limit hit for release ID: 483
+2025-06-04 21:05:59,027 [INFO] Checking release: Key ECB Interest Rates (ID: 484)
+2025-06-04 21:05:59,029 [INFO] Fetching series from FRED API for release ID: 484
+2025-06-04 21:05:59,227 [WARNING] Rate limit hit for release ID: 484
+2025-06-04 21:05:59,234 [INFO] Checking release: U.S. Granted Utility Patents by Counties and CBSAs (ID: 485)
+2025-06-04 21:05:59,237 [INFO] Fetching series from FRED API for release ID: 485
+2025-06-04 21:05:59,422 [WARNING] Rate limit hit for release ID: 485
+2025-06-04 21:05:59,423 [INFO] Checking release: U.S. Granted Patents by States, Territories, and Countries (ID: 486)
+2025-06-04 21:05:59,427 [INFO] Fetching series from FRED API for release ID: 486
+2025-06-04 21:05:59,598 [WARNING] Rate limit hit for release ID: 486
+2025-06-04 21:05:59,599 [INFO] Checking release: Index of Global Real Economic Activity (ID: 487)
+2025-06-04 21:05:59,602 [INFO] Fetching series from FRED API for release ID: 487
+2025-06-04 21:05:59,774 [WARNING] Rate limit hit for release ID: 487
+2025-06-04 21:05:59,775 [INFO] Checking release: Brave-Butters-Kelley Indexes (ID: 488)
+2025-06-04 21:05:59,779 [INFO] Fetching series from FRED API for release ID: 488
+2025-06-04 21:05:59,962 [WARNING] Rate limit hit for release ID: 488
+2025-06-04 21:05:59,963 [INFO] Checking release: Industry Productivity (ID: 490)
+2025-06-04 21:05:59,966 [INFO] Fetching series from FRED API for release ID: 490
+2025-06-04 21:06:00,358 [WARNING] Rate limit hit for release ID: 490
+2025-06-04 21:06:00,358 [INFO] Checking release: The Effects of the 1930s HOLC "Redlining" Maps (ID: 491)
+2025-06-04 21:06:00,361 [INFO] Fetching series from FRED API for release ID: 491
+2025-06-04 21:06:00,535 [WARNING] Rate limit hit for release ID: 491
+2025-06-04 21:06:00,535 [INFO] Checking release: SONIA Interest Rate Benchmark (ID: 492)
+2025-06-04 21:06:00,539 [INFO] Fetching series from FRED API for release ID: 492
+2025-06-04 21:06:00,715 [WARNING] Rate limit hit for release ID: 492
+2025-06-04 21:06:00,716 [INFO] Checking release: Chicago Fed Advance Retail Trade Summary (ID: 494)
+2025-06-04 21:06:00,720 [INFO] Fetching series from FRED API for release ID: 494
+2025-06-04 21:06:00,911 [WARNING] Rate limit hit for release ID: 494
+2025-06-04 21:06:00,911 [INFO] Checking release: EONIA: Euro Interbank Offered Rate (ID: 499)
+2025-06-04 21:06:00,915 [INFO] Fetching series from FRED API for release ID: 499
+2025-06-04 21:06:01,134 [INFO] First series ID received: EONIARATE
+2025-06-04 21:06:01,137 [INFO] MongoDB upserted series: EONIARATE (release ID: 499)
+2025-06-04 21:06:01,137 [INFO] Checking release: Inflation Expectations (ID: 500)
+2025-06-04 21:06:01,141 [INFO] Fetching series from FRED API for release ID: 500
+2025-06-04 21:06:01,336 [INFO] First series ID received: REAINTRATREARAT10Y
+2025-06-04 21:06:01,338 [INFO] MongoDB upserted series: REAINTRATREARAT10Y (release ID: 500)
+2025-06-04 21:06:01,342 [INFO] MongoDB upserted series: EXPINF10YR (release ID: 500)
+2025-06-04 21:06:01,345 [INFO] MongoDB upserted series: EXPINF1YR (release ID: 500)
+2025-06-04 21:06:01,348 [INFO] MongoDB upserted series: REAINTRATREARAT1YE (release ID: 500)
+2025-06-04 21:06:01,351 [INFO] MongoDB upserted series: EXPINF30YR (release ID: 500)
+2025-06-04 21:06:01,351 [INFO] Checking release: Euro Short Term Rate (ID: 502)
+2025-06-04 21:06:01,354 [INFO] Fetching series from FRED API for release ID: 502
+2025-06-04 21:06:01,547 [INFO] First series ID received: ECBESTRVOLWGTTRMDMNRT
+2025-06-04 21:06:01,552 [INFO] MongoDB upserted series: ECBESTRVOLWGTTRMDMNRT (release ID: 502)
+2025-06-04 21:06:01,555 [INFO] MongoDB upserted series: ECBESTRTOTVOL (release ID: 502)
+2025-06-04 21:06:01,558 [INFO] MongoDB upserted series: ECBESTRNUMTRANS (release ID: 502)
+2025-06-04 21:06:01,560 [INFO] MongoDB upserted series: ECBESTRRT75THPCTVOL (release ID: 502)
+2025-06-04 21:06:01,565 [INFO] MongoDB upserted series: ECBESTRNUMACTBANKS (release ID: 502)
+2025-06-04 21:06:01,567 [INFO] Checking release: Zillow Home Value Index (ZHVI) (ID: 503)
+2025-06-04 21:06:01,570 [INFO] Fetching series from FRED API for release ID: 503
+2025-06-04 21:06:01,896 [INFO] First series ID received: USAUCSFRCONDOSMSAMID
+2025-06-04 21:06:01,900 [INFO] MongoDB upserted series: USAUCSFRCONDOSMSAMID (release ID: 503)
+2025-06-04 21:06:01,904 [INFO] MongoDB upserted series: VAUCSFRCONDOSMSAMID (release ID: 503)
+2025-06-04 21:06:01,912 [INFO] MongoDB upserted series: CAUCSFRCONDOSMSAMID (release ID: 503)
+2025-06-04 21:06:01,924 [INFO] MongoDB upserted series: FLUCSFRCONDOSMSAMID (release ID: 503)
+2025-06-04 21:06:01,928 [INFO] MongoDB upserted series: NYUCSFRCONDOSMSAMID (release ID: 503)
+2025-06-04 21:06:01,928 [INFO] Checking release: Historical Overnight AMERIBOR Unsecured Interest Rate (ID: 504)
+2025-06-04 21:06:01,933 [INFO] Fetching series from FRED API for release ID: 504
+2025-06-04 21:06:02,202 [INFO] First series ID received: AMERIBOR
+2025-06-04 21:06:02,206 [INFO] MongoDB upserted series: AMERIBOR (release ID: 504)
+2025-06-04 21:06:02,210 [INFO] MongoDB upserted series: AMBOR30T (release ID: 504)
+2025-06-04 21:06:02,220 [INFO] MongoDB upserted series: AMBOR1M (release ID: 504)
+2025-06-04 21:06:02,226 [INFO] MongoDB upserted series: AMBOR30 (release ID: 504)
+2025-06-04 21:06:02,228 [INFO] MongoDB upserted series: AMBOR3M (release ID: 504)
+2025-06-04 21:06:02,229 [INFO] Checking release: Community Bank Sentiment Index (ID: 505)
+2025-06-04 21:06:02,234 [INFO] Fetching series from FRED API for release ID: 505
+2025-06-04 21:06:02,509 [INFO] First series ID received: CBSICO
+2025-06-04 21:06:02,513 [INFO] MongoDB upserted series: CBSICO (release ID: 505)
+2025-06-04 21:06:02,517 [INFO] MongoDB upserted series: CBSIBC (release ID: 505)
+2025-06-04 21:06:02,521 [INFO] MongoDB upserted series: CBSIMP (release ID: 505)
+2025-06-04 21:06:02,525 [INFO] MongoDB upserted series: CBSIPR (release ID: 505)
+2025-06-04 21:06:02,529 [INFO] MongoDB upserted series: CBSIOE (release ID: 505)
+2025-06-04 21:06:02,531 [INFO] Checking release: Senior Credit Officer Opinion Survey on Dealer Financing Terms (ID: 571)
+2025-06-04 21:06:02,534 [INFO] Fetching series from FRED API for release ID: 571
+2025-06-04 21:06:02,857 [ERROR] Request error for release ID 571: 200
+2025-06-04 21:06:02,859 [INFO] Checking release: Underlying Inflation Gauge (UIG) (ID: 605)
+2025-06-04 21:06:02,862 [INFO] Fetching series from FRED API for release ID: 605
+2025-06-04 21:06:03,037 [INFO] First series ID received: UIGFULL
+2025-06-04 21:06:03,042 [INFO] MongoDB upserted series: UIGFULL (release ID: 605)
+2025-06-04 21:06:03,045 [INFO] MongoDB upserted series: UIGPRICES (release ID: 605)
+2025-06-04 21:06:03,047 [INFO] Checking release: Wage Growth Tracker (ID: 637)
+2025-06-04 21:06:03,051 [INFO] Fetching series from FRED API for release ID: 637
+2025-06-04 21:06:03,271 [INFO] First series ID received: FRBATLWGT3MMAUMHWGO
+2025-06-04 21:06:03,274 [INFO] MongoDB upserted series: FRBATLWGT3MMAUMHWGO (release ID: 637)
+2025-06-04 21:06:03,278 [INFO] MongoDB upserted series: FRBATLWGTUMHWG83O (release ID: 637)
+2025-06-04 21:06:03,281 [INFO] MongoDB upserted series: FRBATLWGTUMHWGO (release ID: 637)
+2025-06-04 21:06:03,285 [INFO] MongoDB upserted series: FRBATLWGT3MMAWMHWGO (release ID: 637)
+2025-06-04 21:06:03,288 [INFO] MongoDB upserted series: FRBATLWGT12MMAWMHWGO (release ID: 637)
+2025-06-04 21:06:03,288 [INFO] Checking release: Macroeconomic Uncertainty Index for United States (ID: 670)
+2025-06-04 21:06:03,292 [INFO] Fetching series from FRED API for release ID: 670
+2025-06-04 21:06:03,532 [INFO] First series ID received: JLNUM12M
+2025-06-04 21:06:03,537 [INFO] MongoDB upserted series: JLNUM12M (release ID: 670)
+2025-06-04 21:06:03,541 [INFO] MongoDB upserted series: JLNUM1M (release ID: 670)
+2025-06-04 21:06:03,545 [INFO] MongoDB upserted series: JLNUM3M (release ID: 670)
+2025-06-04 21:06:03,545 [INFO] Checking release: Financial and Real Uncertainty Indexes (ID: 705)
+2025-06-04 21:06:03,548 [INFO] Fetching series from FRED API for release ID: 705
+2025-06-04 21:06:03,719 [INFO] First series ID received: LMNUF3M
+2025-06-04 21:06:03,723 [INFO] MongoDB upserted series: LMNUF3M (release ID: 705)
+2025-06-04 21:06:03,726 [INFO] MongoDB upserted series: LMNUR12M (release ID: 705)
+2025-06-04 21:06:03,730 [INFO] MongoDB upserted series: LMNUF12M (release ID: 705)
+2025-06-04 21:06:03,733 [INFO] MongoDB upserted series: LMNUR3M (release ID: 705)
+2025-06-04 21:06:03,735 [INFO] MongoDB upserted series: LMNUF1M (release ID: 705)
+2025-06-04 21:06:03,736 [INFO] Checking release: Visa Spending Momentum Index (ID: 736)
+2025-06-04 21:06:03,738 [INFO] Fetching series from FRED API for release ID: 736
+2025-06-04 21:06:03,905 [INFO] First series ID received: VISASMIDNSA
+2025-06-04 21:06:03,910 [INFO] MongoDB upserted series: VISASMIDNSA (release ID: 736)
+2025-06-04 21:06:03,914 [INFO] MongoDB upserted series: VISASMIDSA (release ID: 736)
+2025-06-04 21:06:03,917 [INFO] MongoDB upserted series: VISASMIHNSA (release ID: 736)
+2025-06-04 21:06:03,921 [INFO] MongoDB upserted series: VISASMIHSA (release ID: 736)
+2025-06-04 21:06:03,925 [INFO] MongoDB upserted series: VISASMINNSA (release ID: 736)
+2025-06-04 21:06:03,925 [INFO] Checking release: National Housing Survey (ID: 737)
+2025-06-04 21:06:03,927 [INFO] Fetching series from FRED API for release ID: 737
+2025-06-04 21:06:04,249 [INFO] First series ID received: FMNHSHPSIUS
+2025-06-04 21:06:04,254 [INFO] MongoDB upserted series: FMNHSHPSIUS (release ID: 737)
+2025-06-04 21:06:04,254 [INFO] Checking release: Quits and Layoffs to Nonemployment Based on the Consumer Population Survey (CPS) (ID: 738)
+2025-06-04 21:06:04,258 [INFO] Fetching series from FRED API for release ID: 738
+2025-06-04 21:06:04,415 [INFO] First series ID received: EMELASA
+2025-06-04 21:06:04,421 [INFO] MongoDB upserted series: EMELASA (release ID: 738)
+2025-06-04 21:06:04,425 [INFO] MongoDB upserted series: EMELPSA (release ID: 738)
+2025-06-04 21:06:04,431 [INFO] MongoDB upserted series: EMEQASA (release ID: 738)
+2025-06-04 21:06:04,440 [INFO] MongoDB upserted series: EMEQPSA (release ID: 738)
+2025-06-04 21:06:04,446 [INFO] MongoDB upserted series: EMSHRNLA (release ID: 738)
+2025-06-04 21:06:04,446 [INFO] Checking release: Fujita, Moscarini, and Postel-Vinay Employer-to-Employer Transition Probability (ID: 769)
+2025-06-04 21:06:04,450 [INFO] Fetching series from FRED API for release ID: 769
+2025-06-04 21:06:04,642 [INFO] First series ID received: FMPNSA
+2025-06-04 21:06:04,645 [INFO] MongoDB upserted series: FMPNSA (release ID: 769)
+2025-06-04 21:06:04,648 [INFO] MongoDB upserted series: FMPSA (release ID: 769)
+2025-06-04 21:06:04,651 [INFO] MongoDB upserted series: FMPSA3MA (release ID: 769)
+2025-06-04 21:06:04,653 [INFO] Retrying 83 releases after rate limit. Retry #1
+2025-06-04 21:37:06,546 [INFO] Checking release: H.10 Foreign Exchange Rates (ID: 17)
+2025-06-04 21:37:06,555 [INFO] Fetching series from FRED API for release ID: 17
+2025-06-04 21:40:29,839 [INFO] Checking release: H.10 Foreign Exchange Rates (ID: 17)
+2025-06-04 21:40:29,847 [INFO] Fetching series from FRED API for release ID: 17
+2025-06-04 21:40:29,997 [WARNING] Rate limit hit for release ID: 17
+2025-06-04 21:40:29,998 [INFO] Checking release: H.15 Selected Interest Rates (ID: 18)
+2025-06-04 21:40:30,003 [INFO] Using cached data for release 18 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 21:40:30,003 [INFO] Checking release: Daily Treasury Inflation-Indexed Securities (ID: 72)
+2025-06-04 21:40:30,007 [INFO] Using cached data for release 72 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 21:40:30,008 [INFO] Checking release: Commercial Paper (ID: 86)
+2025-06-04 21:40:30,012 [INFO] Using cached data for release 86 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 21:40:30,013 [INFO] Checking release: FOMC Press Release (ID: 101)
+2025-06-04 21:40:30,017 [INFO] Fetching series from FRED API for release ID: 101
+2025-06-04 21:40:30,186 [WARNING] Rate limit hit for release ID: 101
+2025-06-04 21:40:30,187 [INFO] Checking release: Quarterly Retail E-Commerce Sales (ID: 179)
+2025-06-04 21:40:30,190 [INFO] Using cached data for release 179 (cached: 2025-06-05, updated: 2025-05-19)
+2025-06-04 21:40:30,191 [INFO] Checking release: Interest Rate on Reserve Balances (ID: 185)
+2025-06-04 21:40:30,195 [INFO] Using cached data for release 185 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 21:40:30,196 [INFO] Checking release: CBOE Market Statistics (ID: 200)
+2025-06-04 21:40:30,202 [INFO] Using cached data for release 200 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 21:40:30,202 [INFO] Checking release: ICE BofA Indices (ID: 209)
+2025-06-04 21:40:30,205 [INFO] Using cached data for release 209 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 21:40:30,206 [INFO] Checking release: International Financial Statistics (ID: 239)
+2025-06-04 21:40:30,209 [INFO] Using cached data for release 239 (cached: 2025-06-05, updated: 2025-06-02)
+2025-06-04 21:40:30,211 [INFO] Checking release: Recession Indicators Series (ID: 242)
+2025-06-04 21:40:30,215 [INFO] Using cached data for release 242 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 21:40:30,215 [INFO] Checking release: NASDAQ (ID: 328)
+2025-06-04 21:40:30,219 [INFO] Using cached data for release 328 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 21:40:30,221 [INFO] Checking release: Overnight Bank Funding Rate Data (ID: 375)
+2025-06-04 21:40:30,224 [INFO] Using cached data for release 375 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 21:40:30,225 [INFO] Checking release: Federal Funds Data (ID: 378)
+2025-06-04 21:40:30,228 [INFO] Fetching series from FRED API for release ID: 378
+2025-06-04 21:40:30,404 [WARNING] Rate limit hit for release ID: 378
+2025-06-04 21:40:30,405 [INFO] Checking release: Temporary Open Market Operations (ID: 379)
+2025-06-04 21:40:30,408 [INFO] Fetching series from FRED API for release ID: 379
+2025-06-04 21:40:30,575 [WARNING] Rate limit hit for release ID: 379
+2025-06-04 21:40:30,576 [INFO] Checking release: Moody's Daily Corporate Bond Yield Averages (ID: 427)
+2025-06-04 21:40:30,580 [INFO] Fetching series from FRED API for release ID: 427
+2025-06-04 21:40:30,747 [WARNING] Rate limit hit for release ID: 427
+2025-06-04 21:40:30,748 [INFO] Checking release: Coinbase Cryptocurrencies (ID: 441)
+2025-06-04 21:40:30,752 [INFO] Fetching series from FRED API for release ID: 441
+2025-06-04 21:40:30,920 [WARNING] Rate limit hit for release ID: 441
+2025-06-04 21:40:30,921 [INFO] Checking release: Secured Overnight Financing Rate Data (ID: 445)
+2025-06-04 21:40:30,928 [INFO] Fetching series from FRED API for release ID: 445
+2025-06-04 21:40:31,200 [WARNING] Rate limit hit for release ID: 445
+2025-06-04 21:40:31,201 [INFO] Checking release: State Unemployment Insurance Weekly Claims Report (ID: 469)
+2025-06-04 21:40:31,205 [INFO] Fetching series from FRED API for release ID: 469
+2025-06-04 21:40:31,374 [WARNING] Rate limit hit for release ID: 469
+2025-06-04 21:40:31,375 [INFO] Checking release: Optimal Blue Mortgage Market Indices (ID: 473)
+2025-06-04 21:40:31,380 [INFO] Fetching series from FRED API for release ID: 473
+2025-06-04 21:40:31,574 [WARNING] Rate limit hit for release ID: 473
+2025-06-04 21:40:31,575 [INFO] Checking release: SOFR Averages and Index Data (ID: 483)
+2025-06-04 21:40:31,579 [INFO] Fetching series from FRED API for release ID: 483
+2025-06-04 21:40:31,812 [WARNING] Rate limit hit for release ID: 483
+2025-06-04 21:40:31,813 [INFO] Checking release: Key ECB Interest Rates (ID: 484)
+2025-06-04 21:40:31,817 [INFO] Fetching series from FRED API for release ID: 484
+2025-06-04 21:40:32,119 [WARNING] Rate limit hit for release ID: 484
+2025-06-04 21:40:32,120 [INFO] Retrying 11 releases after rate limit. Retry #1
+2025-06-04 21:52:02,056 [INFO] Checking release: H.10 Foreign Exchange Rates (ID: 17)
+2025-06-04 21:52:02,067 [INFO] Fetching series from FRED API for release ID: 17
+2025-06-04 21:52:02,280 [INFO] First series ID received: DTWEXBGS
+2025-06-04 21:52:02,284 [INFO] MongoDB upserted series: DTWEXBGS (release ID: 17)
+2025-06-04 21:52:02,287 [INFO] MongoDB upserted series: DEXUSEU (release ID: 17)
+2025-06-04 21:52:02,292 [INFO] MongoDB upserted series: DEXCHUS (release ID: 17)
+2025-06-04 21:52:02,297 [INFO] MongoDB upserted series: DEXJPUS (release ID: 17)
+2025-06-04 21:52:02,300 [INFO] MongoDB upserted series: DEXCAUS (release ID: 17)
+2025-06-04 21:52:02,301 [INFO] Checking release: H.15 Selected Interest Rates (ID: 18)
+2025-06-04 21:52:02,308 [INFO] Using cached data for release 18 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 21:52:02,312 [INFO] Checking release: Daily Treasury Inflation-Indexed Securities (ID: 72)
+2025-06-04 21:52:02,316 [INFO] Using cached data for release 72 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 21:52:02,316 [INFO] Checking release: Commercial Paper (ID: 86)
+2025-06-04 21:52:02,319 [INFO] Using cached data for release 86 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 21:52:02,323 [INFO] Checking release: FOMC Press Release (ID: 101)
+2025-06-04 21:52:02,328 [INFO] Fetching series from FRED API for release ID: 101
+2025-06-04 21:52:02,541 [INFO] First series ID received: DFEDTARU
+2025-06-04 21:52:02,544 [INFO] MongoDB upserted series: DFEDTARU (release ID: 101)
+2025-06-04 21:52:02,548 [INFO] MongoDB upserted series: DFEDTARL (release ID: 101)
+2025-06-04 21:52:02,551 [INFO] MongoDB upserted series: DFEDTAR (release ID: 101)
+2025-06-04 21:52:02,555 [INFO] MongoDB upserted series: CDC (release ID: 101)
+2025-06-04 21:52:02,556 [INFO] Checking release: Quarterly Retail E-Commerce Sales (ID: 179)
+2025-06-04 21:52:02,560 [INFO] Using cached data for release 179 (cached: 2025-06-05, updated: 2025-05-19)
+2025-06-04 21:52:02,561 [INFO] Checking release: Interest Rate on Reserve Balances (ID: 185)
+2025-06-04 21:52:02,564 [INFO] Using cached data for release 185 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 21:52:02,564 [INFO] Checking release: CBOE Market Statistics (ID: 200)
+2025-06-04 21:52:02,568 [INFO] Using cached data for release 200 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 21:52:02,569 [INFO] Checking release: ICE BofA Indices (ID: 209)
+2025-06-04 21:52:02,574 [INFO] Using cached data for release 209 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 21:52:02,575 [INFO] Checking release: International Financial Statistics (ID: 239)
+2025-06-04 21:52:02,578 [INFO] Using cached data for release 239 (cached: 2025-06-05, updated: 2025-06-02)
+2025-06-04 21:52:02,579 [INFO] Checking release: Recession Indicators Series (ID: 242)
+2025-06-04 21:52:02,583 [INFO] Using cached data for release 242 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 21:52:02,583 [INFO] Checking release: Quits and Layoffs to Nonemployment Based on the Consumer Population Survey (CPS) (ID: 738)
+2025-06-04 21:52:02,587 [INFO] Using cached data for release 738 (cached: 2025-06-05, updated: 2025-05-20)
+2025-06-04 22:16:23,512 [INFO] Checking release: H.10 Foreign Exchange Rates (ID: 17)
+2025-06-04 22:16:23,514 [INFO] Using cached data for release 17 (cached: 2025-06-05, updated: 2025-06-02)
+2025-06-04 22:16:23,514 [INFO] Checking release: H.15 Selected Interest Rates (ID: 18)
+2025-06-04 22:16:23,515 [INFO] Using cached data for release 18 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:16:23,515 [INFO] Checking release: Daily Treasury Inflation-Indexed Securities (ID: 72)
+2025-06-04 22:16:23,517 [INFO] Using cached data for release 72 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:16:23,517 [INFO] Checking release: Commercial Paper (ID: 86)
+2025-06-04 22:16:23,518 [INFO] Using cached data for release 86 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:16:23,519 [INFO] Checking release: FOMC Press Release (ID: 101)
+2025-06-04 22:16:23,520 [INFO] Using cached data for release 101 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:16:23,520 [INFO] Checking release: Quarterly Retail E-Commerce Sales (ID: 179)
+2025-06-04 22:16:23,522 [INFO] Using cached data for release 179 (cached: 2025-06-05, updated: 2025-05-19)
+2025-06-04 22:16:23,522 [INFO] Checking release: Interest Rate on Reserve Balances (ID: 185)
+2025-06-04 22:16:23,524 [INFO] Using cached data for release 185 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:16:23,525 [INFO] Checking release: CBOE Market Statistics (ID: 200)
+2025-06-04 22:16:23,527 [INFO] Using cached data for release 200 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:16:23,527 [INFO] Checking release: ICE BofA Indices (ID: 209)
+2025-06-04 22:16:23,530 [INFO] Using cached data for release 209 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:16:23,530 [INFO] Checking release: International Financial Statistics (ID: 239)
+2025-06-04 22:16:23,532 [INFO] Using cached data for release 239 (cached: 2025-06-05, updated: 2025-06-02)
+2025-06-04 22:16:23,532 [INFO] Checking release: Recession Indicators Series (ID: 242)
+2025-06-04 22:16:23,533 [INFO] Using cached data for release 242 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:16:23,534 [INFO] Checking release: Overnight Bank Funding Rate Data (ID: 375)
+2025-06-04 22:16:23,535 [INFO] Using cached data for release 375 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:16:23,536 [INFO] Checking release: Federal Funds Data (ID: 378)
+2025-06-04 22:16:23,537 [INFO] Fetching series from FRED API for release ID: 378
+2025-06-04 22:21:35,271 [INFO] Checking release: H.10 Foreign Exchange Rates (ID: 17)
+2025-06-04 22:21:35,273 [INFO] Using cached data for release 17 (cached: 2025-06-05, updated: 2025-06-02)
+2025-06-04 22:21:35,273 [INFO] Checking release: H.15 Selected Interest Rates (ID: 18)
+2025-06-04 22:21:35,275 [INFO] Using cached data for release 18 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:21:35,275 [INFO] Checking release: Daily Treasury Inflation-Indexed Securities (ID: 72)
+2025-06-04 22:21:35,277 [INFO] Using cached data for release 72 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:21:35,278 [INFO] Checking release: Commercial Paper (ID: 86)
+2025-06-04 22:21:35,279 [INFO] Using cached data for release 86 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:21:35,279 [INFO] Checking release: FOMC Press Release (ID: 101)
+2025-06-04 22:21:35,281 [INFO] Using cached data for release 101 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:21:35,281 [INFO] Checking release: Quarterly Retail E-Commerce Sales (ID: 179)
+2025-06-04 22:21:35,282 [INFO] Using cached data for release 179 (cached: 2025-06-05, updated: 2025-05-19)
+2025-06-04 22:21:35,283 [INFO] Checking release: Interest Rate on Reserve Balances (ID: 185)
+2025-06-04 22:21:35,286 [INFO] Using cached data for release 185 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:21:35,286 [INFO] Checking release: CBOE Market Statistics (ID: 200)
+2025-06-04 22:21:35,288 [INFO] Using cached data for release 200 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:21:35,289 [INFO] Checking release: ICE BofA Indices (ID: 209)
+2025-06-04 22:21:35,292 [INFO] Using cached data for release 209 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:21:35,292 [INFO] Checking release: International Financial Statistics (ID: 239)
+2025-06-04 22:21:35,294 [INFO] Using cached data for release 239 (cached: 2025-06-05, updated: 2025-06-02)
+2025-06-04 22:21:35,294 [INFO] Checking release: Recession Indicators Series (ID: 242)
+2025-06-04 22:21:35,296 [INFO] Using cached data for release 242 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:21:35,296 [INFO] Checking release: Harmonized Indices of Consumer Prices (HICP) (ID: 251)
+2025-06-04 22:21:35,298 [INFO] Using cached data for release 251 (cached: 2025-06-05, updated: 2025-05-19)
+2025-06-04 22:21:35,298 [INFO] Checking release: Economic Policy Uncertainty (ID: 279)
+2025-06-04 22:21:35,300 [INFO] Using cached data for release 279 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:21:35,300 [INFO] Checking release: Nikkei Indexes (ID: 287)
+2025-06-04 22:21:35,302 [INFO] Using cached data for release 287 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:21:35,302 [INFO] Checking release: Interest Rate Spreads (ID: 304)
+2025-06-04 22:21:35,304 [INFO] Using cached data for release 304 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:21:35,305 [INFO] Checking release: National Rates and Rate Caps - Monthly Update (ID: 317)
+2025-06-04 22:21:35,306 [INFO] Using cached data for release 317 (cached: 2025-06-05, updated: 2025-05-19)
+2025-06-04 22:21:35,306 [INFO] Checking release: NASDAQ (ID: 328)
+2025-06-04 22:21:35,308 [INFO] Using cached data for release 328 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:21:35,308 [INFO] Checking release: Overnight Bank Funding Rate Data (ID: 375)
+2025-06-04 22:21:35,310 [INFO] Using cached data for release 375 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-04 22:21:35,310 [INFO] Checking release: Federal Funds Data (ID: 378)
+2025-06-04 22:21:35,312 [INFO] Fetching series from FRED API for release ID: 378
+2025-06-04 22:21:35,487 [ERROR] General error for release ID 378: 'series_id'
+2025-06-04 22:21:35,487 [INFO] Checking release: Temporary Open Market Operations (ID: 379)
+2025-06-04 22:21:35,489 [INFO] Fetching series from FRED API for release ID: 379
+2025-06-04 22:21:35,649 [ERROR] General error for release ID 379: 'series_id'
+2025-06-04 22:21:35,696 [INFO] Cached all_series summary in MongoDB for date 2025-05-19
+2025-06-04 22:23:42,749 [INFO] Using cached FRED data for date 2025-05-19
+2025-06-06 18:17:57,259 [INFO] No cached summary for 2025-06-06. Fetching from FRED...
+2025-06-06 18:18:58,006 [INFO] Checking release: G.19 Consumer Credit (ID: 14)
+2025-06-06 18:18:58,033 [INFO] Using cached data for release 14 (cached: 2025-06-05, updated: 2025-05-07)
+2025-06-06 18:18:58,035 [INFO] Checking release: H.15 Selected Interest Rates (ID: 18)
+2025-06-06 18:18:58,038 [INFO] Using cached data for release 18 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-06 18:18:58,038 [INFO] Checking release: H.8 Assets and Liabilities of Commercial Banks in the United States (ID: 22)
+2025-06-06 18:18:58,042 [INFO] Using cached data for release 22 (cached: 2025-06-05, updated: 2025-05-30)
+2025-06-06 18:18:58,044 [INFO] Checking release: Employment Situation (ID: 50)
+2025-06-06 18:18:58,048 [INFO] Using cached data for release 50 (cached: 2025-06-05, updated: 2025-05-02)
+2025-06-06 18:18:58,048 [INFO] Checking release: Daily Treasury Inflation-Indexed Securities (ID: 72)
+2025-06-06 18:18:58,053 [INFO] Using cached data for release 72 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-06 18:18:58,053 [INFO] Checking release: Commercial Paper (ID: 86)
+2025-06-06 18:18:58,058 [INFO] Using cached data for release 86 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-06 18:18:58,058 [INFO] Checking release: Supplemental Estimates, Motor Vehicles (ID: 93)
+2025-06-06 18:18:58,065 [INFO] Fetching series from FRED API for release ID: 93
+2025-06-06 18:18:58,223 [ERROR] General error for release ID 93: 'series_id'
+2025-06-06 18:18:58,224 [INFO] Checking release: FOMC Press Release (ID: 101)
+2025-06-06 18:18:58,227 [INFO] Using cached data for release 101 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-06 18:18:58,228 [INFO] Checking release: Interest Rate on Reserve Balances (ID: 185)
+2025-06-06 18:18:58,231 [INFO] Using cached data for release 185 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-06 18:18:58,231 [INFO] Checking release: Recession Indicators Series (ID: 242)
+2025-06-06 18:18:58,234 [INFO] Using cached data for release 242 (cached: 2025-06-05, updated: 2025-06-04)
+2025-06-06 18:18:58,266 [INFO] Cached all_series summary in MongoDB for date 2025-06-06
+2025-06-06 18:18:58,395 [WARNING] Failed to fetch data for TERMCBCCALLNS: 429 Client Error: Too Many Requests for url: https://api.stlouisfed.org/fred/series/observations?series_id=TERMCBCCALLNS&api_key=3575f98c96c1f20839895a8decb62dfb&file_type=json
+2025-06-06 18:18:58,593 [WARNING] Failed to fetch data for TERMCBAUTO48NS: 429 Client Error: Too Many Requests for url: https://api.stlouisfed.org/fred/series/observations?series_id=TERMCBAUTO48NS&api_key=3575f98c96c1f20839895a8decb62dfb&file_type=json
+2025-06-06 18:18:58,726 [WARNING] Failed to fetch data for TOTALSL: 429 Client Error: Too Many Requests for url: https://api.stlouisfed.org/fred/series/observations?series_id=TOTALSL&api_key=3575f98c96c1f20839895a8decb62dfb&file_type=json
+2025-06-06 18:18:59,002 [WARNING] Failed to fetch data for REVOLSL: 429 Client Error: Too Many Requests for url: https://api.stlouisfed.org/fred/series/observations?series_id=REVOLSL&api_key=3575f98c96c1f20839895a8decb62dfb&file_type=json
+2025-06-06 18:18:59,207 [WARNING] Failed to fetch data for SLOAS: 429 Client Error: Too Many Requests for url: https://api.stlouisfed.org/fred/series/observations?series_id=SLOAS&api_key=3575f98c96c1f20839895a8decb62dfb&file_type=json
+2025-06-06 18:18:59,718 [WARNING] Failed to fetch data for CCLACBW027SBOG: 429 Client Error: Too Many Requests for url: https://api.stlouisfed.org/fred/series/observations?series_id=CCLACBW027SBOG&api_key=3575f98c96c1f20839895a8decb62dfb&file_type=json
+2025-06-06 18:18:59,893 [WARNING] Failed to fetch data for DPSACBW027SBOG: 429 Client Error: Too Many Requests for url: https://api.stlouisfed.org/fred/series/observations?series_id=DPSACBW027SBOG&api_key=3575f98c96c1f20839895a8decb62dfb&file_type=json
+2025-06-06 18:19:00,231 [WARNING] Failed to fetch data for BUSLOANS: 429 Client Error: Too Many Requests for url: https://api.stlouisfed.org/fred/series/observations?series_id=BUSLOANS&api_key=3575f98c96c1f20839895a8decb62dfb&file_type=json
+2025-06-06 18:19:00,436 [WARNING] Failed to fetch data for CREACBM027NBOG: 429 Client Error: Too Many Requests for url: https://api.stlouisfed.org/fred/series/observations?series_id=CREACBM027NBOG&api_key=3575f98c96c1f20839895a8decb62dfb&file_type=json
+2025-06-06 18:19:00,744 [WARNING] Failed to fetch data for CREACBW027SBOG: 429 Client Error: Too Many Requests for url: https://api.stlouisfed.org/fred/series/observations?series_id=CREACBW027SBOG&api_key=3575f98c96c1f20839895a8decb62dfb&file_type=json
+2025-06-07 12:03:15,075 [INFO] No cached summary for 2025-06-07. Fetching from FRED...
+2025-06-07 12:03:34,188 [INFO] No cached summary for 2025-06-07. Fetching from FRED...
+2025-06-07 12:04:14,766 [INFO] No cached summary for 2025-06-07. Fetching from FRED...
+2025-06-07 12:04:31,546 [INFO] Cached all_series summary in MongoDB for date 2025-06-07
+2025-06-07 12:05:10,514 [INFO] Using cached FRED data for date 2025-06-07
+2025-06-07 22:58:30,379 [INFO] No cached summary for 2025-06-08. Fetching from FRED...
+2025-06-07 23:16:41,457 [INFO] No cached summary for 2025-06-08. Fetching from FRED...
+2025-06-07 23:17:47,809 [INFO] No cached summary for 2025-06-08. Fetching from FRED...
+2025-06-07 23:20:03,362 [INFO] No cached summary for 2025-06-08. Fetching from FRED...
+2025-06-07 23:21:55,564 [INFO] No cached summary for 2025-06-08. Fetching from FRED...
+2025-06-07 23:35:35,618 [INFO] No cached summary for 2025-06-08. Fetching from FRED...
+2025-06-08 00:00:12,351 [INFO] No cached summary for 2025-06-08. Fetching from FRED...
+2025-06-08 00:00:59,694 [INFO] Cached all_series summary in MongoDB for date 2025-06-08
